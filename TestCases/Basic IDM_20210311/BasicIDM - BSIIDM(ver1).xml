@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="bSIIDM(ver1)_BASIC IDM.xsl"?>
+<idm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idm.xsd">
+  <specId guid="39eb2c91-c577-412f-bfd8-592e2ba99230" shortTitle="idm_BASIC IDM" fullTitle="basic information delivery manual" subTitle="" idmCode="idm-BSA-BR-DS-NLD-EN-Lee-20201229-NI" localCode="" documentStatus="NI" localStatus="" version="1.0" />
+  <authoring copyright="">
+    <author id="bd67776c-fb4f-460d-a074-735514bb1810" emailAddress="admin123@gmail.com" firstName="John" lastName="Lee" affiliation="" />
+    <author id="820565cf-010c-4f75-9d4d-224aed69d151" emailAddress="glee@yonsei.ac.kr" firstName="Jungdae" lastName="Kim" affiliation="Yonsei University" />
+    <author id="7662ae36-8694-4574-9677-dd68ebfc9277" emailAddress="lex@vdcbase.com" firstName="Lex" lastName="Ransijn" affiliation="BIM Locket" />
+    <changeLog changeSeiralNumber="a5ca033d-b146-4ad7-b81c-c47af8f14e1d" changeDate="2020-12-21" changeTime="15:59:43" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+      <change changedElement="author" changedFrom="" />
+    </changeLog>
+    <changeLog changeSeiralNumber="ce27c64d-ec03-4bbc-aedf-2b651ad4929e" changeDate="2020-12-21" changeTime="15:59:48" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+      <change changedElement="author" changedFrom="" />
+    </changeLog>
+    <changeLog changeSeiralNumber="35f9fc49-16a3-46dc-be03-b66007ee3f8d" changeDate="2020-12-29" changeTime="16:04:58" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+      <change changedElement="Name" changedFrom="idm_BIM BASIC IDM" />
+      <change changedElement="Code" changedFrom="idm-BSA---NLD-EN-Lee-20201221-DS" />
+      <change changedElement="FullTitle" changedFrom="BIM BASIC INFORMATION DELIVERY MANUAL (IDM)" />
+      <change changedElement="Release" changedFrom="DS" />
+    </changeLog>
+    <changeLog changeSeiralNumber="3f27ad08-dd20-473e-b616-de3a06c54a72" changeDate="2020-12-30" changeTime="14:41:10" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+      <change changedElement="FullTitle" changedFrom="BASIC INFORMATION DELIVERY MANUAL (IDM)" />
+    </changeLog>
+    <committee name="bSI IDM Toolkit Project Group">
+      <member id="820565cf-010c-4f75-9d4d-224aed69d151" />
+      <member id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+      <leader id="820565cf-010c-4f75-9d4d-224aed69d151" />
+      <leader id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+    </committee>
+    <publisher name="bSI IDM Toolkit Project Group" publisherLocation="" />
+  </authoring>
+  <uc language="EN" summary="Knowledge and practical experiences have shown that there is a significant common denominator. We are not developing something new, but rather using existing structures, based on openBIM IFC." aimAndScope="To secure and reuse information more efficiently and effectively." benefits="" scopeKeywords="" benefitKeywords="" limitations="" basisStandards="" references="" requiredResources="" requiredCompetencies="" notes="">
+    <specId guid="fa1027ef-3830-4df0-9a5a-d797bf2ab43a" shortTitle="uc_BASIC IDM" fullTitle="basic information delivery manual" subTitle="" idmCode="uc-BSA-BR-DS-NLD-EN-Lee-20201221-DS" localCode="" documentStatus="DS" localStatus="" version="1.0" />
+    <authoring copyright="">
+      <author id="bd67776c-fb4f-460d-a074-735514bb1810" emailAddress="admin123@gmail.com" firstName="John" lastName="Lee" affiliation="" />
+      <author id="820565cf-010c-4f75-9d4d-224aed69d151" emailAddress="wjdeo7189@yonsei.ac.kr" firstName="Jungdae" lastName="Kim" affiliation="Yonsei University" />
+      <author id="7662ae36-8694-4574-9677-dd68ebfc9277" emailAddress="lex@vdcbase.com" firstName="Lex" lastName="Ransijn" affiliation="BIM Locket" />
+      <changeLog changeSeiralNumber="3d81b0ab-f0fe-493c-97b3-618390f52f36" changeDate="2020-12-21" changeTime="15:59:43" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="6fd9c005-f514-48dc-b7b7-67b72535b465" changeDate="2020-12-21" changeTime="15:59:48" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="b802879f-44ee-4c42-bec7-3861cd32ea7a" changeDate="2020-12-22" changeTime="17:48:09" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="ActorList" changedFrom="" />
+        <change changedElement="ConsStandard" changedFrom="" />
+        <change changedElement="businessRule" changedFrom="" />
+        <change changedElement="Local" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="a804da1f-97e1-43dc-a482-8cad8f476f93" changeDate="2020-12-22" changeTime="17:53:15" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="f9534b46-47cc-4952-ac1a-7790874bfff4" changeDate="2020-12-22" changeTime="17:53:21" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="62c58aaf-0f1e-44d0-b937-c4ba4db3a0b5" changeDate="2020-12-29" changeTime="15:19:36" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="e5650fcd-53dd-473c-b265-226771bd2ad3" changeDate="2020-12-29" changeTime="15:21:13" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="2415d331-8dd7-4a2b-9709-d11383121746" changeDate="2020-12-29" changeTime="16:04:58" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="Name" changedFrom="uc_BIM BASIC IDM" />
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="1f158387-b45d-4b1b-84a2-18f050981dc5" changeDate="2020-12-30" changeTime="14:41:10" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="813beb71-7683-4d63-9799-298021728a7f" changeDate="2020-12-30" changeTime="14:43:34" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="cda18f35-0955-4c79-bbb5-a7b1fff92258" changeDate="2020-12-30" changeTime="14:44:33" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="ddc0946c-adda-40bc-b215-1313d9323702" changeDate="2020-12-30" changeTime="14:44:39" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="f94e6d67-9bf8-4b05-90ad-90060e3d232c" changeDate="2020-12-30" changeTime="14:46:02" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="d60ae51a-b2af-4e7a-9c0f-313237d58cad" changeDate="2020-12-30" changeTime="15:12:11" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="c1bfdc4f-ca8d-4ce1-a4c6-8c1d9c42c0a5" changeDate="2020-12-30" changeTime="15:12:28" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="38e12027-6bd8-4ef9-afa5-28c36f789f1a" changeDate="2020-12-31" changeTime="21:10:48" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="3adddef2-f489-4979-9d2d-39fa0f27e529" changeDate="2021-01-05" changeTime="11:43:56" changeSummary="" changedBy="bd67776c-fb4f-460d-a074-735514bb1810">
+        <change changedElement="ConsStandard" changedFrom="" />
+      </changeLog>
+      <committee name="bSI IDM Toolkit Project Group">
+        <member id="bd67776c-fb4f-460d-a074-735514bb1810" />
+        <member id="820565cf-010c-4f75-9d4d-224aed69d151" />
+        <member id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+        <leader id="bd67776c-fb4f-460d-a074-735514bb1810" />
+        <leader id="820565cf-010c-4f75-9d4d-224aed69d151" />
+        <leader id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+      </committee>
+      <publisher name="bSI IDM Toolkit Project Group" publisherLocation="" />
+    </authoring>
+    <useClassification standard="1" use="BSA" />
+    <region type="Country" value="NLD" />
+    <isoProjectPhase name="BR" outcomes="" informationRequirements="" associatedEr="" />
+    <isoProjectPhase name="DS" outcomes="" informationRequirements="" associatedEr=""/>
+    <localProjectPhaseClassification localProjectPhaseClassificationStandard="AIA">
+      <localProjectPhase name="PD: Pre-Design" outcomes="" informationRequirements="" associatedEr=""/>
+      <localProjectPhase name="SD: Schematic Design" outcomes="" informationRequirements="" associatedEr=""/>
+      <localProjectPhase name="DD: Design Development" outcomes="" informationRequirements="" associatedEr=""/>
+    </localProjectPhaseClassification>
+    <businessRule id="b846a493-e741-4089-83a0-b00ad3b5f2e9" name="CountryRegulation" proposition="All of the conditions are following each country regulation." >
+      <graphicalExample fullFilePath="" description=""/>
+    </businessRule>
+    <businessRule id="4b6838bf-150f-4e94-934c-2e42470ef32f" name="SeperateMeterial" proposition="All material is basically separately counted." >
+      <graphicalExample fullFilePath="" description=""/>
+    </businessRule>
+    <constructionEntityClassification standard="">
+      <constructionEntity name="" />
+    </constructionEntityClassification>
+    <actorClassification standard="Omniclass Table 33">
+      <actor roleKey="95f07882-f09c-4347-81c4-26a7d75504f4" role="A (architect)" />
+      <actor roleKey="c7aa12f9-0af0-4118-962b-24d681c6dc3f" role="W (contractor)" />
+    </actorClassification>
+  </uc>
+  <er comments="">
+    <specId guid="c89860e6-18a4-4f4d-a090-86b8170fd5b6" shortTitle="er_Basic IDM" fullTitle="basic information delivery manual" subTitle="" idmCode="er-BSA-BR-DS-NLD-EN-Lee-20201230-NI" localCode="" documentStatus="NI" localStatus="" version="1.0" />
+    <authoring copyright="">
+      <author id="820565cf-010c-4f75-9d4d-224aed69d151" emailAddress="wjdeo7189@yonsei.ac.kr" firstName="Jungdae" lastName="Kim" affiliation="Yonsei University" />
+      <author id="7662ae36-8694-4574-9677-dd68ebfc9277" emailAddress="lex@vdcbase.com" firstName="Lex" lastName="Ransijn" affiliation="BIM Locket" />
+      <author id="bd67776c-fb4f-460d-a074-735514bb1810" emailAddress="admin123@gmail.com" firstName="John" lastName="Lee" affiliation="" />
+      <changeLog changeSeiralNumber="35f9fc49-16a3-46dc-be03-b66007ee3f8d" changeDate="2020-12-30" changeTime="15:12:28" changeSummary="created ver. 1.0 document" changedBy="7662ae36-8694-4574-9677-dd68ebfc9277">
+        <change changedElement="informationUnit" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="be3e97f3-15f2-44f8-b256-66d8e185e284" changeDate="2020-12-30" changeTime="15:12:28" changeSummary="changed the form of original document(from PDF to XML extension) " changedBy="820565cf-010c-4f75-9d4d-224aed69d151">
+        <change changedElement="informationUnit" changedFrom="" />
+      </changeLog>
+      <changeLog changeSeiralNumber="cffb8451-4e7a-4c83-b9ef-217f9c2a72ec" changeDate="2021-01-05" changeTime="11:43:56" changeSummary="revised xsl file scalable to fit with original document and other minor change" changedBy="820565cf-010c-4f75-9d4d-224aed69d151">
+        <change changedElement="informationUnit" changedFrom="" />
+      </changeLog>
+      <committee name="bSI IDM Toolkit Project Group">
+        <member id="820565cf-010c-4f75-9d4d-224aed69d151" />
+        <member id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+        <leader id="820565cf-010c-4f75-9d4d-224aed69d151" />
+        <leader id="7662ae36-8694-4574-9677-dd68ebfc9277" />
+      </committee>
+      <publisher name="bSI IDM Toolkit Project Group" publisherLocation="" />
+    </authoring>
+    <correspondingMvd basisSchema="IFC 4.0" correspondingMvdName="" correspondingMvdComments="" />
+    <!--
+    <informationUnit id="613e5487-3af1-49f9-87cb-c9f9584220b2" name="WHY ARE WE SHARING THIS INFORMATION UNAMBIGUOUSLY?" dataType="various" isMandatory="true" definition="In order to secure and reuse information more efficiently and effectively.">
+      <graphicalExample fullFilePath="Image\ER1-1.PNG" description="" />
+      <graphicalExample fullFilePath="image\ER1-2.PNG" description="" />
+    </informationUnit>
+    <informationUnit id="32591710-2d6a-462c-bef9-d23bd9f649e7" name="HOW ARE WE GOING TO SHARE THIS INFORMATION UNAMBIGUOUSLY?" dataType="various" isMandatory="true" definition="Knowledge and practical experiences have shown that there is a significant common denominator.&#xD;&#xA; We are not developing something new, but rather using existing structures, based on openBIM IFC.">
+      <graphicalExample fullFilePath="image\ER2-1.PNG" description="" />
+      <graphicalExample fullFilePath="image\ER2-2.PNG" description="" />
+      <graphicalExample fullFilePath="image\ER2-3.PNG" description="" />
+    </informationUnit>
+    -->
+    <informationUnit id="9afd725d-98d7-4c06-b4be-0fd6a1b96ec3" name="which structure will we use?" dataType="various" isMandatory="true" definition="The agreements listed below help ensure that every involved party will always be able to find&#xD;&#xA;and supply the right information in the right place.">
+      <subInformationUnit>
+        <informationUnit id="d0ca08f6-1969-4a7c-beae-4f21a1de7e73" name="file name" dataType="string" isMandatory="true" definition="To ensure that uniform and consistent naming&#xD;&#xA;is used for (discipline) models within the&#xD;&#xA;project">
+          <textualExample description="&lt;Building&gt;_&lt;Discipline&gt;_&lt;Component&gt; " />
+          <graphicalExample fullFilePath="image\ER3-1.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="ab643502-d7de-40bf-9116-7143b0622651" name="local position and orientation" dataType="Coordinate" isMandatory="true" definition="The local position of the building is coordinated and close to the origin.&#xD;&#xA;&#xD;&#xA;tip: use a physical object as point of origin, positioned at 0.0.0., and also export this to IFC.&#xD;">
+          <graphicalExample fullFilePath="image\ER3-2.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="a0554655-f5df-45f3-bfb4-3833fbf2dd45" name="building storeys and naming" dataType="string" isMandatory="true" definition="Name building storeys only as ifcBuildingStorey-Name.&#xD;&#xA;&#xD;&#xA;Allocate all objects to the correct level.&#xD;&#xA;&#xD;&#xA;Within a project, ensure that all involved parties consistently use exactly the same&#xD;&#xA;naming, that can be numerically sortedwith a textual description.">
+          <textualExample description="00 ground floor" />
+          <textualExample description="01 first floor" />
+          <graphicalExample fullFilePath="image\ER3-3.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="4a8a852c-25de-4df1-8f51-cb3689d1b38f" name="correct use of entities" dataType="string" isMandatory="true" definition="Use the most appropriate type of BIM entity, both in the source application and the IFC entity.">
+          <textualExample description="slab = ifcSlab, wall = ifcWall, beam = ifcBeam, column = ifcColumn, stair = ifcStair, door = ifcDoor etc." />
+          <graphicalExample fullFilePath="Image\ER3-4.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="89be3bad-9489-4fe7-9cca-1063feb4c90c" name="structure and naming" dataType="string" isMandatory="true" definition="Consistently structure and name objects.&#xD;&#xA;Correctly enter the object TYPE (ifcType, ifcObjectType or ifcObjectTypeOverride).&#xD;&#xA;Where applicable, also correctly enter the Name (ifcName or NameOverride).">
+          <textualExample description="roof insulation, type: glass fiber" />
+          <graphicalExample fullFilePath="Image\ER3-5.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="0272f46c-ef5a-4491-b9cb-1628ec57b33c" name="classification system" dataType="string" isMandatory="true" definition="Apply the existing classification system used in the relevant country. ">
+          <textualExample description="22.11" />
+          <graphicalExample fullFilePath="Image\ER3-6.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="bbee70e0-994c-4705-b2a4-c4997b7b1142" name="objects with correct materialization" dataType="string" isMandatory="true" definition="Allocate objects with a material description (ifcMaterial).">
+          <textualExample description="limestone" />
+          <graphicalExample fullFilePath="Image\ER3-7.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="e7742fca-631a-46ad-91f2-4fb2bcaf16cd" name="duplicates and intersections" dataType="boolean" isMandatory="true" definition="There are no duplicates or intersections permitted. Make sure this is checked in IFC.">
+          <graphicalExample fullFilePath="Image\ER3-8.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="e77ifa8a-884d-65ci-72a2-5nw6aieq58di" name="learning to speak the same language is something we do together" dataType="various" isMandatory="true" definition="When naming objects, consider whether the name meets the following criteria. Double-check this, and know what information you are sharing.">
+          <textualExample description="Significant Understandable Logical Insightful Consistent Recognizable"/>
+        </informationUnit>
+      </subInformationUnit>
+    </informationUnit>
+    <informationUnit id="9cc7db56-2da3-4c83-a076-421d4279dee6" name="how can we secure other/future object information?" dataType="various" isMandatory="true" definition="Object information is secured in the correct properties and property sets as defined in IFC.">
+      <subInformationUnit>
+        <informationUnit id="097b4f08-1333-404c-96c0-e60d990ec6e9" name="loadbearing" dataType="boolean" isMandatory="true" definition="Allocate objects, when applicable, with the property LoadBearing">
+          <textualExample description="[True/False]" />
+          <graphicalExample fullFilePath="image\ER4-1.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="26d40988-027e-4255-aaf5-4e6d8f59ca24" name="is external" dataType="boolean" isMandatory="true" definition="Allocate objects, when applicable, with the&#xD;&#xA;property IsExternal">
+          <textualExample description="[True/False]" />
+          <textualExample description="both inner and outer faces of the façade&#xD;&#xA;have the property IsExternalTrue." />
+          <graphicalExample fullFilePath="Image\ER4-2.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="d6b99d8a-36fd-4397-a480-77896b6fc177" name="fire rating" dataType="various" isMandatory="false" definition="Allocate objects, when applicable,&#xD;&#xA;with the property FireRating.">
+          <textualExample description="Apply the existing standard used in the&#xD;&#xA;relevant country." />
+          <graphicalExample fullFilePath="Image\ER4-3.PNG" description="" />
+        </informationUnit>
+        <informationUnit id="7fb3464b-7b1d-4157-af19-b574850f2383" name="project specific" dataType="IFC property" isMandatory="false" definition="Define which IFC properties you are using&#xD;&#xA;for each specific project.">
+          <graphicalExample fullFilePath="Image\ER4-4.PNG" description="" />
+        </informationUnit>
+      </subInformationUnit>
+      <textualExample description="for beams, the properties FireRating, LoadBearing and IsExternal are part of the Pset_BeamCommon." />
+      <graphicalExample fullFilePath="image\ER4-0-1.PNG" description="" />
+      <graphicalExample fullFilePath="image\ER4-0-2.PNG" description="" />
+    </informationUnit>
+  </er>
+</idm>
