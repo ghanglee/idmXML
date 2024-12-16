@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<idm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="idm.xsd">
+  <specId guid="fd632523-75da-4812-932a-f1190433c2e1" shortTitle="idm_Bridge Data Handover Requirements" fullTitle="Guidelines for Defiinng Information Requirements and Specifications for Bridge Data During Client Handover" subTitle="" idmCode="idm-AM----EN-Lee-20241216-Bridge Data Handover Requirements-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="Version 0.1" />
+  <authoring copyright="">
+    <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+    <author id="ac50d3fe-a1e9-4e6e-b0e0-e6af2eeb1ea0" digitalSignature="" firstName="Andre" middleName="" lastName="Borrmann" affiliation="TUM" />
+    <committee name="The loinXSD project team">
+      <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+      <leader>ac50d3fe-a1e9-4e6e-b0e0-e6af2eeb1ea0</leader>
+    </committee>
+    <publisher name="" location="" />
+  </authoring>
+  <uc>
+    <specId guid="c5a69024-af69-426f-828f-9ff0796482f3" shortTitle="uc_Bridge Data Handover Requirements" fullTitle="Guidelines for Defiinng Information Requirements and Specifications for Bridge Data During Client Handover" subTitle="" idmCode="uc-AM----EN-Lee-20241216-Bridge Data Handover Requirements-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="Version 0.1" />
+    <authoring copyright="">
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <author id="ac50d3fe-a1e9-4e6e-b0e0-e6af2eeb1ea0" digitalSignature="" firstName="Andre" middleName="" lastName="Borrmann" affiliation="TUM" />
+      <committee name="The loinXSD project team">
+        <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+        <leader>ac50d3fe-a1e9-4e6e-b0e0-e6af2eeb1ea0</leader>
+      </committee>
+      <publisher name="" location="" />
+    </authoring>
+    <summary>
+      <description>
+        <content>This document outlines the specific requirements and standards for bridge data during the handover phase to clients. It defines the necessary information, level of detail, and data quality that the models must meet to ensure they are fit for purpose. The document also addresses interoperability, compliance with industry standards (e.g., ISO 29481), and the inclusion of as-built information to support asset management, maintenance, and future modifications. By clearly specifying these requirements, the document aims to streamline the handover process, improve communication between stakeholders, and enhance the long-term usability of bridge models.</content>
+      </description>
+    </summary>
+    <aimAndScope>
+      <description>
+        <content>The aim of this document is to establish clear and standardized requirements for bridge data during the handover process to clients. It ensures that the delivered models contain accurate, complete, and consistent information that supports asset management, maintenance, operations, and future modifications. By defining these requirements, the document aims to facilitate seamless communication among stakeholders, improve interoperability, and enhance the overall quality and usability of bridge models.</content>
+      </description>
+    </aimAndScope>
+    <language>EN</language>
+    <use name="AM">
+      <classification name="bSI BIM Use cases" version="4-1" publicationYear="2019" />
+    </use>
+    <standardProjectPhase>
+      <name>Maintenance </name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr></associatedEr>
+      </informationRequirements>
+    </standardProjectPhase>
+  </uc>
+  <businessContextMap>
+    <specId guid="2d176aa8-d42d-40c8-beac-5737111a0e1b" shortTitle="pm_BridgeDataHandover" fullTitle="Bridge Data Handover Process" subTitle="" idmCode="pm-AM-MT-MT--EN-Lee-20241216-BridgeDataHandover-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="" />
+    <authoring copyright="">
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <publisher name="" location="" />
+    </authoring>
+    <pm>
+      <diagram id="7c3003e0-fe93-4810-98c6-f50e9df4b276" name="pm_BridgeDataHandover" filePath="Diagram\Diagram(1).bpmn" notation="BPMN">
+        <description>
+          <content>The image you provided depicts a Bridge Data Handover Process between a Contractor and a Client.
+
+Here's a breakdown of the process:
+
+Contractor's Role:
+
+Compile Bridge Handover Data: The contractor compiles the necessary bridge handover data.
+Send Bridge Handover Data: The contractor sends the compiled data to the client.
+Client's Role:
+
+Request Bridge Handover Data: The client initiates the process by requesting the handover data from the contractor.
+Receive Bridge Handover Data: The client receives the data from the contractor.
+Check Bridge Handover Data: The client verifies the received data against the required standards and specifications.
+Decision Point:
+If the data is valid, the process moves to the final step.
+If the data is invalid, the client requests a revised submission from the contractor.
+Revised Submission:
+
+If the data is invalid, the contractor is required to compile and send a revised version of the bridge handover data.
+The process continues in a loop until the client receives and validates the data.
+
+Key Points:
+
+The process ensures that the bridge handover data meets the required standards and specifications.
+The client has the authority to request revisions if the data is not satisfactory.
+The process includes a feedback loop to ensure data accuracy and completeness.</content>
+          <image caption="" filePath="Image\Image(1).png" />
+        </description>
+      </diagram>
+      <dataObjectAndEr id="113f7c90-4708-4b89-9851-34c30fd2602f">
+        <associatedDataObject>dataobjectreference_MuN1rKLt</associatedDataObject>
+        <associatedEr></associatedEr>
+      </dataObjectAndEr>
+      <dataObjectAndEr id="48652311-c4a5-4b5a-b037-3088f6b361d3">
+        <associatedDataObject>dataobjectreference_MuN1r7k</associatedDataObject>
+        <associatedEr></associatedEr>
+      </dataObjectAndEr>
+      <dataObjectAndEr id="3d12ffac-9362-471b-bb79-c49a34a78c00">
+        <associatedDataObject>DataObjectReference_0rp6wjf</associatedDataObject>
+        <associatedEr></associatedEr>
+      </dataObjectAndEr>
+      <dataObjectAndEr id="edd008fe-ddc5-4b6a-b342-da17f5d10a14">
+        <associatedDataObject>DataObjectReference_05umuy5</associatedDataObject>
+        <associatedEr></associatedEr>
+      </dataObjectAndEr>
+    </pm>
+  </businessContextMap>
+  <er>
+    <specId guid="a6c43060-f354-4b80-9dd7-a5f97af0daad" shortTitle="er_BridgeHandoverData" fullTitle="Bridge handover data requirements" subTitle="" idmCode="er-AM-MT-MT--EN-Lee-20241216-BridgeHandoverData-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="" />
+    <authoring copyright="">
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <publisher name="" location="" />
+    </authoring>
+    <informationUnit id="d3de9cb7-4f77-47a2-88ea-9fbee49b4f2d" name="Wing Wall" dataType="Object" isMandatory="false" definition="Wing walls are retaining walls that are built next to the abutments of a bridge to support the embankment fill and prevent the carriageway from settling. ">
+      <examples>
+        <description>
+          <content>See the wing wall example image.</content>
+          <image caption="" filePath="Image\Image(1).jpg" />
+        </description>
+      </examples>
+      <correspondingExternalElement basis="LOIN &quot;Bridge Handover to Client&quot;" name="Wing Wall">
+        <description>
+          <content>The lateral wall of a bridge abutment</content>
+        </description>
+      </correspondingExternalElement>
+    </informationUnit>
+    <informationUnit id="c40fd5bf-9873-4da4-8b75-0105b46ac2e7" name="Technical Drawing" dataType="CAD File" isMandatory="true" definition="A precise and detailed drawing of a bridge and its subcomponents">
+      <correspondingExternalElement basis="97c5a8ae-7807-40c5-9872-7244274373b6" name="Technical Drawing" />
+    </informationUnit>
+    <informationUnit id="73713177-7553-4820-84d4-89e55d6302b1" name="Level 5 BIM gemetric data" dataType="BIM model" isMandatory="true" definition="Level 5 gemetric data of bridge objects">
+      <correspondingExternalElement basis="97c5a8ae-7807-40c5-9872-7244274373b6" name="GeometricalInformation" />
+    </informationUnit>
+    <informationUnit id="ef56b6a6-c3ef-4287-b2ca-ea100b0e3aaa" name="Wing wall data template form 101" dataType="Form" isMandatory="false" definition="A standardized form used to capture and organize essential data related to the design, construction, and maintenance of wing walls in bridge projects. This template includes fields for structural details, materials, dimensions, geotechnical data, and other relevant information needed for effective project planning, execution, and future asset management. It ensures consistent data collection and facilitates the integration of wing wall information into larger bridge models or asset management systems.">
+      <correspondingExternalElement basis="97c5a8ae-7807-40c5-9872-7244274373b6" name="Data Template for Wing Wall" />
+    </informationUnit>
+    <correspondingMvd basis="97c5a8ae-7807-40c5-9872-7244274373b6" name="LOIN &quot;Bridge Handover to Client&quot; specification">
+      <description>
+        <content>This IDM is currently mapped to the LOIN "Bridge Handover to Client" specification, identifier "97c5a8ae-7807-40c5-9872-7244274373b6".</content>
+      </description>
+    </correspondingMvd>
+    <description>
+      <content>"Bridge Handover Data Requirements" outlines the essential information and standards that must be met when transferring bridge models and data to clients. It ensures that the data is complete, accurate, and compatible with asset management systems, supporting the ongoing maintenance, operation, and future modifications of the bridge.</content>
+    </description>
+  </er>
+</idm>
