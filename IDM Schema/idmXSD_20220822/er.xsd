@@ -29,18 +29,18 @@
 					</xs:complexType>
 				</xs:element>
 				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
-				<xsd:complexType> 
-					<xs:element name="informationUnit" use="optional">
-					<xs:element name="subEr" use="optional">
-						<xs:complexType>
-							<xs:sequence>
-								<xs:element ref="er"/>
-							</xs:sequence>
-						</xs:complexType>
-					</xs:element>
-					<xsd:assert test="(@informationUnit and not(@SubEr)) or (not(@informationUnit) and @SubEr)"/>       
-				</xsd:complexType>
-			</xs:sequence>
+<!--Cardinality -->
+				        <xs:element ref="informationUnit" minOccurs="0" maxOccurs="unbounded"/>
+				        <xs:element name="subEr" minOccurs="0" maxOccurs="unbounded">
+				            <xs:complexType>
+				                <xs:sequence>
+				                    <xs:element ref="er"/>
+				                </xs:sequence>
+				            </xs:complexType>
+				        </xs:element>
+				    <xs:assert test="(count(informationUnit) > 0 and count(subEr) = 0) or (count(informationUnit) = 0 and count(subEr) > 0)"/>
+<!--Cardinality -->
+			
 		</xs:complexType>
 		<xs:key name="key_erGuid">
 			<xs:selector xpath="./specId"/>
