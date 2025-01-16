@@ -9,7 +9,6 @@
 			<xs:sequence>
 				<xs:element ref="specId" minOccurs="1" maxOccurs="1"/>
 				<xs:element ref="authoring" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="informationUnit" minOccurs="1" maxOccurs="unbounded"/>
 				<xs:element name="constraint" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
@@ -30,13 +29,17 @@
 					</xs:complexType>
 				</xs:element>
 				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
-				<xs:element name="subEr" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element ref="er"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xsd:complexType> 
+					<xs:element name="informationUnit" use="optional">
+					<xs:element name="subEr" use="optional">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="er"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xsd:assert test="(@informationUnit and not(@SubEr)) or (not(@informationUnit) and @SubEr)"/>       
+				</xsd:complexType>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key name="key_erGuid">
