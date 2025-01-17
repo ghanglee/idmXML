@@ -29,18 +29,18 @@
 					</xs:complexType>
 				</xs:element>
 				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
-<!--Cardinality -->
-				        <xs:element ref="informationUnit" minOccurs="0" maxOccurs="unbounded"/>
-				        <xs:element name="subEr" minOccurs="0" maxOccurs="unbounded">
-				            <xs:complexType>
-				                <xs:sequence>
-				                    <xs:element ref="er"/>
-				                </xs:sequence>
-				            </xs:complexType>
-				        </xs:element>
-				    <xs:assert test="(count(informationUnit) > 0 and count(subEr) = 0) or (count(informationUnit) = 0 and count(subEr) > 0)"/>
-<!--Cardinality -->
-			
+<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
+				<xs:choice>
+					<xs:element ref="informationUnit" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="subEr" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="er"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->		
 		</xs:complexType>
 		<xs:key name="key_erGuid">
 			<xs:selector xpath="./specId"/>
