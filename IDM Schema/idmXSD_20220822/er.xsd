@@ -30,16 +30,16 @@
 				</xs:element>
 				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
 <!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
-				<xs:choice>
-					<xs:element ref="informationUnit" minOccurs="0" maxOccurs="unbounded"/>
-					<xs:element name="subEr" minOccurs="0" maxOccurs="unbounded">
-						<xs:complexType>
-							<xs:sequence>
-								<xs:element ref="er"/>
-							</xs:sequence>
-						</xs:complexType>
-					</xs:element>
-				</xs:choice>
+				<xs:choice minOccours="1" maxOccurs="unbounded">
+				    <xs:element ref="informationUnit"/>
+				    <xs:element name="subEr">
+			        	<xs:complexType>
+				            <xs:sequence>
+				                <xs:element ref="er"/>
+				            </xs:sequence>
+				        </xs:complexType>
+				    </xs:element>
+				</xs:choice>>
 <!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->		
 		</xs:complexType>
 		<xs:key name="key_erGuid">
