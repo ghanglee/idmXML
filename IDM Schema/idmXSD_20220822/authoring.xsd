@@ -70,7 +70,7 @@
 	<!--Author-->
 	<xs:element name="author">
 		<xs:complexType>
-			<xs:choice minOccours="1" maxOccurs="unbounded">
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
 				<xs:element name="person">
 					<xs:complexType>
 						<xs:attribute name="firstName" type="xs:string" use="required"/>
