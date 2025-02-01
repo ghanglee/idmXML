@@ -70,8 +70,8 @@
 	<!--Author-->
 	<xs:element name="author">
 		<xs:complexType>
-			<xs:choice>
-				<xs:element name="person" maxOccurs="unbounded">
+			<xs:choice minOccours="1" maxOccurs="unbounded">
+				<xs:element name="person">
 					<xs:complexType>
 						<xs:attribute name="firstName" type="xs:string" use="required"/>
 						<xs:attribute name="middleName" type="xs:string" use="optional"/>
@@ -80,7 +80,7 @@
 						<xs:attribute name="affiliation" type="xs:string" use="optional"/>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="organization" maxOccurs="unbounded">
+				<xs:element name="organization">
 					<xs:complexType>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
