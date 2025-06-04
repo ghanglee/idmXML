@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IDM for Design Authoring</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; }
+  h1 { color: #333; }
+  h2 { color: #555; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 20px; }
+  h3 { color: #777; margin-top: 15px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #f2f2f2; }
+  ul { list-style-type: disc; margin-left: 20px; }
+</style>
+</head>
+<body>
+
+<h1>IDM for Design Authoring</h1>
+
+<h2>1. Introduction</h2>
+<p>This document outlines the Information Delivery Manual (IDM) for Design Authoring, version 0.1, with a document status of "NP" (New Proposal).</p>
+
+<h2>2. Use Case (UC)</h2>
+
+<h3>2.1. UC Specification</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short Title</td>
+      <td>uc_DesignAuthoring</td>
+    </tr>
+    <tr>
+      <td>Full Title</td>
+      <td>IDM for Design Authoring</td>
+    </tr>
+    <tr>
+      <td>IDM Code</td>
+      <td>uc-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP</td>
+    </tr>
+    <tr>
+      <td>Version</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>2.2. Summary</h3>
+<p>Design Authoring involves using 3D software to create a Building Information Model (BIM) based on criteria important for translating the building's design. This process primarily utilizes design authoring tools for model creation and audit/analysis tools for studying or enriching the model's information. Design authoring tools are the initial step towards BIM, connecting the 3D model with a powerful database of properties, quantities, means and methods, costs, and schedules.
+<br>[Source] BIM Project Execution Planning Guide Version 2.2 Appendix B-12
+</p>
+<p><strong>Potential Value</strong>:</p>
+<ul>
+  <li>Transparency of design for all stakeholders</li>
+  <li>Improved control and quality control of design, cost, and schedule</li>
+  <li>Enabled powerful design visualization</li>
+  <li>Enabled true collaboration between project stakeholders and BIM users</li>
+  <li>Improved quality control and assurance</li>
+</ul>
+
+<p><strong>Resources Required</strong>:</p>
+<ul>
+  <li>Design Authoring Software</li>
+</ul>
+
+<p><strong>Team Competencies Required</strong>:</p>
+<ul>
+  <li>Ability to manipulate, navigate, and review a 3D model</li>
+  <li>Knowledge of construction means and methods</li>
+  <li>Design and construction experience</li>
+</ul>
+
+<p><strong>Selected References</strong>:</p>
+<ul>
+  <li>Tardif, M. (2008). BIM: Reaching Forward, Reaching Back. AIArchitect This Week. Face of the AIA. AIArchitect.</li>
+  <li>(Source: BIM Project Execution Planning Guide Version 2.2 Appendix B-12)</li>
+</ul>
+
+<h3>2.3. Aim and Scope</h3>
+<p><strong>Aim</strong>:</p>
+<p>The aim of this IDM specification is to establish standardized processes and information requirements for Design Authoring using BIM. This IDM defines how 3D design data is systematically authored, enriched, and delivered to facilitate downstream use in construction project management, coordination, and analysis. The goal is to support high-quality, transparent, and collaborative BIM-based design that serves as the foundation for all subsequent project stages.</p>
+<p><strong>Scope</strong>:</p>
+This IDM covers the use of 3D design authoring tools to create, structure, and maintain Building Information Models in accordance with project-specific BIM requirements. The scope includes:
+<ul>
+<li>Initial Model Creation: Crafting a digital representation of the building using BIM authoring software, encapsulating geometry as well as associated information such as materials, quantities, and spatial relationships.
+</li><li>Design Coordination and Revision: Facilitating information exchange to enable collaboration and transparency between clients, architects, engineers, and other stakeholders.
+</li><li>Quality Assurance: Implementing checks using model audit and analysis tools to ensure completeness, consistency, and accuracy of both geometric and non-geometric data.
+</li><li>Deliverables: Defining exchange requirements tailored to subsequent uses such as design review, cost estimation, scheduling, and construction planning.
+</ul>
+</p>
+
+</ul>
+<h3>2.4. Language</h3>
+<p>EN</p>
+
+<h3>2.5. Use</h3>
+<ul>
+  <li><strong>Name</strong>: Design Authoring</li>
+  <li><strong>Classification</strong>: BIM Project Execution Planning Guide, version 2.2</li>
+</ul>
+
+<h3>2.6. Target Project Phases</h3>
+<p>ISO 29481 series use the ISO 22263, one of the simplest project lifecycle classification systems, as the standard to provide users with a common basis to search for, use, and repurpose existing IDMs. 
+The target project phases of this IDM specification are listed below, mapped to those of the American Institute of Architects (AIA) and the Royal Institute of British Architects (RIBA). This document does not intend to specify information requirements beyond the production phase; therefore, the maintenance phase is not included. However, the design authoring task may be extended to the maintenance phase depending on the scope of a project.
+</p>
+<p><strong>ISO 22263 Project Phase</strong>:</p>
+<ul>
+  <li>Inception</li>
+  <li>Brief</li>
+  <li>Design</li>
+  <li>Production</li>
+</ul>
+
+<p><strong>AIA Project Phase</strong>:</p>
+<ul>
+  <li>Pre-Design</li>
+  <li>Project Brief</li>
+  <li>Pre-Design</li>
+  <li>Schematic Design</li>
+  <li>Design Development</li>
+  <li>Construction Documentation</li>
+  <li>Bidding and Negotiation</li>
+  <li>Construction Administration</li>
+</ul>
+
+<p><strong>RIBA Plan of Work</strong>:</p>
+<ul>
+  <li>Strategic Definition</li>
+  <li>Preparation and Brief</li>
+  <li>Concept Design</li>
+  <li>Spatial Coordination</li>
+  <li>Technical Design</li>
+  <li>Manufacturing and Construction</li>
+</ul>
+
+<h3>2.7. Intended Users</h3>
+<ul>
+  <li>Client</li>
+  <li>Designers (architects and engineers)</li>
+  <li>BIM managers and coordinators</li>
+  <li>Other project stakeholders require design information for review, coordination, and downstream use.</li>
+</ul>
+
+<h3>2.8. Value Proposition</h3>
+Adhering to this IDM will:
+<ul>
+  <li>Promote transparency and consistency in design communication among stakeholders.</li>
+  <li>Enhance quality control and cost/schedule management by providing reliable, well-structured model data.</li>
+  <li>Reduce errors, omissions, and rework during project delivery.</li>
+</ul>
+
+<h3>2.9. Required Resources & Competencies</h3>
+The effective application of this IDM requires:
+<ul>
+  <li>Proficient use of design authoring software (e.g., Autodesk Revit, Graphisoft Archicad, Bentley AECOsim, etc.).</li>
+  <li>The ability to manipulate, navigate, and review complex 3D models.</li>
+  <li>Fundamental knowledge of design and construction principles, including construction means and methods.</li>
+</ul>
+
+
+<h2>3. Business Context Map</h2>
+
+<h3>3.1. Process Map (PM)</h3>
+<ul>
+  <li><strong>Short Title</strong>: pm_DesignAuthoring</li>
+  <li><strong>Full Title</strong>: IDM for Design Authoring</li>
+  <li><strong>IDM Code</strong>: pm-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP</li>
+  <li><strong>Diagram Name</strong>: pm_DesignAuthoring</li>
+  <li><strong>Notation</strong>: BPMN</li>
+</ul>
+
+<img src="Diagram\Diagram(2).png" width="800"></Img>
+<br>Figure 1. "Design Autoring" Process Map
+
+<p><strong>Description</strong>:
+This process map illustrates a collaborative design process across three swim lanes representing different stakeholders: Client and Design Team. The process begins when the Client initiates a "Request Design" activity, which generates a Design Brief document that flows to the Design Team's "Generate Design" process. The Design Team creates a Design Submission Package that moves back to the Client for the "Review Design" activity. At this point, a decision gateway (marked with X) determines whether the design is approved or requires revision - if approved, the process ends at the terminal state, but if not approved, the Client performs a "Request Revision" activity that creates a Design Change Request document. This revision request triggers the Design Team's "Revise Design" process, which updates the Design Submission Package and sends it back to the Client for another review cycle. The diagram effectively shows the iterative nature of design development, with document exchanges facilitating communication between parties and feedback loops ensuring client satisfaction before final approval, while the middle Exchange Requirements lane serves as the repository for all project documentation throughout the process.
+The Design Brief, Design Submission Package, and Design Change Request—which are represented as Data Objects in the process map—correspond to the sub-ERs: er_DesignBrief, er_DesignSubmissionPackage, and er_DesignChangeRequest.
+
+<h3>3.2. Interaction Map (IM)</h3>
+<ul>
+  <li><strong>Diagram Name</strong>: IM_shortTitle</li>
+  <li><strong>Notation</strong>: Interaction Map</li>
+</ul>
+<img src="Image\FigB.2_InteractionMap.PNG" width="800"></Img>
+<br>Figure 2. "Design Autoring" Interaction Map
+<p><strong>Description</strong>:
+This interaction map shows the communication flow within a Design Team structure where CR₁ (Client), positioned outside the main Design Team boundary, communicates with R₁ (Project Lead) through transition T₁, who then serves as the central coordinator connecting to three specialized team members: R₂ (Designer) through T₂, R₃ (Structural Engineer) through T₃, and R₄ (Cost Engineer) through T₄. The diagram illustrates a hub-and-spoke model where the Project Lead acts as the single point of contact between the client and the various technical specialists, suggesting a managed communication approach where client requirements flow through the Project Lead who distributes relevant information to the appropriate team members based on their expertise areas, with the circular symbols (T₁-T₄) representing transition points or communication interfaces between the different roles in the project workflow.</p>
+<img src="Image\FigB.3_TransactionMap.PNG" width="800"></Img>
+<br>Figure 3. "Delivery Design" Transaction Map
+<p>Transaction T₁ illustrates the design delivery process between a Client (CR₁) and Project Lead (R₁), showing the complete workflow from initial request to final approval. The process begins when the Client sends a "Request Design" message to the Project Lead, who then responds with "Send Design". The Client reviews the submitted design and sends back "Review and Request Revision," prompting the Project Lead to provide a "Send Revised Design". Once satisfied with the revisions, the Client sends "Send Approval" to the Project Lead, and the process concludes at the end state (indicated by the filled circle). The entire interaction is framed within "Transaction T₁: Deliver Design," indicating this represents a complete business transaction for design delivery, with the vertical lifelines showing the chronological sequence of communications between the two parties throughout the design approval cycle.</p>
+
+<h2>4. Exchange Requirements (ER)</h2>
+
+<h3>4.1. ER Specification</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Short Title</td>
+      <td>er_DesignAuthoring</td>
+    </tr>
+    <tr>
+      <td>Full Title</td>
+      <td>IDM for Design Authoring</td>
+    </tr>
+    <tr>
+      <td>IDM Code</td>
+      <td>er-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP</td>
+    </tr>
+    <tr>
+      <td>Version</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>4.2. Sub-Exchange Requirements</h3>
+
+<h4>4.2.1. Exchange requirement for a design brief (er_DesignBrief)</h4>
+<p><strong>Decription</strong>: Design authoring is a complex process that typically involves multiple exchanges of information. In this example, however, the process is simplified to focus on only three key information sets: the design brief, the design submission package, and the design change request. 
+The exchange requirement for design authoring, as illustrated here, is an aggregation of three sub-ERs—design brief, design submission package, and design change request. The following section details the specific information units required by each sub-ER, with particular emphasis on the design submission package.
+
+<p><strong>Information Unit: Brief</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Brief</td>
+    </tr>
+    <tr>
+      <td>Data Type</td>
+      <td>Document</td>
+    </tr>
+    <tr>
+      <td>Is Mandatory</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>A design brief is a foundational document that outlines the project requirements, objectives, and constraints for a design project.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>4.2.2. Exchange requirement for a design submission package (er_DesignSubmissionPackage)</h4>
+<p><strong>Description</strong>: A design submission package is a comprehensive collection of documents, drawings, and supporting materials that formally presents a design proposal to clients, regulatory authorities, or other stakeholders for review and approval.</p>
+
+<p><strong>Information Units for Design Submission Package:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Data Type</th>
+      <th>Is Mandatory</th>
+      <th>Definition</th>
+      <th>Constraint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cover Letter</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>Brief introduction describing the submission, summarizing contents, and providing submitter contact info.</td>
+      <td>One per submission; signed by responsible party.</td>
+    </tr>
+    <tr>
+      <td>Table of Contents</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>List enumerating all documents and drawings in the submission package.</td>
+      <td>Updated to match all included materials.</td>
+    </tr>
+    <tr>
+      <td>Design Narrative</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>Written explanation of design intent, goals, concepts, and major decisions.</td>
+      <td>Must address project-specific criteria.</td>
+    </tr>
+    <tr>
+      <td>Drawings</td>
+      <td>Drawing Set</td>
+      <td>true</td>
+      <td>Technical drawings showing the design, including plans, sections, elevations, and details as required.</td>
+      <td>All drawings to scale; drawing list per submission stage.</td>
+    </tr>
+    <tr>
+      <td>Specifications</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>Outline or full technical specifications of materials, assemblies, workmanship, and performance requirements.</td>
+      <td>Must reference applicable standards and codes.</td>
+    </tr>
+    <tr>
+      <td>BIM Models</td>
+      <td>Digital Model Files</td>
+      <td>true</td>
+      <td>Digital, three-dimensional representations of a building or infrastructure project that contains not only geometry, but also detailed information and attributes.</td>
+      <td>Submission guidelines required.</td>
+    </tr>
+    <tr>
+      <td>&nbsp-&nbspIFC Models</td>
+      <td>IFC File</td>
+      <td>true</td>
+      <td>BIM models saved in IFC format.</td>
+      <td>Version must be specified.</td>
+    </tr>
+    <tr>
+      <td>&nbsp-&nbspNative BIM Models</td>
+      <td>Digital Model File</td>
+      <td>false</td>
+      <td>BIM models in the native data format of an authoring tool.</td>
+      <td>Version should be specified.</td>
+    </tr>
+    <tr>
+      <td>Renderings</td>
+      <td>Digital Image File</td>
+      <td>false</td>
+      <td>Digitally rendered images that show the final results of a facility.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Animations</td>
+      <td>Digital Video File</td>
+      <td>false</td>
+      <td>Digital videos of computer-generated movies showcasing a facility.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Code Compliance Information</td>
+      <td>Document</td>
+      <td>false</td>
+      <td>Statement/matrix showing how design complies with relevant codes and regulations.</td>
+      <td>Must reference specific codes; tailored to jurisdiction.</td>
+    </tr>
+    <tr>
+      <td>Calculations and Analysis</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>Technical analyses supporting the design, such as structural, energy, or systems calculations.</td>
+      <td>May be required for approval of specific materials.*</td>
+    </tr>
+    <tr>
+      <td>Product Data</td>
+      <td>Document</td>
+      <td>false</td>
+      <td>Product/manufacturer information for key products or systems proposed in the design.</td>
+      <td>May be required for approval of specific materials.*</td>
+    </tr>
+    <tr>
+      <td>Material and Colour Boards</td>
+      <td>Physical or Digital Samples</td>
+      <td>false</td>
+      <td>Boards or digital representations showing proposed materials, finishes, and colours.</td>
+      <td>As required by client or review board.</td>
+    </tr>
+    <tr>
+      <td>Schedules</td>
+      <td>Document</td>
+      <td>false</td>
+      <td>Project timeline, deliverables, or phasing plan.</td>
+      <td>Reflects realistic project sequencing.</td>
+    </tr>
+    <tr>
+      <td>Consultant Reports</td>
+      <td>Document</td>
+      <td>false</td>
+      <td>Reports from specialists needed for project approval.</td>
+      <td>Required for specific project types or sites.*</td>
+    </tr>
+    <tr>
+      <td>Approvals and Certifications</td>
+      <td>Document</td>
+      <td>true</td>
+      <td>Forms, permits, or sign-offs from authorities or consultants.</td>
+      <td>Must meet local authority or client requirements.</td>
+    </tr>
+    <tr>
+      <td>Cost Estimates</td>
+      <td></td>
+      <td>false</td>
+      <td>Preliminary or detailed cost breakdowns for the project.</td>
+      <td>Often required at certain review milestones.*</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>4.2.3. Exchange requirement for a design change request (er_DesignChangeRequest)</h4>
+<p><strong>Description</strong>: A design change request is a formal document that proposes modifications to an existing design after it has been initially developed or approved. It serves as a structured way to manage alterations during the design or construction process.</p>
+
+<p><strong>Information Unit: Design Change Request</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Design Change Request</td>
+    </tr>
+    <tr>
+      <td>Data Type</td>
+      <td>Document</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Is Mandatory</td>
+      <td>false</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>A design change request is a formal document that proposes modifications to an existing design after it has been initially developed or approved.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Author Information</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Copyright</td>
+      <td>(Not specified)</td>
+    </tr>
+    <tr>
+      <td>Authors</td>
+      <td>Ghang Lee, Jim Plume, David Churcher, Ruben Blair, Emma Hooper, David Churcher, Stepanka Tomanova, Marie-Claire Coin, Tomi Henttinen, Shuang Huang, Raimar Scherer, Peter Kompolschek, Thomas Brink, Stefan Brouwers, Arne Bruinse, Alex Kalden, Lisbet Landfald, Erik Poirier, Wei Lai </td>
+    </tr>
+    <tr>
+      <td>Committee</td>
+      <td>ISO TC59/SC13</td>
+    </tr>
+    <tr>
+      <td>Committee Members</td>
+      <td>Jim Plume, Ghang Lee, David Churcher, Ruben Blair, Emma Hooper, David Churcher, Stepanka Tomanova, Marie-Claire Coin, Tomi Henttinen, Shuang Huang, Raimar Scherer, Peter Kompolschek, Thomas Brink, Stefan Brouwers, Arne Bruinse, Alex Kalden, Lisbet Landfald, Erik Poirier, Wei Lai </td>
+    </tr>
+    <tr>
+      <td>Committee Leader</td>
+      <td>Jim Plume</td>
+    </tr>
+    <tr>
+      <td>Publisher</td>
+      <td>ISO</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Change Log</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Change Date/Time</th>
+      <th>Change Summary</th>
+      <th>Changed By</th>
+      <th>Changed Element</th>
+      <th>Changed From</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c07cc82d-5e6e-4b7f-a012-56a91d3cc7ef</td>
+      <td>2025-05-27 11:47:45</td>
+      <td></td>
+      <td>5556add3-addf-4859-ba43-d16c75148b01</td>
+      <td>author</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c07cc82d-5e6e-4b7f-a012-56a91d3cc7ef</td>
+      <td>2025-05-27 11:47:45</td>
+      <td></td>
+      <td>5556add3-addf-4859-ba43-d16c75148b01</td>
+      <td>committee</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>

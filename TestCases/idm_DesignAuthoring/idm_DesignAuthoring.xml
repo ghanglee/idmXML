@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href=""?>
+<idm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance/" xsi:noNamespaceSchemaLocation="idm.xsd">
+  <specId guid="efece2dd-9124-4841-b3d4-b731586ba1d0" shortTitle="idm_DesignAuthoring" fullTitle="IDM for Design Authoring" subTitle="" idmCode="idm-Design Authoring-IC-PD--EN-Lee-20250526-DesignAuthoring-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.2" />
+  <authoring copyright="">
+    <changeLog id="c07cc82d-5e6e-4b7f-a012-56a91d3cc7ef" changeDateTime="2025-05-27 11:47:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+      <change changedElement="author" changedFrom="" />
+      <change changedElement="committee" changedFrom="" />
+    </changeLog>
+    <changeLog id="2119861c-14dc-49ea-a3f0-85ae20f62260" changeDateTime="2025-06-02 18:57:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+      <change changedElement="version" changedFrom="0.1" />
+    </changeLog>
+    <changeLog id="9762029c-c961-4fab-b884-dd55241a78ce" changeDateTime="2025-06-02 19:07:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+      <change changedElement="idmCode" changedFrom="idm-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP" />
+    </changeLog>
+    <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+    <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+    <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+    <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+    <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+    <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+    <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+    <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+    <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+    <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+    <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+    <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+    <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+    <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+    <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+    <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+    <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+    <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+    <committee name="ISO TC59/SC13">
+      <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+      <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+      <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+      <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+      <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+      <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+      <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+      <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+      <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+      <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+      <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+      <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+      <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+      <member>b59246de-56ed-4992-802f-689648e417d8</member>
+      <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+      <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+      <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+      <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+      <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+    </committee>
+    <publisher name="" location="" />
+  </authoring>
+  <uc>
+    <specId guid="3f0324f3-fa7f-4934-bf00-8503acd9ad2c" shortTitle="uc_DesignAuthoring" fullTitle="IDM for Design Authoring" subTitle="" idmCode="uc-Design Authoring-IC-PD--EN-Lee-20250526-DesignAuthoring-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.2" />
+    <authoring copyright="">
+      <changeLog id="eeed5cd4-9fca-4029-a08e-041ade5b9e67" changeDateTime="2025-05-27 11:47:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="fullTitle" changedFrom="Design Authoring" />
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+      </changeLog>
+      <changeLog id="a423b3e7-2871-4832-973f-7e1a5018f75b" changeDateTime="2025-06-02 19:07:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="idmCode" changedFrom="uc-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP" />
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="version" changedFrom="0.1" />
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="standardProjectPhase" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+        <change changedElement="localProjectPhase" changedFrom="" />
+      </changeLog>
+      <changeLog id="859279f2-af54-46f1-90c9-bcdaf2690344" changeDateTime="2025-06-02 19:13:33" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="benefits" changedFrom="" />
+        <change changedElement="requiredResources" changedFrom="" />
+        <change changedElement="requiredCompetencies" changedFrom="" />
+        <change changedElement="reference" changedFrom="" />
+        <change changedElement="actor" changedFrom="" />
+      </changeLog>
+      <changeLog id="3f871d7d-ca28-4801-9d0a-394f3ea67f03" changeDateTime="2025-06-02 19:14:02" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="benefits" changedFrom="" />
+        <change changedElement="requiredResources" changedFrom="" />
+        <change changedElement="requiredCompetencies" changedFrom="" />
+      </changeLog>
+      <changeLog id="dbe2aadd-6e6f-450a-b652-71f24737e1fc" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="benefits" changedFrom="" />
+        <change changedElement="requiredResources" changedFrom="" />
+        <change changedElement="requiredCompetencies" changedFrom="" />
+      </changeLog>
+      <changeLog id="e77730e6-aa52-4aa1-a194-12289acf2b66" changeDateTime="2025-06-02 19:19:56" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="benefits" changedFrom="" />
+        <change changedElement="requiredResources" changedFrom="" />
+        <change changedElement="requiredCompetencies" changedFrom="" />
+      </changeLog>
+      <changeLog id="711b89cd-0829-427f-859b-0f1dc001002b" changeDateTime="2025-06-02 19:20:21" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="summary" changedFrom="" />
+        <change changedElement="aimAndScope" changedFrom="" />
+        <change changedElement="benefits" changedFrom="" />
+        <change changedElement="requiredResources" changedFrom="" />
+        <change changedElement="requiredCompetencies" changedFrom="" />
+      </changeLog>
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+      <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+      <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+      <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+      <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+      <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+      <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+      <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+      <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+      <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+      <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+      <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+      <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+      <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+      <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+      <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+      <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+      <committee name="ISO TC59/SC13">
+        <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+        <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+        <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+        <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+        <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+        <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+        <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+        <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+        <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+        <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+        <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+        <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+        <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+        <member>b59246de-56ed-4992-802f-689648e417d8</member>
+        <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+        <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+        <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+        <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+        <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+      </committee>
+      <publisher name="" location="" />
+    </authoring>
+    <summary>
+      <description>
+        <content>Design Authoring involves using 3D software to create a Building Information Model (BIM) based on criteria important for translating the building's design. This process primarily utilizes design authoring tools for model creation and audit/analysis tools for studying or enriching the model's information. Design authoring tools are the initial step towards BIM, connecting the 3D model with a powerful database of properties, quantities, means and methods, costs, and schedules.
+[Source] BIM Project Execution Planning Guide Version 2.2 Appendix B-12</content>
+      </description>
+    </summary>
+    <aimAndScope>
+      <description>
+        <content>Aim
+The aim of this IDM specification is to establish standardized processes and information requirements for Design Authoring using BIM. This IDM defines how 3D design data is systematically authored, enriched, and delivered to facilitate downstream use in construction project management, coordination, and analysis. The goal is to support high-quality, transparent, and collaborative BIM-based design that serves as the foundation for all subsequent project stages.
+Scope
+This IDM covers the use of 3D design authoring tools to create, structure, and maintain Building Information Models in accordance with project-specific BIM requirements. The scope includes:
+• Initial Model Creation: Crafting a digital representation of the building using BIM authoring software, encapsulating geometry as well as associated information such as materials, quantities, and spatial relationships.
+• Design Coordination and Revision: Facilitating information exchange to enable collaboration and transparency between clients, architects, engineers, and other stakeholders.
+• Quality Assurance: Implementing checks using model audit and analysis tools to ensure completeness, consistency, and accuracy of both geometric and non-geometric data.
+• Deliverables: Defining exchange requirements tailored to subsequent uses such as design review, cost estimation, scheduling, and construction planning.
+</content>
+      </description>
+    </aimAndScope>
+    <language>EN</language>
+    <use name="Design Authoring">
+      <classification name="BIM Project Execution Planning Guide" version="2.2" publicationYear="" />
+    </use>
+    <standardProjectPhase>
+      <name>Inception </name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </informationRequirements>
+    </standardProjectPhase>
+    <standardProjectPhase>
+      <name>Brief</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </informationRequirements>
+    </standardProjectPhase>
+    <standardProjectPhase>
+      <name>Design </name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+    </standardProjectPhase>
+    <standardProjectPhase>
+      <name>Production</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+    </standardProjectPhase>
+    <localProjectPhase>
+      <name>PD: Pre-Design</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </informationRequirements>
+      <classification name="AIA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>SD: Schematic Design</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="AIA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>DD: Design Development</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="AIA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>CD: Construction Document</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="AIA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>C: Construction</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="AIA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>0: Strategic Definition</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>1: Preparation and Brief</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>2: concept Design</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>3: Developed Design</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>4: Technical Design</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <localProjectPhase>
+      <name>5: Construction</name>
+      <outcomes>
+        <description>
+          <content></content>
+        </description>
+      </outcomes>
+      <informationRequirements>
+        <description>
+          <content></content>
+        </description>
+        <associatedEr>d2a714c5-5600-4af4-a09f-c3aa70d8a978</associatedEr>
+      </informationRequirements>
+      <classification name="RIBA Project Stages" version="" publicationYear="" />
+    </localProjectPhase>
+    <actor id="a54ccdcc-b4aa-40e0-b167-51a9fb76b6aa" name="Client">
+      <classification name="No classification" version="" publicationYear="" />
+    </actor>
+    <actor id="2fa55c2d-bd39-4c91-85b9-e57cf650adae" name="Designers">
+      <classification name="No classification" version="" publicationYear="" />
+    </actor>
+    <actor id="fe8e85ab-8978-4be2-8978-8c20c69a8b03" name="BIM managers and coordinators">
+      <classification name="No classification" version="" publicationYear="" />
+    </actor>
+    <actor id="919d3a28-1fdb-47c7-af18-c243453ebda8" name="• Other project stakeholders require design information for review, coordination, and downstream use.">
+      <classification name="No classification" version="" publicationYear="" />
+    </actor>
+    <benefits>
+      <description>
+        <content>Adhering to this IDM will:
+• Promote transparency and consistency in design communication among stakeholders.
+• Enhance quality control and cost/schedule management by providing reliable, well-structured model data.
+• Reduce errors, omissions, and rework during project delivery.</content>
+      </description>
+    </benefits>
+    <requiredResources>
+      <description>
+        <content>The effective application of this IDM requires:
+• Proficient use of design authoring software (e.g., Autodesk Revit, Graphisoft Archicad, Bentley AECOsim, etc.).</content>
+      </description>
+    </requiredResources>
+    <requiredCompetencies>
+      <description>
+        <content>The effective application of this IDM requires:
+• The ability to manipulate, navigate, and review complex 3D models.
+• Fundamental knowledge of design and construction principles, including construction means and methods.</content>
+      </description>
+    </requiredCompetencies>
+    <reference basisStandard="false" fullCitation="BIM Project Execution Planning Guide Version 2.2 Appendix B-12" />
+  </uc>
+  <businessContextMap>
+    <specId guid="432d3b9b-de35-4465-bc68-a12c9a3b1b93" shortTitle="pm_DesignAuthoring" fullTitle="Process Map for Design Authoring" subTitle="" idmCode="pm-Design Authoring-IC-PD--EN-Lee-20250526-DesignAuthoring-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.2" />
+    <authoring copyright="">
+      <changeLog id="91095dd3-73b8-4910-9185-f46bc5d34d88" changeDateTime="2025-05-27 11:47:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="6b883ca8-10a5-4db0-bd53-15ffba8fbe10" changeDateTime="2025-05-27 14:27:04" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="e3fe2c57-7846-4ac1-bcef-94849edd001c" changeDateTime="2025-06-02 19:07:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="idmCode" changedFrom="pm-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP" />
+      </changeLog>
+      <changeLog id="f7ca6069-8b57-4748-8fb3-b279bfe68267" changeDateTime="2025-06-02 19:13:33" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="version" changedFrom="0.1" />
+        <change changedElement="author" changedFrom="" />
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="f713b94c-10e7-4d73-be90-8674effad7bb" changeDateTime="2025-06-02 19:14:02" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="a36d7f8f-74b3-4207-b465-8e8c083645d5" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="fullTitle" changedFrom="IDM for Design Authoring" />
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="fe414d34-6b81-4d56-9c44-72e973efb5b5" changeDateTime="2025-06-02 19:19:56" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <changeLog id="d4237805-88a3-4bb6-8b0b-3518fb8d2b6e" changeDateTime="2025-06-02 19:20:21" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="diagram" changedFrom="" />
+      </changeLog>
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+      <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+      <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+      <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+      <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+      <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+      <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+      <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+      <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+      <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+      <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+      <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+      <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+      <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+      <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+      <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+      <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+      <committee name="ISO TC59/SC13">
+        <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+        <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+        <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+        <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+        <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+        <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+        <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+        <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+        <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+        <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+        <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+        <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+        <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+        <member>b59246de-56ed-4992-802f-689648e417d8</member>
+        <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+        <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+        <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+        <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+        <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+      </committee>
+      <publisher name="" location="" />
+    </authoring>
+    <pm>
+      <diagram id="b15315ba-ffe8-416b-8268-7bbcdb40a662" name="pm_DesignAuthoring" filePath="Diagram\Diagram(2).bpmn" notation="BPMN">
+        <description>
+          <content>This process map illustrates a collaborative design process across three swim lanes representing different stakeholders: Client and Design Team. The process begins when the Client initiates a "Request Design" activity, which generates a Design Brief document that flows to the Design Team's "Generate Design" process. The Design Team creates a Design Submission Package that moves back to the Client for the "Review Design" activity. At this point, a decision gateway (marked with X) determines whether the design is approved or requires revision - if approved, the process ends at the terminal state, but if not approved, the Client performs a "Request Revision" activity that creates a Design Change Request document. This revision request triggers the Design Team's "Revise Design" process, which updates the Design Submission Package and sends it back to the Client for another review cycle. The diagram effectively shows the iterative nature of design development, with document exchanges facilitating communication between parties and feedback loops ensuring client satisfaction before final approval, while the middle Exchange Requirements lane serves as the repository for all project documentation throughout the process.
+The Design Brief, Design Submission Package, and Design Change Request—which are represented as Data Objects in the process map—correspond to the sub-ERs: er_DesignBrief, er_DesignSubmissionPackage, and er_DesignChangeRequest.</content>
+          <image caption="" filePath="Image\Image(5).png" />
+        </description>
+      </diagram>
+      <dataObjectAndEr id="edb5289c-c825-4f0e-a60a-5b6c3f120a70">
+        <associatedDataObject>DataObjectReference_1ahr23g</associatedDataObject>
+        <associatedEr>3283d40d-a9af-4158-a187-23763f1bd61b</associatedEr>
+      </dataObjectAndEr>
+      <dataObjectAndEr id="148f959e-2cfc-408e-b72a-f4de8fb2c2b2">
+        <associatedDataObject>DataObjectReference_16f9zng</associatedDataObject>
+        <associatedEr>6a012bab-21ca-425e-abc4-6427e93869ff</associatedEr>
+      </dataObjectAndEr>
+      <dataObjectAndEr id="45787398-b565-47f7-82f9-7671d532492f">
+        <associatedDataObject>DataObjectReference_08wrenl</associatedDataObject>
+        <associatedEr>2b15729d-6881-4c4c-8ac7-d7eed486c2bd</associatedEr>
+      </dataObjectAndEr>
+    </pm>
+    <im>
+      <diagram id="1ad24392-5487-498d-bbbf-d631c2721a19" name="IM_DesignAuthoring" filePath="D:\Meetings_Committee\_ISO\ISO29481_2023_Revision\Part 1\Document Figures\FigB.2_InteractionMap.PNG" notation="Interaction Map">
+        <description>
+          <content>This interaction map shows the communication flow within a Design Team structure where CR₁ (Client), positioned outside the main Design Team boundary, communicates with R₁ (Project Lead) through transaction T₁, who then serves as the central coordinator connecting to three specialized team members: R₂ (Designer) through T₂, R₃ (Structural Engineer) through T₃, and R₄ (Cost Engineer) through T₄. The diagram illustrates a hub-and-spoke model where the Project Lead acts as the single point of contact between the client and the various technical specialists, suggesting a managed communication approach where client requirements flow through the Project Lead who distributes relevant information to the appropriate team members based on their expertise areas, with the circular symbols (T₁-T₄) representing transactions or communication interfaces between the different roles in the project workflow.
+Transaction T₁ illustrates the design delivery process between a Client (CR₁) and Project Lead (R₁), showing the complete workflow from initial request to final approval. The process begins when the Client sends a "Request Design" message to the Project Lead, who then responds with "Send Design". The Client reviews the submitted design and sends back "Review and Request Revision," prompting the Project Lead to provide a "Send Revised Design". Once satisfied with the revisions, the Client sends "Send Approval" to the Project Lead, and the process concludes at the end state (indicated by the filled circle). The entire interaction is framed within "Transaction T₁: Deliver Design," indicating this represents a complete business transaction for design delivery, with the vertical lifelines showing the chronological sequence of communications between the two parties throughout the design approval cycle.
+(Descriptions for Transactions T2 to T4 are omitted in this example document but must be added in the complete version.)</content>
+          <image caption="" filePath="Image\FigB.3_TransactionMap.PNG" />
+        </description>
+      </diagram>
+    </im>
+  </businessContextMap>
+  <er>
+    <specId guid="d2a714c5-5600-4af4-a09f-c3aa70d8a978" shortTitle="er_DesignAuthoring" fullTitle="Exchange Requirement for Design Authoring" subTitle="" idmCode="er-Design Authoring-IC-PD--EN-Lee-20250526-DesignAuthoring-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.1" />
+    <authoring copyright="">
+      <changeLog id="5e5a57d2-b1cf-43ca-9c98-9fee1112f664" changeDateTime="2025-05-27 11:50:13" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+      </changeLog>
+      <changeLog id="789eee57-1cd6-4834-b009-0cefc2b7c188" changeDateTime="2025-05-27 12:52:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="description" changedFrom="" />
+      </changeLog>
+      <changeLog id="ba0a4955-489d-44bb-b6d1-f86d93ebbf58" changeDateTime="2025-06-02 18:57:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="committee" changedFrom="" />
+        <change changedElement="author" changedFrom="" />
+      </changeLog>
+      <changeLog id="cc2322f9-91c0-45f0-94c2-e78014280df8" changeDateTime="2025-06-02 19:07:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250526-DesignAuthoring-NP" />
+      </changeLog>
+      <changeLog id="319795db-de3a-46a2-893e-69dd104817a4" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="fullTitle" changedFrom="IDM for Design Authoring" />
+        <change changedElement="description" changedFrom="" />
+      </changeLog>
+      <changeLog id="9309a155-8c51-435a-9225-444538fd418f" changeDateTime="2025-06-02 19:19:56" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="description" changedFrom="" />
+      </changeLog>
+      <changeLog id="5e114b1a-fe21-4b49-ad3a-6bc4b9e328e4" changeDateTime="2025-06-02 19:20:21" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+        <change changedElement="description" changedFrom="" />
+      </changeLog>
+      <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+      <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+      <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+      <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+      <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+      <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+      <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+      <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+      <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+      <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+      <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+      <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+      <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+      <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+      <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+      <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+      <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+      <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+      <committee name="ISO TC59/SC13">
+        <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+        <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+        <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+        <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+        <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+        <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+        <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+        <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+        <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+        <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+        <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+        <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+        <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+        <member>b59246de-56ed-4992-802f-689648e417d8</member>
+        <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+        <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+        <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+        <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+        <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+      </committee>
+      <publisher name="" location="" />
+    </authoring>
+    <correspondingMvd basis="" name="" />
+    <description>
+      <content>Design authoring is a complex process that typically involves multiple exchanges of information. In this example, however, the process is simplified to focus on only three key information sets: the design brief, the design submission package, and the design change request. 
+The exchange requirement for design authoring, as illustrated here, is an aggregation of three sub-ERs—design brief, design submission package, and design change request. The following section details the specific information units required by each sub-ER, with particular emphasis on the design submission package.</content>
+    </description>
+    <subEr>
+      <er>
+        <specId guid="3283d40d-a9af-4158-a187-23763f1bd61b" shortTitle="er_DesignBrief" fullTitle="Exchange requirement for a design brief" subTitle="" idmCode="er-Design Authoring-IC-PD--EN-Lee-20250527-DesignBrief-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.1" />
+        <authoring copyright="">
+          <changeLog id="954f8479-a01d-4d4d-b4a4-f19529f0415b" changeDateTime="2025-05-27 11:50:31" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_DesignAuthoring" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-DesignAuthoring-NP" />
+            <change changedElement="fullTitle" changedFrom="IDM for Design Authoring" />
+          </changeLog>
+          <changeLog id="537aa4ba-cc0b-482b-8ee2-20cc93e938ea" changeDateTime="2025-05-27 12:52:45" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="description" changedFrom="" />
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="0fba50c5-5755-4a70-8f86-282199d0c982" changeDateTime="2025-05-27 12:58:25" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_Design Brief" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-Design Brief-NP" />
+            <change changedElement="fullTitle" changedFrom="Exchange requirement for design" />
+          </changeLog>
+          <changeLog id="adecd2be-2e0c-4ccc-9cb3-1a6ed5b3bfdf" changeDateTime="2025-05-27 13:41:04" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="6a668d10-66d8-4de8-9097-65497f8496de" changeDateTime="2025-05-27 14:25:09" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_ExchangeRequirementFor" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-ExchangeRequirementFor-NP" />
+          </changeLog>
+          <changeLog id="e3887c99-999a-48ed-8194-6e5012afad6f" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-DesignBrief-NP" />
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+          <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+          <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+          <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+          <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+          <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+          <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+          <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+          <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+          <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+          <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+          <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+          <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+          <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+          <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+          <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+          <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+          <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+          <committee name="ISO TC59/SC13">
+            <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+            <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+            <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+            <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+            <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+            <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+            <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+            <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+            <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+            <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+            <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+            <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+            <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+            <member>b59246de-56ed-4992-802f-689648e417d8</member>
+            <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+            <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+            <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+            <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+            <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+          </committee>
+          <publisher name="" location="" />
+        </authoring>
+        <informationUnit id="87267695-8bbe-40d3-a93a-c251c064e128" name="Brief" dataType="Document" isMandatory="true" definition="A design brief is a foundational document that outlines the project requirements, objectives, and constraints for a design project. It serves as the roadmap and reference point throughout the design process.">
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <correspondingMvd basis="" name="" />
+        <description>
+          <content>A design brief is a foundational document that outlines the project requirements, objectives, and constraints for a design project. It serves as the roadmap and reference point throughout the design process. Key components typically include:
+Project Overview:
+
+Project purpose and goals
+Background context and history
+Problem statement or opportunity being addressed
+Success criteria and key performance indicators
+
+Scope and Requirements:
+
+Functional requirements (what the design must do)
+Technical specifications and standards
+Spatial or capacity requirements
+Regulatory and code compliance needs
+
+Project Parameters:
+
+Budget constraints and cost targets
+Timeline and key milestones
+Site conditions or physical limitations
+Environmental or sustainability requirements
+
+Design Direction:
+
+Aesthetic preferences or style guidelines
+Brand requirements or corporate standards
+User experience expectations
+Quality standards and materials preferences
+
+Stakeholder Information:
+
+Key decision makers and approval process
+End user profiles and needs
+Communication protocols and reporting requirements
+
+The design brief acts as a contract between the client and design team, ensuring everyone has a clear understanding of expectations before work begins. It helps prevent scope creep, reduces miscommunication, and provides a benchmark for evaluating design solutions. A well-written brief is detailed enough to guide decision-making but flexible enough to allow creative problem-solving.</content>
+        </description>
+      </er>
+    </subEr>
+    <subEr>
+      <er>
+        <specId guid="6a012bab-21ca-425e-abc4-6427e93869ff" shortTitle="er_DesignSubmissionPackage" fullTitle="IDM for Design Submission Package" subTitle="" idmCode="er-Design Authoring-IC-PD--EN-Lee-20250527-DesignSubmissionPackage-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.2" />
+        <authoring copyright="">
+          <changeLog id="a22c04f8-ac7d-46e8-83ac-808089870317" changeDateTime="2025-05-27 12:56:08" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="64c98089-4f33-45cf-905d-55d213cb2326" changeDateTime="2025-05-27 12:58:12" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_ExchangeRequirementFor" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-ExchangeRequirementFor-NP" />
+          </changeLog>
+          <changeLog id="5ba100ba-e226-4b62-aeb6-f8b17ac8a32c" changeDateTime="2025-05-27 13:41:04" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="7d0baa0f-4d5e-4874-8e9c-4796e0b5dc08" changeDateTime="2025-05-27 13:42:10" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="94fdbc4d-1866-4c73-b993-d1c95cad81d6" changeDateTime="2025-05-27 13:46:00" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="ace009c0-9acf-4c9f-aaa7-50a1e616e415" changeDateTime="2025-05-27 13:47:21" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="69f59f75-e2c7-439d-924d-570f9a4c5bb4" changeDateTime="2025-05-27 13:48:47" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="43e48510-9102-4352-aee5-a1fde99a4397" changeDateTime="2025-05-27 13:51:51" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="ad274030-eb37-468c-be01-54ce4aece88b" changeDateTime="2025-05-27 13:54:10" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="7f8b114a-2381-4c38-b30c-62af6af3c70c" changeDateTime="2025-05-27 14:22:43" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="cfabb469-139c-4843-ab7c-5117d3f26b09" changeDateTime="2025-05-27 14:24:16" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="b5cee5e5-bd1b-4726-b7ac-ea3da0ca4c07" changeDateTime="2025-05-27 14:25:09" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="009338cb-1081-425c-b198-90884d9dbb88" changeDateTime="2025-05-27 14:25:20" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="8ceaf521-7719-47bb-8830-be1fcc28949d" changeDateTime="2025-05-27 14:27:04" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="78f62093-149b-44b5-9232-a9b686cc99a0" changeDateTime="2025-05-27 14:44:24" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="f5445282-187e-4437-bc37-a9b0396dbdd7" changeDateTime="2025-05-27 14:44:30" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="684ca547-bada-4bcf-9503-3cfa5340e21e" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-DesignSubmissionPackage-NP" />
+            <change changedElement="fullTitle" changedFrom="Exchange requirement for a design submission package" />
+            <change changedElement="version" changedFrom="0.1" />
+            <change changedElement="description" changedFrom="" />
+          </changeLog>
+          <changeLog id="1afa65f6-2ccf-4774-af21-63264caac8f4" changeDateTime="2025-06-02 19:19:56" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="description" changedFrom="" />
+          </changeLog>
+          <changeLog id="54fcf104-21bd-4a81-ab9a-03b43581ff74" changeDateTime="2025-06-02 19:20:21" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="description" changedFrom="" />
+          </changeLog>
+          <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+          <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+          <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+          <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+          <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+          <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+          <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+          <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+          <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+          <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+          <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+          <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+          <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+          <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+          <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+          <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+          <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+          <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+          <committee name="ISO TC59/SC13">
+            <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+            <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+            <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+            <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+            <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+            <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+            <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+            <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+            <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+            <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+            <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+            <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+            <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+            <member>b59246de-56ed-4992-802f-689648e417d8</member>
+            <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+            <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+            <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+            <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+            <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+          </committee>
+          <publisher name="" location="" />
+        </authoring>
+        <informationUnit id="5e4af8c8-3fc5-4685-a956-b7b770ce6130" name="Cover Letter" dataType="Document" isMandatory="true" definition="Brief introduction describing the submission, summarizing contents, and providing submitter contact info.">
+          <examples>
+            <description>
+              <content>Cover letter PDF, project summary document</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="98b32c5f-b686-400d-8d18-6ed76ec9e1d3" name="Table of Contents" dataType="Document" isMandatory="true" definition="List enumerating all documents and drawings in the submission package.">
+          <examples>
+            <description>
+              <content>Cover letter PDF, project summary document</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="92e03270-55d7-4617-b4fc-acbc7eb8a157" name="Design Narrative" dataType="Document" isMandatory="true" definition="Written explanation of design intent, goals, concepts, and major decisions.">
+          <examples>
+            <description>
+              <content>Design description, project explanation, concept summary</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="b1f2b2b7-0624-419a-98f0-4ea72232d88c" name="Drawings" dataType="Drawing Set" isMandatory="true" definition="Technical drawings showing the design, including plans, sections, elevations, and details as required.">
+          <examples>
+            <description>
+              <content>Site plan, floor plans, sections, elevations, MEP drawings</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="cc306144-0d43-4470-a28e-efb76a1b1fe3" name="Specifications" dataType="Document" isMandatory="true" definition="Outline or full technical specifications of materials, assemblies, workmanship, and performance requirements.">
+          <examples>
+            <description>
+              <content>Outline spec, CSI spec, datasheets</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="385525c4-9e3e-406f-abc1-fa4729644cb1" name="BIM Models" dataType="Digital Model Files" isMandatory="true" definition="Digital, three-dimensional representations of a building or infrastructure project that contains not only geometry, but also detailed information and attributes.">
+          <subInformationUnit>
+            <informationUnit id="21c01e73-4af4-435c-80e7-aba85ba20d45" name="IFC Models" dataType="IFC File" isMandatory="true" definition="BIM models saved in IFC format">
+              <examples>
+                <description>
+                  <content>*.IFC</content>
+                </description>
+              </examples>
+              <correspondingExternalElement basis="" name="" />
+            </informationUnit>
+            <informationUnit id="e83c6dbd-3ae6-4298-9ba1-57df7e424252" name="Native BIM Models" dataType="Digital Model File" isMandatory="false" definition="BIM models in the native data format of an authoring tool">
+              <examples>
+                <description>
+                  <content>*.rvt, *.pln, *.dgn</content>
+                </description>
+              </examples>
+              <correspondingExternalElement basis="" name="" />
+            </informationUnit>
+          </subInformationUnit>
+          <examples>
+            <description>
+              <content>IFC model file, Revit model file, ArchiCAD model file, Bentley model file</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="dd255879-4136-41e4-8c61-6bb1fd57bfe4" name="Renderings" dataType="Digital Image File" isMandatory="false" definition="Digitally redenred images that show the final results of a facility">
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="7a83e7f5-7d95-4f0d-ae69-f38f437683d8" name="Animations" dataType="Digital Video File" isMandatory="false" definition="Digital videos of computer-generated movies showcasing a facility">
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="fe318599-c6c7-4e91-a42a-a94a1998f0d2" name="Code Compliance Information" dataType="Document" isMandatory="false" definition="Statement/matrix showing how design complies with relevant codes and regulations.">
+          <examples>
+            <description>
+              <content>Code checklist, compliance summary</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="3060753c-02cd-4bfa-8751-2b81752f053d" name="Calculations and Analysis" dataType="Document" isMandatory="true" definition="Technical analyses supporting the design, such as structural, energy, or systems calculations.">
+          <examples>
+            <description>
+              <content>Datasheets, cut sheets, product brochures</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="ad7e223c-f2e3-4d24-9ba4-fce4a369ba06" name="Product Data" dataType="Document" isMandatory="false" definition="Product/manufacturer information for key products or systems proposed in the design.">
+          <examples>
+            <description>
+              <content>Product/manufacturer information for key products or systems proposed in the design.</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="da8f349a-a950-4002-9bbe-d51859ac56c2" name="Material and Colour Boards" dataType="Physical or Digital Samples" isMandatory="false" definition="Boards or digital representations showing proposed materials, finishes, and colours.">
+          <examples>
+            <description>
+              <content>Physical sample board, photos of materials</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="642124ba-5660-41e5-a426-ea945616a233" name="Schedules" dataType="Document" isMandatory="false" definition="Project timeline, deliverables, or phasing plan.">
+          <examples>
+            <description>
+              <content>Gantt chart, phasing diagrams, milestone schedule</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="4613ca16-da55-4f92-8b95-3759b0cf5366" name="Consultant Reports" dataType="Document" isMandatory="false" definition="Reports from specialists needed for project approval.">
+          <examples>
+            <description>
+              <content>Environmental, traffic, geotechnical reports</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="cfa6bad0-7fcf-4718-9695-0fd79af4b62b" name="Approvals and Certifications" dataType="Document" isMandatory="true" definition="Forms, permits, or sign-offs from authorities or consultants.">
+          <examples>
+            <description>
+              <content>Permit application, sign-off forms, certifications</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <informationUnit id="de8ddd75-1183-41ee-b712-007ff3e7c045" name="Cost Estimates" dataType="" isMandatory="false" definition="Preliminary or detailed cost breakdowns for the project.">
+          <examples>
+            <description>
+              <content>Budget estimate, bill of quantities</content>
+            </description>
+          </examples>
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <constraint id="8d4f7fd9-12ec-450c-8f40-df760024adf5" associatedInformationUnit="98b32c5f-b686-400d-8d18-6ed76ec9e1d3" associatedBusinessRule="">
+          <description>
+            <content>Updated to match all included materials.</content>
+          </description>
+        </constraint>
+        <constraint id="b3c72a65-6b73-45ff-bb26-930d88fee9ae" associatedInformationUnit="5e4af8c8-3fc5-4685-a956-b7b770ce6130" associatedBusinessRule="">
+          <description>
+            <content>One per submission; signed by responsible party.</content>
+          </description>
+        </constraint>
+        <constraint id="b22320dc-6936-49bf-bb95-4d5d76558bf9" associatedInformationUnit="92e03270-55d7-4617-b4fc-acbc7eb8a157" associatedBusinessRule="">
+          <description>
+            <content>Must address project-specific criteria.</content>
+          </description>
+        </constraint>
+        <constraint id="e736e880-c856-4369-8eac-049fed90537c" associatedInformationUnit="b1f2b2b7-0624-419a-98f0-4ea72232d88c" associatedBusinessRule="">
+          <description>
+            <content>All drawings to scale; drawing list per submission stage.</content>
+          </description>
+        </constraint>
+        <constraint id="8ae40f8d-e3a9-40bb-8c0c-976c3081a2fd" associatedInformationUnit="cc306144-0d43-4470-a28e-efb76a1b1fe3" associatedBusinessRule="">
+          <description>
+            <content>Must reference applicable standards and codes.</content>
+          </description>
+        </constraint>
+        <constraint id="e9a7c996-aea5-4776-9ca5-b5966b8ae599" associatedInformationUnit="385525c4-9e3e-406f-abc1-fa4729644cb1" associatedBusinessRule="">
+          <description>
+            <content>Submission guidelines  required</content>
+          </description>
+        </constraint>
+        <constraint id="f1df8b7f-dbee-4a1c-a238-1b690069ca37" associatedInformationUnit="21c01e73-4af4-435c-80e7-aba85ba20d45" associatedBusinessRule="">
+          <description>
+            <content>Version must be specified.</content>
+          </description>
+        </constraint>
+        <constraint id="1f95925e-3914-4de5-97a8-103624adedc3" associatedInformationUnit="e83c6dbd-3ae6-4298-9ba1-57df7e424252" associatedBusinessRule="">
+          <description>
+            <content>Version should be specified.</content>
+          </description>
+        </constraint>
+        <constraint id="a101829c-ff6c-4987-83a3-1b8a7574da48" associatedInformationUnit="fe318599-c6c7-4e91-a42a-a94a1998f0d2" associatedBusinessRule="">
+          <description>
+            <content>Must reference specific codes; tailored to jurisdiction.</content>
+          </description>
+        </constraint>
+        <constraint id="64799166-89c0-4f0a-b6ef-0fb49501e648" associatedInformationUnit="3060753c-02cd-4bfa-8751-2b81752f053d" associatedBusinessRule="">
+          <description>
+            <content>May be required for approval of specific materials.*</content>
+          </description>
+        </constraint>
+        <constraint id="c5338ee7-3d6d-44f3-a8cb-72331fbf5c8f" associatedInformationUnit="ad7e223c-f2e3-4d24-9ba4-fce4a369ba06" associatedBusinessRule="">
+          <description>
+            <content>May be required for approval of specific materials.*</content>
+          </description>
+        </constraint>
+        <constraint id="9224f148-3b92-4a04-9c8a-ede2e7b2d07b" associatedInformationUnit="da8f349a-a950-4002-9bbe-d51859ac56c2" associatedBusinessRule="">
+          <description>
+            <content>As required by client or review board</content>
+          </description>
+        </constraint>
+        <constraint id="2ee2f9c9-58ba-4252-8403-b16d83907ecf" associatedInformationUnit="642124ba-5660-41e5-a426-ea945616a233" associatedBusinessRule="">
+          <description>
+            <content>Reflects realistic project sequencing</content>
+          </description>
+        </constraint>
+        <constraint id="a9b597b1-5e85-4de7-840b-9b158181d595" associatedInformationUnit="4613ca16-da55-4f92-8b95-3759b0cf5366" associatedBusinessRule="">
+          <description>
+            <content>Required for specific project types or sites.*</content>
+          </description>
+        </constraint>
+        <constraint id="9dc08b61-5b8d-4757-bb75-41d9ea298048" associatedInformationUnit="cfa6bad0-7fcf-4718-9695-0fd79af4b62b" associatedBusinessRule="">
+          <description>
+            <content>Must meet local authority or client requirements.</content>
+          </description>
+        </constraint>
+        <constraint id="377b7922-25ef-402c-8048-3465552a83a1" associatedInformationUnit="de8ddd75-1183-41ee-b712-007ff3e7c045" associatedBusinessRule="">
+          <description>
+            <content>Often required at certain review milestones.*</content>
+          </description>
+        </constraint>
+        <correspondingMvd basis="" name="" />
+        <description>
+          <content>A design submission package is a comprehensive collection of documents, drawings, and supporting materials that formally present a design proposal to clients, regulatory authorities, or other stakeholders for review and approval.
+The hierarchical relationships between information units can be represented using indentation, as shown in the example of "BIM Models," "IFC Models," and "Native BIM Models."</content>
+        </description>
+      </er>
+    </subEr>
+    <subEr>
+      <er>
+        <specId guid="2b15729d-6881-4c4c-8ac7-d7eed486c2bd" shortTitle="er_DesignChangeRequest" fullTitle="Exchange requirement for a design change request" subTitle="" idmCode="er-Design Authoring-IC-PD--EN-Lee-20250527-DesignChangeRequest-NP" localCode="" documentStatus="NP" localDocumentStatus="" version="0.1" />
+        <authoring copyright="">
+          <changeLog id="d49feb43-0d29-4565-b732-1f104cf16bcf" changeDateTime="2025-05-27 12:57:32" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_DesignChangeRequest" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-shortTitle-" />
+            <change changedElement="fullTitle" changedFrom="" />
+            <change changedElement="documentStatus" changedFrom="" />
+            <change changedElement="committee" changedFrom="" />
+            <change changedElement="version" changedFrom="" />
+            <change changedElement="author" changedFrom="" />
+            <change changedElement="description" changedFrom="" />
+          </changeLog>
+          <changeLog id="ad83f6b6-8219-4b91-8d2c-964a3544d201" changeDateTime="2025-05-27 12:58:12" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="shortTitle" changedFrom="er_ExchangeRequirementFor" />
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-ExchangeRequirementFor-NP" />
+          </changeLog>
+          <changeLog id="2ca3e03b-131b-46d8-9dc8-7cbaf84eab31" changeDateTime="2025-05-27 14:24:16" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <changeLog id="3ae846ff-fae6-4251-b3b9-40ea2dad304d" changeDateTime="2025-06-02 19:19:41" changeSummary="" changedBy="5556add3-addf-4859-ba43-d16c75148b01">
+            <change changedElement="idmCode" changedFrom="er-Design Authoring-IC---EN-Lee-20250527-DesignChangeRequest-NP" />
+            <change changedElement="informationUnit" changedFrom="" />
+          </changeLog>
+          <author id="5556add3-addf-4859-ba43-d16c75148b01" digitalSignature="glee@yonsei.ac.kr" firstName="Ghang" middleName="" lastName="Lee" affiliation="" />
+          <author id="366d8dc8-185f-4c87-93cd-dc7d2c2a61e4" digitalSignature="" firstName="Jim" middleName="" lastName="Plume" affiliation="" />
+          <author id="c272e2e8-6686-448c-ac57-d6cd797087fa" digitalSignature="" firstName="David" middleName="" lastName="Churcher" affiliation="" />
+          <author id="04e426c2-aafc-477c-b4d5-ae5730bba78d" digitalSignature="" firstName="Ruben" middleName="" lastName="Blair" affiliation="" />
+          <author id="bc5ac26c-9e11-4c8e-8e50-f7b33267475c" digitalSignature="" firstName="Emma" middleName="" lastName="Hooper" affiliation="" />
+          <author id="ab95aaf1-0e24-4db6-8d0b-43b10a4966bd" digitalSignature="" firstName="Stepanka" middleName="" lastName="Tomanova" affiliation="" />
+          <author id="19f7365b-e7e6-4fd5-83f9-4ed3bf80182f" digitalSignature="" firstName="Marie-Claire" middleName="" lastName="Coin" affiliation="" />
+          <author id="a630b3d6-f16e-45a2-ac04-b76ae5c4094c" digitalSignature="" firstName="Tomi" middleName="" lastName="Henttinen" affiliation="" />
+          <author id="f828a91b-63c7-41c5-b83f-741556edf35e" digitalSignature="" firstName="Shuang" middleName="" lastName="Huang" affiliation="" />
+          <author id="a912712e-9b90-4cb9-a600-25fd0d3f092c" digitalSignature="" firstName="Raimar" middleName="" lastName="Scherer" affiliation="" />
+          <author id="b126accc-fa8c-4a4f-a2f0-619232ae2cd9" digitalSignature="" firstName="Peter" middleName="" lastName="Kompolschek" affiliation="" />
+          <author id="8c6666ca-a3a0-442c-a339-a612ea0de54b" digitalSignature="" firstName="Thomas" middleName="" lastName="Brink" affiliation="" />
+          <author id="b59246de-56ed-4992-802f-689648e417d8" digitalSignature="" firstName="Stefan" middleName="" lastName="Brouwers" affiliation="" />
+          <author id="01b02aba-71fa-44f1-90d3-19650581064c" digitalSignature="" firstName="Arne" middleName="" lastName="Bruinse" affiliation="" />
+          <author id="1eaea60d-c879-4e48-ac3a-f6c814914c68" digitalSignature="" firstName="Alex" middleName="" lastName="Kalden" affiliation="" />
+          <author id="379913b6-b42e-4470-b9c6-f0f49593eb3b" digitalSignature="" firstName="Lisbet" middleName="" lastName="Landfald" affiliation="" />
+          <author id="a2e2e37e-2584-42ea-8bf8-5af89df7dbf0" digitalSignature="" firstName="Erik" middleName="" lastName="Poirier" affiliation="" />
+          <author id="fae585a3-6300-4d5d-9af9-7a8f05958b3f" digitalSignature="" firstName="Wei" middleName="" lastName="Lai" affiliation="" />
+          <committee name="ISO TC59/SC13">
+            <member>01b02aba-71fa-44f1-90d3-19650581064c</member>
+            <member>04e426c2-aafc-477c-b4d5-ae5730bba78d</member>
+            <member>19f7365b-e7e6-4fd5-83f9-4ed3bf80182f</member>
+            <member>1eaea60d-c879-4e48-ac3a-f6c814914c68</member>
+            <member>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</member>
+            <member>379913b6-b42e-4470-b9c6-f0f49593eb3b</member>
+            <member>5556add3-addf-4859-ba43-d16c75148b01</member>
+            <member>8c6666ca-a3a0-442c-a339-a612ea0de54b</member>
+            <member>a2e2e37e-2584-42ea-8bf8-5af89df7dbf0</member>
+            <member>a630b3d6-f16e-45a2-ac04-b76ae5c4094c</member>
+            <member>a912712e-9b90-4cb9-a600-25fd0d3f092c</member>
+            <member>ab95aaf1-0e24-4db6-8d0b-43b10a4966bd</member>
+            <member>b126accc-fa8c-4a4f-a2f0-619232ae2cd9</member>
+            <member>b59246de-56ed-4992-802f-689648e417d8</member>
+            <member>bc5ac26c-9e11-4c8e-8e50-f7b33267475c</member>
+            <member>c272e2e8-6686-448c-ac57-d6cd797087fa</member>
+            <member>f828a91b-63c7-41c5-b83f-741556edf35e</member>
+            <member>fae585a3-6300-4d5d-9af9-7a8f05958b3f</member>
+            <leader>366d8dc8-185f-4c87-93cd-dc7d2c2a61e4</leader>
+          </committee>
+          <publisher name="" location="" />
+        </authoring>
+        <informationUnit id="828d7599-0329-4ba6-80ec-cb2beae1176b" name="Design Change Request" dataType="Document" isMandatory="false" definition="A design change request is a formal document that proposes modifications to an existing design after it has been initially developed or approved. It serves as a structured way to manage alterations during the design or construction process.">
+          <correspondingExternalElement basis="" name="" />
+        </informationUnit>
+        <correspondingMvd basis="" name="" />
+        <description>
+          <content>A design change request is a formal document that proposes modifications to an existing design after it has been initially developed or approved. It serves as a structured way to manage alterations during the design or construction process. Key aspects include:
+Purpose and Triggers:
+
+Client feedback requiring design adjustments
+Regulatory changes or code compliance issues
+Site conditions discovered after initial design
+Budget constraints requiring value engineering
+Functional requirements that have evolved
+Technical problems identified during review
+
+Content Components:
+
+Description of the proposed change and rationale
+Impact analysis on cost, schedule, and scope
+Technical drawings or specifications affected
+Risk assessment and mitigation strategies
+Approval requirements and authorization levels
+Dependencies on other design elements
+
+Process Management:
+
+Change request number and tracking system
+Priority level and urgency classification
+Review and approval workflow
+Communication to affected stakeholders
+Documentation of decisions and approvals
+Version control for updated drawings
+
+Impact Assessment:
+
+Cost implications (additional fees, material costs)
+Schedule effects and milestone adjustments
+Resource allocation changes
+Quality or performance considerations
+Regulatory approval requirements
+
+Design change requests are essential for maintaining project control, ensuring all modifications are properly evaluated, documented, and approved before implementation. They help prevent unauthorized changes, manage client expectations, and maintain clear accountability throughout the design development process.</content>
+        </description>
+      </er>
+    </subEr>
+  </er>
+</idm>
