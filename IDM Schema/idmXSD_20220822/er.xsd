@@ -30,7 +30,7 @@
 				</xs:element>
 				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
 <!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
-				<xs:choice minOccours="1" maxOccurs="unbounded">
+				<xs:choice minOccurs="1" maxOccurs="unbounded">
 				    <xs:element ref="informationUnit"/>
 				    <xs:element name="subEr">
 			        	<xs:complexType>
@@ -100,3 +100,4 @@
 	</xs:element>
 	<xs:element name="associatedEr"/>
 </xs:schema>
+
