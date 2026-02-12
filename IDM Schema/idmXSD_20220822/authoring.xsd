@@ -48,14 +48,14 @@
 		</xs:key>
 		<xs:keyref name="keyref_changedBy" refer="key_authorId">
 			<xs:selector xpath="./changeLog"/>
-			<xs:field xpath="changedBy"/>
+			<xs:field xpath="@changedBy"/>
 		</xs:keyref>
 		<xs:keyref name="keyref_member" refer="key_authorId">
-			<xs:selector xpath="./author/committee"/>
+			<xs:selector xpath="./committee"/>
 			<xs:field xpath="member"/>
 		</xs:keyref>
 		<xs:keyref name="keyref_leader" refer="key_authorId">
-			<xs:selector xpath="./author/committee"/>
+			<xs:selector xpath="./committee"/>
 			<xs:field xpath="leader"/>
 		</xs:keyref>
 		<xs:unique name="unique_organizationName">
@@ -63,7 +63,7 @@
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_committeeName">
-			<xs:selector xpath="./author/committee"/>
+			<xs:selector xpath="./committee"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 	</xs:element>

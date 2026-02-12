@@ -22,5 +22,14 @@
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
+		<!-- Cross-element identity constraint: er/constraint/@associatedBusinessRule references uc/businessRule/@id -->
+		<xs:key name="key_businessRuleId">
+			<xs:selector xpath="uc/businessRule"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+		<xs:keyref name="keyref_associatedBusinessRule" refer="key_businessRuleId">
+			<xs:selector xpath="er/constraint"/>
+			<xs:field xpath="@associatedBusinessRule"/>
+		</xs:keyref>
 	</xs:element>
 </xs:schema>

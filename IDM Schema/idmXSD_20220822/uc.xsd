@@ -205,12 +205,12 @@
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_standardprojectStageName">
-			<xs:selector xpath="standardPhase"/>
-			<xs:field xpath="@name"/>
+			<xs:selector xpath="standardProjectStage"/>
+			<xs:field xpath="name"/>
 		</xs:unique>
 		<xs:unique name="unique_regionType">
 			<xs:selector xpath="region"/>
-			<xs:field xpath="@type"/>
+			<xs:field xpath="type"/>
 		</xs:unique>
 		<xs:unique name="unique_constructionEntityName">
 			<xs:selector xpath="constructionEntity"/>
@@ -228,18 +228,10 @@
 			<xs:selector xpath="userDefinedProperty"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
-		<xs:key name="key_businessRuleId">
-			<xs:selector xpath="busuinessRule"/>
-			<xs:field xpath="@id"/>
-		</xs:key>
 		<xs:unique name="unique_businessRuleName">
 			<xs:selector xpath="businessRule"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
-		<xs:keyref name="keyref_associatedBusinessRules" refer="key_businessRuleId">
-			<xs:selector xpath="./constraint"/>
-			<xs:field xpath="@associatedBusinessRule"/>
-		</xs:keyref>
 	</xs:element>
 	<!-- Classification -->
 	<xs:element name="classification">

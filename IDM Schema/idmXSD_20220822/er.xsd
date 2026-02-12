@@ -39,8 +39,9 @@
 				            </xs:sequence>
 				        </xs:complexType>
 				    </xs:element>
-				</xs:choice>>
-<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->		
+				</xs:choice>
+<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
+			</xs:sequence>
 		</xs:complexType>
 		<xs:key name="key_erGuid">
 			<xs:selector xpath="./specId"/>
