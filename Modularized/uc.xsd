@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:idm="https://standards.buildingsmart.org/IDM/idmXML/0.2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:include schemaLocation="specId.xsd"/>
 	<xs:include schemaLocation="authoring.xsd"/>
 	<xs:include schemaLocation="businessContextMap.xsd"/>
@@ -269,12 +269,19 @@
 			<xs:attribute name="title" type="xs:string" use="optional"/>
 		</xs:complexType>
 	</xs:element>
-	<!-- Image -->
+	<!-- Image: supports both file reference (filePath) and inline base64 (mimeType + encoding + text content) -->
 	<xs:element name="image">
-		<xs:complexType>
+		<xs:complexType mixed="true">
 			<xs:attribute name="caption" type="xs:string" use="required"/>
-			<xs:attribute name="filePath" type="xs:string" use="required"/>
+			<xs:attribute name="filePath" type="xs:string" use="optional"/>
+			<xs:attribute name="mimeType" type="xs:string" use="optional"/>
+			<xs:attribute name="encoding" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="base64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 </xs:schema>
-
