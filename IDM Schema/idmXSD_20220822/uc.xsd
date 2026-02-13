@@ -102,34 +102,31 @@
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
 				</xs:element>
-				<!-- START of "actor" - Revised on Feb. 4, 2026 -->
+				<!-- START of "actor" - Revised on Feb. 13, 2026 -->
+			<!-- Actor-to-BCM shape mapping is defined in businessContextMap.xsd (shapeAndActor) -->
 				<xs:element name="actor" minOccurs="0" maxOccurs="unbounded">
 				  <xs:complexType>
 				    <xs:sequence>
 				      <!-- Optional classification -->
 				      <xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
-				
-				      <!-- Optional BPMN shape name or ID -->
-				      <xs:element name="bpmnShapeName" type="xs:string" minOccurs="0"/>
-				
+
 				      <!-- Recursive sub-actor definition (Swimlanes) -->
 				      <xs:element name="subActor" minOccurs="0" maxOccurs="unbounded">
 				        <xs:complexType>
 				          <xs:sequence>
 				            <xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
-				            <xs:element name="bpmnShapeName" type="xs:string" minOccurs="0"/>
 				          </xs:sequence>
 				          <xs:attribute name="id" type="xs:string" use="required"/>
 				          <xs:attribute name="name" type="xs:string" use="required"/>
 				        </xs:complexType>
 				      </xs:element>
-				
+
 				    </xs:sequence>
-				
+
 				    <!-- Actor attributes -->
 				    <xs:attribute name="id" type="xs:string" use="required"/>
 				    <xs:attribute name="name" type="xs:string" use="required"/>
-				
+
 				    <!-- Optional semantic typing -->
 				    <xs:attribute name="actorType" use="optional">
 				      <xs:simpleType>
@@ -139,10 +136,10 @@
 				        </xs:restriction>
 				      </xs:simpleType>
 				    </xs:attribute>
-				
+
 				  </xs:complexType>
 				</xs:element>
-				<!-- END of "actor" - Revised on Feb. 4, 2026 -->
+				<!-- END of "actor" - Revised on Feb. 13, 2026 -->
 				<xs:element name="benefits" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
@@ -255,7 +252,11 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
-				<xs:element ref="associatedEr" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="associatedEr" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="ref" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

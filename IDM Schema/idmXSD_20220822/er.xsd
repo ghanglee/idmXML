@@ -59,10 +59,6 @@
 			<xs:selector xpath="./constraint"/>
 			<xs:field xpath="@associatedInformationUnit"/>
 		</xs:keyref>
-		<xs:keyref name="keyref_associatedEr" refer="key_erGuid">
-			<xs:selector xpath="./associatedEr"/>
-			<xs:field xpath="associatedEr"/>
-		</xs:keyref>
 	</xs:element>
 	<!-- Information Unit -->
 	<xs:element name="informationUnit">
@@ -99,6 +95,5 @@
 			<xs:attribute name="definition" type="xs:string" use="required"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="associatedEr"/>
 </xs:schema>
 

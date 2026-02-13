@@ -28,11 +28,38 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="diagram" minOccurs="1" maxOccurs="1"/>
+				<!-- Maps BPMN Data Objects to Exchange Requirements -->
 				<xs:element name="dataObjectAndEr" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="associatedDataObject" minOccurs="1" maxOccurs="1"/>
-							<xs:element ref="associatedEr" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="associatedDataObject" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="associatedEr" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<!-- Maps BPMN Pools/Lanes to Actors/SubActors defined in uc -->
+				<xs:element name="shapeAndActor" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="associatedShape" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="associatedActor" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
 						</xs:sequence>
 						<xs:attribute name="id" type="xs:string" use="required"/>
 					</xs:complexType>
@@ -64,8 +91,16 @@
 				<xs:element name="messageAndEr" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="associatedMessage" minOccurs="1" maxOccurs="1"/>
-							<xs:element ref="associatedEr" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="associatedMessage" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="associatedEr" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="ref" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
 						</xs:sequence>
 						<xs:attribute name="id" type="xs:string" use="required"/>
 					</xs:complexType>
