@@ -13,7 +13,7 @@
 | `businessContextMap.xsd` | BCM, process map, interaction map, transaction map, diagram |
 | `er.xsd` | Exchange requirement, information unit |
 | `idm.xsd` | Root IDM element with cross-element constraints |
-| `idm2.0.xsd` | Monolithic (consolidated) version of the above 6 files |
+| `idm_monolithic_V2.0.xsd` | Monolithic (consolidated) version of the above 6 files |
 
 ---
 
@@ -382,6 +382,48 @@ Information Units have a `definition` attribute for text-based definitions. Howe
 
 ---
 
+## Revision 9 — Target Namespace Declaration
+
+**Date**: February 14, 2026
+**Affected files**: All 6 modularized XSD files + monolithic
+
+### Change
+Added `targetNamespace` and `elementFormDefault="qualified"` to all schema files, and prefixed all `ref`, `type`, and XPath element references with the `idm:` namespace prefix:
+
+```xml
+<!-- Before -->
+<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  ...
+  <xs:element ref="specId" .../>
+  <xs:attribute name="guid" type="uuid" .../>
+  <xs:selector xpath="./specId"/>
+
+<!-- After -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+    targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
+    elementFormDefault="qualified">
+  ...
+  <xs:element ref="idm:specId" .../>
+  <xs:attribute name="guid" type="idm:uuid" .../>
+  <xs:selector xpath="./idm:specId"/>
+```
+
+### Specific changes
+- **Header**: Added `targetNamespace` and `elementFormDefault="qualified"` to all 7 XSD files
+- **Element references**: All `ref="elementName"` → `ref="idm:elementName"` (e.g., `ref="specId"` → `ref="idm:specId"`)
+- **Custom type**: `type="uuid"` → `type="idm:uuid"` in `specId.xsd`
+- **XPath selectors**: All element names in `xs:selector` and `xs:field` XPath expressions prefixed with `idm:` (e.g., `xpath="businessRule"` → `xpath="idm:businessRule"`)
+- **Attribute references**: `@guid`, `@id`, `@name`, etc. remain unprefixed (attributes are unqualified by default)
+
+### Reason
+Without `targetNamespace`, the schema defines elements in **no namespace**. However, the generated idmXML output uses `<idm xmlns="https://standards.iso.org/iso/29481/-3/ed-2/en">`, placing all elements **in the namespace**. This mismatch causes XML validators to report `cvc-elt.1.a: Cannot find the declaration of element 'idm'` because the schema has no declaration for elements in that namespace.
+
+Adding `targetNamespace` ensures the schema declares elements in the same namespace that instance documents use. `elementFormDefault="qualified"` ensures all child elements (not just the root) are namespace-qualified.
+
+---
+
 ## Summary of All Changes
 
 | Rev | Date | Files | Change | Category |
@@ -395,3 +437,4 @@ Information Units have a `definition` attribute for text-based definitions. Howe
 | 6 | Feb 13, 2026 | uc.xsd, businessContextMap.xsd | Embedded content: inline base64 images + inline diagram CDATA | Enhancement |
 | 7 | Feb 14, 2026 | er.xsd | `description` child in `informationUnit` | Enhancement |
 | 8 | Feb 13, 2026 | uc.xsd, authoring.xsd, er.xsd, idm.xsd | Fixed 5 identity constraint bugs | Bug fix |
+| 9 | Feb 14, 2026 | All | Added `targetNamespace`, `elementFormDefault`, `idm:` prefixes | Namespace fix |
