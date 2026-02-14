@@ -49,15 +49,15 @@
 			<xs:selector xpath="./idm:author"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
-		<xs:keyref name="keyref_changedBy" refer="key_authorId">
+		<xs:keyref name="keyref_changedBy" refer="idm:key_authorId">
 			<xs:selector xpath="./idm:changeLog"/>
 			<xs:field xpath="@changedBy"/>
 		</xs:keyref>
-		<xs:keyref name="keyref_member" refer="key_authorId">
+		<xs:keyref name="keyref_member" refer="idm:key_authorId">
 			<xs:selector xpath="./idm:committee"/>
 			<xs:field xpath="idm:member"/>
 		</xs:keyref>
-		<xs:keyref name="keyref_leader" refer="key_authorId">
+		<xs:keyref name="keyref_leader" refer="idm:key_authorId">
 			<xs:selector xpath="./idm:committee"/>
 			<xs:field xpath="idm:leader"/>
 		</xs:keyref>

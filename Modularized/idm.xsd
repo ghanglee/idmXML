@@ -30,7 +30,7 @@
 			<xs:selector xpath="idm:uc/idm:businessRule"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
-		<xs:keyref name="keyref_associatedBusinessRule" refer="key_businessRuleId">
+		<xs:keyref name="keyref_associatedBusinessRule" refer="idm:key_businessRuleId">
 			<xs:selector xpath="idm:er/idm:constraint"/>
 			<xs:field xpath="@associatedBusinessRule"/>
 		</xs:keyref>
