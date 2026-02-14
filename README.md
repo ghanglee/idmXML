@@ -7,7 +7,7 @@ This repository provides **idmXSD** (the XML Schema Definition for IDM data sche
 | Branch | Contents | Link |
 |--------|----------|------|
 | **[main](https://github.com/ghanglee/idmXML/tree/main)** | Original idmXSD as published with ISO/FDIS 29481-3 V2.0 (August 2022) | [Browse](https://github.com/ghanglee/idmXML/tree/main) |
-| **[Ver2.0](https://github.com/ghanglee/idmXML/tree/Ver2.0)** | Revised idmXSD with 8 revisions (see REVISION_HISTORY.md) | [Browse](https://github.com/ghanglee/idmXML/tree/Ver2.0) |
+| **Ver2.0** (this branch) | Revised idmXSD with 9 revisions (see REVISION_HISTORY.md) | [Browse](https://github.com/ghanglee/idmXML/tree/Ver2.0) |
 
 - **main** — The baseline schema as-is from the ISO standard. Use this as the reference for the current official schema.
 - **Ver2.0** — The revised schema with enhancements and bug fixes. See [REVISION_HISTORY.md](https://github.com/ghanglee/idmXML/blob/Ver2.0/REVISION_HISTORY.md) for the full list of changes and rationale.
@@ -56,6 +56,7 @@ A consolidated single-file version (`idm_monolithic_V2.0.xsd`) containing all el
 | 6 | Embedded content: inline base64 images + inline diagram CDATA | Enhancement |
 | 7 | `description` child in `informationUnit` | Enhancement |
 | 8 | Fixed 5 identity constraint bugs | Bug fix |
+| 9 | Added `targetNamespace`, `elementFormDefault`, `idm:` prefixes | Namespace fix |
 
 ## Related Standards
 
