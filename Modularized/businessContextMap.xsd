@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	elementFormDefault="qualified">
 	<xs:include schemaLocation="specId.xsd"/>
 	<xs:include schemaLocation="authoring.xsd"/>
 	<xs:include schemaLocation="uc.xsd"/>
@@ -7,16 +10,16 @@
 	<xs:element name="businessContextMap">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="specId" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="authoring" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:specId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:authoring" minOccurs="1" maxOccurs="1"/>
 				<xs:choice minOccurs="1" maxOccurs="unbounded">
-					<xs:element ref="pm"/>
-					<xs:element ref="im"/>
+					<xs:element ref="idm:pm"/>
+					<xs:element ref="idm:im"/>
 				</xs:choice>
 				<xs:element name="subBusinessContextMap" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="businessContextMap"/>
+							<xs:element ref="idm:businessContextMap"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -27,7 +30,7 @@
 	<xs:element name="pm">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="diagram" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:diagram" minOccurs="1" maxOccurs="1"/>
 				<!-- Maps BPMN Data Objects to Exchange Requirements -->
 				<xs:element name="dataObjectAndEr" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
@@ -67,7 +70,7 @@
 				<xs:element name="subPm" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="pm"/>
+							<xs:element ref="idm:pm"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -78,8 +81,8 @@
 	<xs:element name="im">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="diagram" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="tm" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="idm:diagram" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:tm" minOccurs="1" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -87,7 +90,7 @@
 	<xs:element name="tm">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="diagram" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:diagram" minOccurs="1" maxOccurs="1"/>
 				<xs:element name="messageAndEr" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
@@ -112,7 +115,7 @@
 	<xs:element name="diagram">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="diagramContent" type="xs:string" minOccurs="0" maxOccurs="1"/>
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:string" use="required"/>

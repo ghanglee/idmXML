@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	elementFormDefault="qualified">
 	<xs:element name="authoring">
 		<xs:complexType>
 			<xs:sequence>
@@ -19,7 +22,7 @@
 						<xs:attribute name="changedBy" type="xs:NCName" use="required"/>
 					</xs:complexType>
 				</xs:element>
-				<xs:element ref="author" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="idm:author" minOccurs="1" maxOccurs="unbounded"/>
 				<xs:element name="committee" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
@@ -39,31 +42,31 @@
 			<xs:attribute name="copyright" type="xs:string" use="required"/>
 		</xs:complexType>
 		<xs:key name="key_id">
-			<xs:selector xpath="./changeLog"/>
+			<xs:selector xpath="./idm:changeLog"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
 		<xs:key name="key_authorId">
-			<xs:selector xpath="./author"/>
+			<xs:selector xpath="./idm:author"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
 		<xs:keyref name="keyref_changedBy" refer="key_authorId">
-			<xs:selector xpath="./changeLog"/>
+			<xs:selector xpath="./idm:changeLog"/>
 			<xs:field xpath="@changedBy"/>
 		</xs:keyref>
 		<xs:keyref name="keyref_member" refer="key_authorId">
-			<xs:selector xpath="./committee"/>
-			<xs:field xpath="member"/>
+			<xs:selector xpath="./idm:committee"/>
+			<xs:field xpath="idm:member"/>
 		</xs:keyref>
 		<xs:keyref name="keyref_leader" refer="key_authorId">
-			<xs:selector xpath="./committee"/>
-			<xs:field xpath="leader"/>
+			<xs:selector xpath="./idm:committee"/>
+			<xs:field xpath="idm:leader"/>
 		</xs:keyref>
 		<xs:unique name="unique_organizationName">
-			<xs:selector xpath="./author/organization"/>
+			<xs:selector xpath="./idm:author/idm:organization"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_committeeName">
-			<xs:selector xpath="./committee"/>
+			<xs:selector xpath="./idm:committee"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 	</xs:element>

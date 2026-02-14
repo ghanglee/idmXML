@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	elementFormDefault="qualified">
 	<xs:include schemaLocation="specId.xsd"/>
 	<xs:include schemaLocation="authoring.xsd"/>
 	<xs:include schemaLocation="businessContextMap.xsd"/>
@@ -7,19 +10,19 @@
 	<xs:element name="uc">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="specId" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="authoring" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:specId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:authoring" minOccurs="1" maxOccurs="1"/>
 				<xs:element name="summary" minOccurs="1" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="aimAndScope" minOccurs="1" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -27,7 +30,7 @@
 				<xs:element name="use" minOccurs="1" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:classification" minOccurs="0" maxOccurs="1"/>
 						</xs:sequence>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
@@ -63,8 +66,8 @@
 									</xs:restriction>
 								</xs:simpleType>
 							</xs:element>
-							<xs:element ref="outcomes" minOccurs="0" maxOccurs="1"/>
-							<xs:element ref="informationRequirements" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:outcomes" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:informationRequirements" minOccurs="0" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -72,16 +75,16 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="name" minOccurs="1" maxOccurs="1"/>
-							<xs:element ref="outcomes" minOccurs="0" maxOccurs="1"/>
-							<xs:element ref="informationRequirements" minOccurs="0" maxOccurs="1"/>
-							<xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:outcomes" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:informationRequirements" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:classification" minOccurs="0" maxOccurs="1"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="constructionEntity" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="idm:classification" minOccurs="0" maxOccurs="1"/>
 						</xs:sequence>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
@@ -92,7 +95,7 @@
 							<xs:element name="proposition" minOccurs="1" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+										<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -108,13 +111,13 @@
 				  <xs:complexType>
 				    <xs:sequence>
 				      <!-- Optional classification -->
-				      <xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
+				      <xs:element ref="idm:classification" minOccurs="0" maxOccurs="1"/>
 
 				      <!-- Recursive sub-actor definition (Swimlanes) -->
 				      <xs:element name="subActor" minOccurs="0" maxOccurs="unbounded">
 				        <xs:complexType>
 				          <xs:sequence>
-				            <xs:element ref="classification" minOccurs="0" maxOccurs="1"/>
+				            <xs:element ref="idm:classification" minOccurs="0" maxOccurs="1"/>
 				          </xs:sequence>
 				          <xs:attribute name="id" type="xs:string" use="required"/>
 				          <xs:attribute name="name" type="xs:string" use="required"/>
@@ -143,28 +146,28 @@
 				<xs:element name="benefits" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="limitations" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="requiredResources" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="requiredCompetencies" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
@@ -179,7 +182,7 @@
 				<xs:element name="userDefinedProperty" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" maxOccurs="unbounded"/>
 						</xs:sequence>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
@@ -187,46 +190,46 @@
 				<xs:element name="subUc" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="uc"/>
+							<xs:element ref="idm:uc"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key name="key_ucGuid">
-			<xs:selector xpath="specId"/>
+			<xs:selector xpath="idm:specId"/>
 			<xs:field xpath="@guid"/>
 		</xs:key>
 		<xs:unique name="unique_useName">
-			<xs:selector xpath="use"/>
+			<xs:selector xpath="idm:use"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_standardprojectStageName">
-			<xs:selector xpath="standardProjectStage"/>
-			<xs:field xpath="name"/>
+			<xs:selector xpath="idm:standardProjectStage"/>
+			<xs:field xpath="idm:name"/>
 		</xs:unique>
 		<xs:unique name="unique_regionType">
-			<xs:selector xpath="region"/>
-			<xs:field xpath="type"/>
+			<xs:selector xpath="idm:region"/>
+			<xs:field xpath="idm:type"/>
 		</xs:unique>
 		<xs:unique name="unique_constructionEntityName">
-			<xs:selector xpath="constructionEntity"/>
+			<xs:selector xpath="idm:constructionEntity"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_actorName">
-			<xs:selector xpath="actor"/>
+			<xs:selector xpath="idm:actor"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_referenceFullcitation">
-			<xs:selector xpath="reference"/>
+			<xs:selector xpath="idm:reference"/>
 			<xs:field xpath="@fullCitation"/>
 		</xs:unique>
 		<xs:unique name="unique_userDefinedPropertyName">
-			<xs:selector xpath="userDefinedProperty"/>
+			<xs:selector xpath="idm:userDefinedProperty"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 		<xs:unique name="unique_businessRuleName">
-			<xs:selector xpath="businessRule"/>
+			<xs:selector xpath="idm:businessRule"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
 	</xs:element>
@@ -243,7 +246,7 @@
 	<xs:element name="outcomes">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -251,7 +254,7 @@
 	<xs:element name="informationRequirements">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="description" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
 				<xs:element name="associatedEr" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:attribute name="ref" type="xs:string" use="required"/>
@@ -264,7 +267,7 @@
 	<xs:element name="description">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="image" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="idm:image" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:sequence>
 			<xs:attribute name="title" type="xs:string" use="optional"/>
 		</xs:complexType>

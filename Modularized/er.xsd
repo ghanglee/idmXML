@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
+	elementFormDefault="qualified">
 	<xs:include schemaLocation="specId.xsd"/>
 	<xs:include schemaLocation="authoring.xsd"/>
 	<xs:include schemaLocation="uc.xsd"/>
@@ -7,12 +10,12 @@
 	<xs:element name="er">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="specId" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="authoring" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:specId" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="idm:authoring" minOccurs="1" maxOccurs="1"/>
 				<xs:element name="constraint" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 						<xs:attribute name="id" type="xs:string" use="required"/>
 						<xs:attribute name="associatedInformationUnit" use="optional"/>
@@ -22,20 +25,20 @@
 				<xs:element name="correspondingMvd" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 						<xs:attribute name="basis" type="xs:string" use="required"/>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 					</xs:complexType>
 				</xs:element>
-				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 <!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
 				<xs:choice minOccurs="1" maxOccurs="unbounded">
-				    <xs:element ref="informationUnit"/>
+				    <xs:element ref="idm:informationUnit"/>
 				    <xs:element name="subEr">
 			        	<xs:complexType>
 				            <xs:sequence>
-				                <xs:element ref="er"/>
+				                <xs:element ref="idm:er"/>
 				            </xs:sequence>
 				        </xs:complexType>
 				    </xs:element>
@@ -44,19 +47,19 @@
 			</xs:sequence>
 		</xs:complexType>
 		<xs:key name="key_erGuid">
-			<xs:selector xpath="./specId"/>
+			<xs:selector xpath="./idm:specId"/>
 			<xs:field xpath="@guid"/>
 		</xs:key>
 		<xs:key name="key_informationUnitId">
-			<xs:selector xpath="./informationUnit"/>
+			<xs:selector xpath="./idm:informationUnit"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
 		<xs:key name="key_constraint">
-			<xs:selector xpath="./constraint"/>
+			<xs:selector xpath="./idm:constraint"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
 		<xs:keyref name="keyref_associatedInformationUnit" refer="key_informationUnitId">
-			<xs:selector xpath="./constraint"/>
+			<xs:selector xpath="./idm:constraint"/>
 			<xs:field xpath="@associatedInformationUnit"/>
 		</xs:keyref>
 	</xs:element>
@@ -64,18 +67,18 @@
 	<xs:element name="informationUnit">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element name="examples" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="correspondingExternalElement" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 						<xs:attribute name="basis" type="xs:string" use="required"/>
 						<xs:attribute name="name" type="xs:string" use="required"/>
@@ -84,7 +87,7 @@
 				<xs:element name="subInformationUnit" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence minOccurs="0" maxOccurs="unbounded">
-							<xs:element ref="informationUnit"/>
+							<xs:element ref="idm:informationUnit"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
