@@ -16,6 +16,7 @@ This repository provides **idmXSD** (the XML Schema Definition for IDM data sche
 
 ```
 idmXML/
+├── Class Diagram/                # (empty on Ver2.0; UML diagrams on main)
 ├── Modularized/                  # Split XSD files (one per IDM component)
 │   ├── idm.xsd                   # Root element and cross-element constraints
 │   ├── specId.xsd                # Specification identifier
@@ -25,6 +26,7 @@ idmXML/
 │   └── er.xsd                    # Exchange requirements, information units
 ├── Monolithic/
 │   └── idm_monolithic_V2.0.xsd   # Consolidated single-file XSD
+├── TestCases/                    # (empty on Ver2.0; example idmXML files on main)
 ├── REVISION_HISTORY.md           # Detailed changelog with rationale
 ├── README.md
 └── LICENSE
