@@ -16,20 +16,20 @@ This repository provides **idmXSD** (the XML Schema Definition for IDM data sche
 
 ```
 idmXML/
-├── IDM Schema/
-│   ├── Class Diagram/              # UML class diagrams
-│   └── idmXSD_20220822/            # Original modularized XSD files
-│       ├── idm.xsd
-│       ├── specId.xsd
-│       ├── authoring.xsd
-│       ├── uc.xsd
-│       ├── businessContextMap.xsd
-│       └── er.xsd
-├── TestCases/                      # Example idmXML files
+├── Class Diagram/                 # UML class diagrams
+├── Modularized/                   # Original modularized XSD files (baseline)
+│   ├── idm.xsd
+│   ├── specId.xsd
+│   ├── authoring.xsd
+│   ├── uc.xsd
+│   ├── businessContextMap.xsd
+│   └── er.xsd
+├── Monolithic/                    # (empty on main; monolithic XSD on Ver2.0)
+├── TestCases/                     # Example idmXML files
 │   ├── Basic IDM_20210311/
 │   ├── Bridge Data Handover/
 │   └── idm_DesignAuthoring/
-├── xPPM-neo                        # Link to IDM authoring tool
+├── xPPM-neo                       # Link to IDM authoring tool
 └── README.md
 ```
 
