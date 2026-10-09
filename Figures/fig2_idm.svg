@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="437" height="240" viewBox="0 0 437 240">
+<title>idm</title>
+<rect x="0" y="0" width="437" height="240" fill="#ffffff"/>
+<g id="el-idm">
+<rect x="13.0" y="147.0" width="51.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="10.0" y="144.0" width="51.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="18.0" y="159.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">idm</text>
+<rect x="48.3" y="150.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="50.3" y1="155.0" x2="55.3" y2="155.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="63.3" y1="155.0" x2="77.3" y2="155.0" stroke="#000000" stroke-width="1"/>
+<line x1="77.3" y1="97.0" x2="77.3" y2="213.0" stroke="#000000" stroke-width="1"/>
+<line x1="77.3" y1="97.0" x2="89.3" y2="97.0" stroke="#000000" stroke-width="1"/>
+<line x1="77.3" y1="213.0" x2="89.3" y2="213.0" stroke="#000000" stroke-width="1"/>
+<g id="group-sequence">
+<polygon points="95.328125,86.0 129.328125,86.0 135.328125,92.0 135.328125,102.0 129.328125,108.0 95.328125,108.0 89.328125,102.0 89.328125,92.0" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="95.328125,86.0 129.328125,86.0 135.328125,92.0 135.328125,102.0 129.328125,108.0 95.328125,108.0 89.328125,102.0 89.328125,92.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="97.3" y1="97.0" x2="127.3" y2="97.0" stroke="#000000" stroke-width="1"/>
+<rect x="104.3" y="95.0" width="4" height="4" fill="#000000"/>
+<rect x="110.3" y="95.0" width="4" height="4" fill="#000000"/>
+<rect x="116.3" y="95.0" width="4" height="4" fill="#000000"/>
+<rect x="137.3" y="92.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="139.3" y1="97.0" x2="144.3" y2="97.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="146.3" y1="97.0" x2="160.3" y2="97.0" stroke="#000000" stroke-width="1"/>
+<line x1="160.3" y1="21.0" x2="160.3" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="160.3" y1="21.0" x2="174.3" y2="21.0" stroke="#000000" stroke-width="1"/>
+<line x1="160.3" y1="49.0" x2="174.3" y2="49.0" stroke="#000000" stroke-width="1"/>
+<line x1="160.3" y1="77.0" x2="174.3" y2="77.0" stroke="#000000" stroke-width="1"/>
+<line x1="160.3" y1="105.0" x2="174.3" y2="105.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="160.3" y1="145.0" x2="174.3" y2="145.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="160.3" y1="173.0" x2="174.3" y2="173.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<g id="el-specId">
+<rect x="177.3" y="13.0" width="76.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="174.3" y="10.0" width="76.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<path d="M177.3 29.0 L183.3 23.0 M179.3 23.0 L183.3 23.0 L183.3 27.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="188.3" y="25.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">specId</text>
+<rect x="237.3" y="16.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="239.3" y1="21.0" x2="244.3" y2="21.0" stroke="#000000" stroke-width="1"/>
+<line x1="241.8" y1="18.5" x2="241.8" y2="23.5" stroke="#000000" stroke-width="1"/>
+</g>
+<g id="el-authoring">
+<rect x="177.3" y="41.0" width="93.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="174.3" y="38.0" width="93.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<path d="M177.3 57.0 L183.3 51.0 M179.3 51.0 L183.3 51.0 L183.3 55.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="188.3" y="53.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">authoring</text>
+<rect x="254.6" y="44.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="256.6" y1="49.0" x2="261.6" y2="49.0" stroke="#000000" stroke-width="1"/>
+<line x1="259.1" y1="46.5" x2="259.1" y2="51.5" stroke="#000000" stroke-width="1"/>
+</g>
+<g id="el-uc">
+<rect x="177.3" y="69.0" width="52.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="174.3" y="66.0" width="52.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<path d="M177.3 85.0 L183.3 79.0 M179.3 79.0 L183.3 79.0 L183.3 83.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="188.3" y="81.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">uc</text>
+<rect x="213.3" y="72.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="215.3" y1="77.0" x2="220.3" y2="77.0" stroke="#000000" stroke-width="1"/>
+<line x1="217.8" y1="74.5" x2="217.8" y2="79.5" stroke="#000000" stroke-width="1"/>
+</g>
+<g id="el-businessContextMap">
+<rect x="181.3" y="101.0" width="158.7" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="178.3" y="98.0" width="158.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="174.3" y="94.0" width="158.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<path d="M177.3 113.0 L183.3 107.0 M179.3 107.0 L183.3 107.0 L183.3 111.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="188.3" y="109.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">businessContextMap</text>
+<rect x="320.0" y="100.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="322.0" y1="105.0" x2="327.0" y2="105.0" stroke="#000000" stroke-width="1"/>
+<line x1="324.5" y1="102.5" x2="324.5" y2="107.5" stroke="#000000" stroke-width="1"/>
+<text x="331.0" y="129.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">0..*</text>
+</g>
+<g id="el-er">
+<rect x="177.3" y="137.0" width="49.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="174.3" y="134.0" width="49.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<path d="M177.3 153.0 L183.3 147.0 M179.3 147.0 L183.3 147.0 L183.3 151.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="188.3" y="149.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">er</text>
+<rect x="210.7" y="140.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="212.7" y1="145.0" x2="217.7" y2="145.0" stroke="#000000" stroke-width="1"/>
+<line x1="215.2" y1="142.5" x2="215.2" y2="147.5" stroke="#000000" stroke-width="1"/>
+</g>
+<g id="el-subIdm">
+<rect x="181.3" y="169.0" width="72.7" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="178.3" y="166.0" width="72.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="174.3" y="162.0" width="72.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="182.3" y="177.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">subIdm</text>
+<rect x="234.0" y="168.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="236.0" y1="173.0" x2="241.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<text x="245.0" y="197.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">0..*</text>
+</g>
+<line x1="249.0" y1="173.0" x2="263.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="263.0" y1="173.0" x2="263.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="263.0" y1="173.0" x2="275.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<g id="group-sequence">
+<polygon points="280.984375,162.0 314.984375,162.0 320.984375,168.0 320.984375,178.0 314.984375,184.0 280.984375,184.0 274.984375,178.0 274.984375,168.0" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="280.984375,162.0 314.984375,162.0 320.984375,168.0 320.984375,178.0 314.984375,184.0 280.984375,184.0 274.984375,178.0 274.984375,168.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="283.0" y1="173.0" x2="313.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<rect x="290.0" y="171.0" width="4" height="4" fill="#000000"/>
+<rect x="296.0" y="171.0" width="4" height="4" fill="#000000"/>
+<rect x="302.0" y="171.0" width="4" height="4" fill="#000000"/>
+<rect x="323.0" y="168.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="325.0" y1="173.0" x2="330.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="332.0" y1="173.0" x2="346.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="346.0" y1="173.0" x2="346.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="346.0" y1="173.0" x2="360.0" y2="173.0" stroke="#000000" stroke-width="1"/>
+<g id="el-idm">
+<rect x="363.0" y="165.0" width="59.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="360.0" y="162.0" width="59.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<path d="M363.0 181.0 L369.0 175.0 M365.0 175.0 L369.0 175.0 L369.0 179.0" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="374.0" y="177.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">idm</text>
+<rect x="406.3" y="168.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="408.3" y1="173.0" x2="413.3" y2="173.0" stroke="#000000" stroke-width="1"/>
+<line x1="410.8" y1="170.5" x2="410.8" y2="175.5" stroke="#000000" stroke-width="1"/>
+</g>
+<g id="constraints-">
+<rect x="89.3" y="202.0" width="93.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<rect x="95.3" y="208.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="97.3" y1="213.0" x2="102.3" y2="213.0" stroke="#000000" stroke-width="1"/>
+<line x1="99.8" y1="210.5" x2="99.8" y2="215.5" stroke="#000000" stroke-width="1"/>
+<text x="108.3" y="217.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">constraints</text>
+</g>
+</svg>

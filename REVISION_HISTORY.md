@@ -14,6 +14,7 @@
 | `er.xsd` | Exchange requirement, information unit |
 | `idm.xsd` | Root IDM element with cross-element constraints |
 | `idm_monolithic_V2.0.xsd` | Monolithic (consolidated) version of the above 6 files |
+| `xml.xsd` | Minimal W3C XML-namespace schema (`xml:lang`), imported by `er.xsd` / monolithic (Rev. 10) |
 
 ---
 
@@ -424,6 +425,120 @@ Adding `targetNamespace` ensures the schema declares elements in the same namesp
 
 ---
 
+## Revision 10 — Information Unit Synonyms (Multilingual)
+
+**Date**: October 9, 2026
+**Affected files**: `er.xsd`, `idm_monolithic_V2.0.xsd`; new `xml.xsd` in `modularized/` and `monolithic/`
+
+### Change
+Added an optional, repeatable `synonym` element to `informationUnit`, carrying alternative names and translations. Each synonym may be tagged with `xml:lang` (BCP 47 language tag). The `name` attribute remains the preferred term.
+
+```xml
+<idm:informationUnit id="IU-012" name="Fire rating" dataType="IfcLabel" isMandatory="true" definition="...">
+  <idm:synonym xml:lang="en">Fire resistance rating</idm:synonym>
+  <idm:synonym xml:lang="en-GB">Period of fire resistance</idm:synonym>
+  <idm:synonym xml:lang="ko">내화등급</idm:synonym>
+  <idm:synonym xml:lang="ja">耐火性能</idm:synonym>
+  <idm:correspondingExternalElement basis="IFC4.3" name="Pset_WallCommon.FireRating"/>
+</idm:informationUnit>
+```
+
+### Specific changes
+- **`informationUnit` sequence**: `description` → **`synonym` (0..*)** → `examples` → `correspondingExternalElement` → `subInformationUnit`
+- **`synonym` content**: new simple type `idm:synonymText` (`xs:normalizedString`, `minLength` 1); optional `xml:lang` attribute
+- **Identity constraint**: `unique_synonymPerLanguage` on `informationUnit` — no duplicate synonym text within the same language. Synonyms without `xml:lang` are not covered (XSD skips absent fields); the authoring app should check those.
+- **`xml:lang` import**: `xs:import` of the XML namespace from a local `xml.xsd` (minimal copy of the W3C schema, `xml:lang` only), so validation works offline. Distribute `xml.xsd` alongside the schema files.
+
+### Reason
+ISO 29481-3 gives an information unit a single `name` and `definition` with no language tag, so an IDM cannot record alternative terms or translations. Synonyms are stored as plain strings on the information unit rather than as links between information units, which avoids having to keep symmetric/transitive links consistent and handles translations in the same structure.
+
+### Compatibility
+Backward compatible: the element is optional, so existing idmXML files remain valid (checked against `samples/IDM/idmNachtragsmeldung_export.xml` and `samples/IDM/KillianReyer/Roundtrip/WindowCostIDM.xml`). Files that use `synonym` will **not** validate against the published ISO 29481-3 ed. 2 schema; this is an extension pending proposal to the standard.
+
+---
+
+## Revision 11 — Constraint Links, Formal Rule Expressions, ER-Tree Identity
+
+**Date**: October 9, 2026
+**Affected files**: `er.xsd`, `idm.xsd`, `idm_monolithic_V2.0.xsd`; new `tests/`
+
+### Changes
+
+**1. `constraint` links (breaking)**
+- The single-valued attributes `associatedInformationUnit` and `associatedBusinessRule` are **removed**.
+- Replaced by repeatable child elements, each with a required `ref` attribute:
+  `associatedBusinessRule` (0..\*) → `associatedInformationUnit` (0..\*) → `description` (0..\*) → `expression` (0..\*).
+- Old files are converted by the importer: `@associatedBusinessRule="X"` → `<associatedBusinessRule ref="X"/>`, same for information units.
+
+**2. New global elements `expression` and `formalRuleLanguage`**
+- `expression`: one formal statement of a constraint. Required first child `formalRuleLanguage`, then either foreign-namespace XML (`xs:any namespace="##other" processContents="lax"`, e.g. RuleML, LegalRuleML), character data / CDATA (`mixed="true"`, e.g. SPARQL, SHACL), or nothing with `@uri` pointing to an external rule file. Optional `@id`, `@uri`.
+- `formalRuleLanguage`: `name` (required), `version`, `publicationYear` (`xs:gYear`), `uri` (`xs:anyURI`) — same pattern as `classification`.
+
+**3. Identity constraints**
+- `er` now has a named type `idm:erType`. The global `er` (top-level ER) declares `key_informationUnitId` over `.//idm:informationUnit` and `keyref_associatedInformationUnitRef` over `.//idm:constraint/idm:associatedInformationUnit`: information unit ids are **unique across the whole ER tree**, and a constraint anywhere in the tree may reference any information unit in it (nested `subInformationUnit`s and sub-ERs included).
+- Sub-ERs use a local `er` declaration of the same type with `key_subErGuid` and `key_subErConstraint` (constraint ids stay unique per ER). Declaring the information-unit key on every nested `er` made libxml2 report ambiguous matches.
+- `idm`: `keyref_associatedBusinessRuleRef` checks `associatedBusinessRule/@ref` for constraints in the top-level ER and in sub-ERs up to 5 levels deep (XSD 1.0 selectors cannot reach arbitrary depth without also entering `subIdm`). Deeper levels are checked by the application.
+- Removed: `keyref_associatedInformationUnit`, `keyref_associatedBusinessRule` (attribute-based).
+
+### Impact on existing files
+- `idmPhase319Phasenabnahme_export.xml` is now **invalid**: the generator writes `id="iu-placeholder"` in every empty leaf ER, which now collides across the ER tree. Fix in `src/utils/idmXmlGenerator.js` (make placeholder ids unique per ER); with unique ids the file validates.
+- Other v2 samples: unchanged results (`WindowCostIDM_Figures.xml` and the legacy `idm-specification.xml` were already invalid for unrelated reasons).
+
+### Tests (`tests/run_tests.py`)
+59 expectation cases plus all v2 sample files, each validated against both the monolithic and modularized schema with three independent XSD 1.0 validators: libxml2 (lxml), Xerces (JDK `javax.xml.validation`, `tests/Validate.java`) and `xmlschema` (Python). A case passes only if all validators agree with the expected result. Groups: sample regression, constraint links and scoping, `expression`/`formalRuleLanguage`, synonyms (Rev. 10), sub-IDM scoping. Run: `python3 tests/run_tests.py <repo root>`; last output in `tests/last_run.txt`.
+
+Documented validator deviations (reported, not counted as failures):
+- libxml2 reports an ambiguous match when a sub-IDM reuses a business rule id of the outer IDM (pre-existing; Xerces and xmlschema accept, as XSD 1.0 specifies).
+- xmlschema (Python) flags duplicate synonyms without `xml:lang`; XSD 1.0 excludes rows with an absent field from `xs:unique`.
+
+---
+
+## Revision 12 — Business Rule Statement (replaces proposition)
+
+**Date**: October 9, 2026
+**Affected files**: `uc.xsd`, `er.xsd` (type rename), `idm_monolithic_V2.0.xsd`, `tests/run_tests.py`; samples in `samples/IDM/businessRule/r12/`
+
+### Change
+The `proposition` wrapper of `businessRule` (which only contained `description` 1..\*) is replaced by a `statement` (the rule in natural language), optional `images`, and an optional `description` for commentary:
+
+```xml
+<!-- Before -->
+<businessRule id="BR-07" name="Fire resistance of load-bearing walls">
+  <proposition>
+    <description title="Load-bearing walls in buildings over 12 storeys shall have a fire resistance of at least 2 hours."/>
+  </proposition>
+  <reference>Building Act Enforcement Decree, Art. 56(1)</reference>
+</businessRule>
+
+<!-- After -->
+<businessRule id="BR-07" name="Fire resistance of load-bearing walls">
+  <statement>Load-bearing walls in buildings over 12 storeys shall have a fire resistance of at least 2 hours.</statement>
+  <images>
+    <image caption="Fire-rated wall section" filePath="img/br07.png"/>
+  </images>
+  <description title="Commentary: applies to walls that carry vertical loads; non-load-bearing partitions are covered by BR-08."/>
+  <reference>Building Act Enforcement Decree, Art. 56(1)</reference>
+</businessRule>
+```
+
+### Specific changes
+- **`businessRule` sequence**: `statement` (1..1) → `images` (0..1) → `description` (0..\*) → `reference` (0..\*)
+- **`statement`**: non-empty text (`idm:nonEmptyText`); one statement per business rule (translations are out of scope)
+- **`images`**: group element (plural per naming convention c) containing `image` (1..\*, global `idm:image`)
+- **`description`**: global `idm:description`, used for commentary on the rule (scope, exceptions, interpretation)
+- **Type rename**: `idm:synonymText` (Rev. 10) → `idm:nonEmptyText`, now shared by `synonym` and `statement` (no effect on instance documents)
+
+### Reason
+"Proposition" was unclear to users, and the wrapper added a nesting level whose only content was `description`, whose text could only go into the `title` attribute. A business rule is now: id, name, statement, optional images, optional commentary, references. The informal rule lives in the UC (`statement`); formal versions live in the ER (`constraint/expression`, Rev. 11).
+
+### Migration
+Importers map `proposition/description/@title` → `statement` text (several descriptions: first → statement, the others → `description`), and images under the old description → `images/image`. Example: `samples/WindowCostIDM_BusinessRules.xml` (Rev. 11) and its converted counterpart `samples/IDM/businessRule/r12/WindowCostIDM_BusinessRules_r12.xml`.
+
+### Tests
+Group F covers statement, images, description, element order, the removed `proposition` and constraint → business rule links. See `tests/last_run.txt` for counts.
+
+---
+
 ## Summary of All Changes
 
 | Rev | Date | Files | Change | Category |
@@ -438,3 +553,6 @@ Adding `targetNamespace` ensures the schema declares elements in the same namesp
 | 7 | Feb 14, 2026 | er.xsd | `description` child in `informationUnit` | Enhancement |
 | 8 | Feb 13, 2026 | uc.xsd, authoring.xsd, er.xsd, idm.xsd | Fixed 5 identity constraint bugs | Bug fix |
 | 9 | Feb 14, 2026 | All | Added `targetNamespace`, `elementFormDefault`, `idm:` prefixes | Namespace fix |
+| 10 | Oct 9, 2026 | er.xsd, monolithic, xml.xsd (new) | `informationUnit/synonym` with `xml:lang`; `unique_synonymPerLanguage` | Enhancement (extension) |
+| 11 | Oct 9, 2026 | er.xsd, idm.xsd, monolithic, tests/ (new) | Constraint link elements (attributes removed); `expression` + `formalRuleLanguage`; ER-tree-wide information-unit identity; `erType`; multi-validator test suite | Enhancement (breaking) |
+| 12 | Oct 9, 2026 | uc.xsd, er.xsd, monolithic, tests | `businessRule`: `statement` + optional `images` and `description` replace `proposition`; `synonymText` → `nonEmptyText` | Enhancement (breaking) |
