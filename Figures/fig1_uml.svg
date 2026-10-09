@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1590" height="2130" viewBox="0 0 1590 2130">
+<title>idmXSD v2.0 logical view (UML class diagram)</title>
+<rect width="1590" height="2130" fill="#ffffff"/>
+<g id="class-idm">
+<rect x="15" y="80" width="110.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="15" y1="102" x2="125.0" y2="102" stroke="#7F9DB9" stroke-width="1"/>
+<text x="70.0" y="96.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">idm</text>
+</g>
+<g id="ext-specId#idm"><rect x="270" y="42" width="73.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="306.6" y="60.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">specId</text>
+</g>
+<g id="ext-authoring#idm"><rect x="270" y="98" width="93.5" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="316.7" y="116.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">authoring</text>
+</g>
+<g id="class-uc">
+<rect x="215" y="210" width="190.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="215" y1="232" x2="405.0" y2="232" stroke="#7F9DB9" stroke-width="1"/>
+<text x="310.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">uc</text>
+</g>
+<g id="class-summary">
+<rect x="520" y="30" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="52" x2="755.0" y2="52" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="46.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">summary</text>
+</g>
+<g id="class-aimAndScope">
+<rect x="520" y="82" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="104" x2="755.0" y2="104" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="98.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">aimAndScope</text>
+</g>
+<g id="class-benefits">
+<rect x="520" y="134" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="156" x2="755.0" y2="156" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="150.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">benefits</text>
+</g>
+<g id="class-limitations">
+<rect x="520" y="186" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="208" x2="755.0" y2="208" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="202.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">limitations</text>
+</g>
+<g id="class-requiredResources">
+<rect x="520" y="238" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="260" x2="755.0" y2="260" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="254.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">requiredResources</text>
+</g>
+<g id="class-requiredCompetencies">
+<rect x="520" y="290" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="312" x2="755.0" y2="312" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="306.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">requiredCompetencies</text>
+</g>
+<g id="class-userDefinedProperty">
+<rect x="520" y="342" width="235.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="364" x2="755.0" y2="364" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="358.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">userDefinedProperty</text>
+<text x="528.0" y="379.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="542.0" y="379.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-scopeKeyword">
+<rect x="520" y="418" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="440" x2="755.0" y2="440" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="434.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">scopeKeyword</text>
+</g>
+<g id="class-benefitKeyword">
+<rect x="520" y="470" width="235.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="492" x2="755.0" y2="492" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="486.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">benefitKeyword</text>
+</g>
+<g id="class-reference">
+<rect x="520" y="522" width="235.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="544" x2="755.0" y2="544" stroke="#7F9DB9" stroke-width="1"/>
+<text x="637.5" y="538.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">reference</text>
+<text x="528.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="542.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">basisStandard: Boolean</text>
+<text x="528.0" y="578.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="542.0" y="578.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">fullCitation: String</text>
+</g>
+<g id="class-language">
+<rect x="850" y="118" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="140" x2="1095.0" y2="140" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="134.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">language</text>
+</g>
+<g id="class-use">
+<rect x="850" y="170" width="245.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="192" x2="1095.0" y2="192" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="186.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">use</text>
+<text x="858.0" y="207.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="207.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-region">
+<rect x="850" y="236" width="245.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="258" x2="1095.0" y2="258" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="252.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">region</text>
+<text x="858.0" y="273.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="273.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">value: String</text>
+<text x="858.0" y="292.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="292.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">type: String</text>
+</g>
+<g id="class-standardProjectStage">
+<rect x="850" y="316" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="338" x2="1095.0" y2="338" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="332.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">standardProjectStage</text>
+</g>
+<g id="class-localProjectStage">
+<rect x="850" y="368" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="390" x2="1095.0" y2="390" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="384.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">localProjectStage</text>
+</g>
+<g id="class-constructionEntity">
+<rect x="850" y="420" width="245.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="442" x2="1095.0" y2="442" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="436.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">constructionEntity</text>
+<text x="858.0" y="457.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="457.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-actor">
+<rect x="850" y="484" width="245.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="506" x2="1095.0" y2="506" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="500.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">actor</text>
+<text x="858.0" y="521.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="521.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="858.0" y="540.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="540.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="858.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">actorType: String</text>
+</g>
+<g id="class-businessRule">
+<rect x="850" y="590" width="245.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="850" y1="612" x2="1095.0" y2="612" stroke="#7F9DB9" stroke-width="1"/>
+<text x="972.5" y="606.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">businessRule</text>
+<text x="858.0" y="627.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="627.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="858.0" y="646.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="646.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="858.0" y="665.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="872.0" y="665.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">statement: String</text>
+</g>
+<g id="class-description#uc">
+<rect x="835" y="26" width="260.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="835" y1="48" x2="1095.0" y2="48" stroke="#7F9DB9" stroke-width="1"/>
+<text x="965.0" y="42.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+<text x="843.0" y="63.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="857.0" y="63.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">title: String</text>
+</g>
+<g id="class-image">
+<rect x="1180" y="22" width="250.0" height="123" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="44" x2="1430.0" y2="44" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="38.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">image</text>
+<text x="1188.0" y="59.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="59.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">caption: String</text>
+<text x="1188.0" y="78.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="78.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">filePath: String</text>
+<text x="1188.0" y="97.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="97.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">mimeType: String</text>
+<text x="1188.0" y="116.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="116.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">encoding: String</text>
+<text x="1188.0" y="135.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="135.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">(content): base64</text>
+</g>
+<g id="class-name">
+<rect x="1180" y="160" width="250.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="182" x2="1430.0" y2="182" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="176.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">name</text>
+</g>
+<g id="class-outcomes">
+<rect x="1180" y="210" width="250.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="232" x2="1430.0" y2="232" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">outcomes</text>
+</g>
+<g id="class-informationRequirements">
+<rect x="1180" y="260" width="250.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="282" x2="1430.0" y2="282" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="276.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">informationRequirements</text>
+<text x="1188.0" y="297.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="297.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedEr: String [0..*] &lt;&lt;FK&gt;&gt;</text>
+</g>
+<g id="class-classification">
+<rect x="1180" y="330" width="250.0" height="104" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="352" x2="1430.0" y2="352" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="346.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">classification</text>
+<text x="1188.0" y="367.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="367.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String</text>
+<text x="1188.0" y="386.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="386.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="1188.0" y="405.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="405.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">version: String</text>
+<text x="1188.0" y="424.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="424.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">publicationYear: gYear</text>
+</g>
+<g id="class-subActor">
+<rect x="1180" y="500" width="250.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="522" x2="1430.0" y2="522" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="516.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">subActor</text>
+<text x="1188.0" y="537.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="537.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="1188.0" y="556.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="556.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-images#br">
+<rect x="1180" y="590" width="250.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="612" x2="1430.0" y2="612" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="606.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">images</text>
+</g>
+<g id="ext-description#out"><rect x="1465" y="222" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1516.1" y="240.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-image#br"><rect x="1475" y="596" width="71.0" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1510.5" y="614.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">image</text>
+</g>
+<g id="ext-description#br"><rect x="1225" y="672" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1276.1" y="690.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<path d="M125.0 92.0 L175.0 92.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="125.0,92.0 134.0,99.0 143.0,92.0 134.0,85.0" fill="#404040" stroke="#404040" stroke-width="1"/>
+<text x="147.0" y="88.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M175.0 92.0 L175.0 1168.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M175.0 92.0 L205.0 92.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M205.0 55.0 L205.0 111.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M205.0 55.0 L270.0 55.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="264.0" y="50.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M205.0 111.0 L270.0 111.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="264.0" y="106.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M175.0 228.0 L215.0 228.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="209.0" y="223.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M40.0 116.0 L40.0 142.0 L100.0 142.0 L100.0 116.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="40.0,116.0 33.0,125.0 40.0,134.0 47.0,125.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="107.0" y="130.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="23.0" y="138.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="70.0" y="160.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subIdm</text>
+<path d="M405.0 220.0 L470.0 220.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="410.0" y="215.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M470.0 41.0 L470.0 552.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 41.0 L520.0 41.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 93.0 L520.0 93.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 145.0 L520.0 145.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 197.0 L520.0 197.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 249.0 L520.0 249.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 301.0 L520.0 301.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 353.0 L520.0 353.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 429.0 L520.0 429.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 481.0 L520.0 481.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M470.0 533.0 L520.0 533.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="514.0" y="37.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<text x="514.0" y="89.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<text x="514.0" y="141.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<text x="514.0" y="193.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<text x="514.0" y="245.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<text x="514.0" y="297.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<text x="514.0" y="349.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<text x="514.0" y="425.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<text x="514.0" y="477.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<text x="514.0" y="529.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M755.0 41.0 L790.0 41.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="37.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 93.0 L790.0 93.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="89.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 145.0 L790.0 145.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="141.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 197.0 L790.0 197.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="193.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 249.0 L790.0 249.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="245.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 301.0 L790.0 301.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="297.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M755.0 353.0 L790.0 353.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="760.0" y="349.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M790.0 49.5 L790.0 353.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M790.0 49.5 L835.0 49.5" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="829.0" y="44.5" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M1095.0 49.5 L1180.0 49.5" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="44.5" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1174.0" y="44.5" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M470.0 403.0 L815.0 403.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M815.0 129.0 L815.0 601.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M815.0 129.0 L850.0 129.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="125.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M815.0 181.0 L850.0 181.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="177.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M815.0 247.0 L850.0 247.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="243.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M815.0 327.0 L850.0 327.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="323.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M815.0 379.0 L850.0 379.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="375.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M815.0 431.0 L850.0 431.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="427.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M815.0 495.0 L850.0 495.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="491.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M815.0 601.0 L850.0 601.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="844.0" y="597.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1095.0 327.0 L1140.0 327.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="323.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1095.0 379.0 L1140.0 379.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="375.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1140.0 171.0 L1180.0 171.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1174.0" y="167.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M1140.0 221.0 L1180.0 221.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1174.0" y="217.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M1140.0 271.0 L1180.0 271.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1174.0" y="267.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M1140.0 171.0 L1140.0 379.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M1095.0 200.0 L1160.0 200.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="196.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1095.0 398.0 L1160.0 398.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="394.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1095.0 450.0 L1160.0 450.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="446.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1095.0 506.0 L1160.0 506.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="502.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1160.0 200.0 L1160.0 506.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M1160.0 370.0 L1180.0 370.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1174.0" y="366.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M1430.0 530.0 L1450.0 530.0 L1450.0 390.0 L1430.0 390.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1434.0" y="526.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1434.0" y="386.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..1</text>
+<path d="M1095.0 552.0 L1180.0 552.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1174.0" y="548.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<text x="1100.0" y="548.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1430.0 221.0 L1450.0 221.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1434.0" y="217.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1430.0 271.0 L1450.0 271.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1434.0" y="267.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M1450.0 221.0 L1450.0 271.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M1450.0 235.0 L1465.0 235.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1469.0" y="265.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..*</text>
+<path d="M1095.0 601.0 L1180.0 601.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="597.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1174.0" y="597.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M1430.0 601.0 L1475.0 601.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1434.0" y="597.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1471.0" y="616.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M1095.0 660.0 L1150.0 660.0 L1150.0 685.0 L1225.0 685.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1100.0" y="656.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1219.0" y="680.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M640.0 588.0 L640.0 680.0 L1000.0 680.0 L1000.0 675.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="634.0" y="602.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<text x="1005.0" y="689.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M365.0 246.0 L365.0 272.0 L427.0 272.0 L427.0 236.0 L405.0 236.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="365.0,246.0 358.0,255.0 365.0,264.0 372.0,255.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="369.0" y="266.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="408.0" y="232.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="385.0" y="290.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subUc</text>
+<g id="class-businessContextMap">
+<rect x="215" y="730" width="190.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="215" y1="752" x2="405.0" y2="752" stroke="#7F9DB9" stroke-width="1"/>
+<text x="310.0" y="746.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">businessContextMap</text>
+</g>
+<g id="ext-specId#bcm"><rect x="470" y="705" width="73.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="506.6" y="723.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">specId</text>
+</g>
+<g id="ext-authoring#bcm"><rect x="470" y="748" width="93.5" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="516.7" y="766.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">authoring</text>
+</g>
+<g id="class-pm">
+<rect x="520" y="830" width="120.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="852" x2="640.0" y2="852" stroke="#7F9DB9" stroke-width="1"/>
+<text x="580.0" y="846.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">pm</text>
+</g>
+<g id="class-im">
+<rect x="520" y="990" width="120.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="1012" x2="640.0" y2="1012" stroke="#7F9DB9" stroke-width="1"/>
+<text x="580.0" y="1006.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">im</text>
+</g>
+<g id="class-dataObjectAndEr">
+<rect x="760" y="720" width="300.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="760" y1="742" x2="1060.0" y2="742" stroke="#7F9DB9" stroke-width="1"/>
+<text x="910.0" y="736.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">dataObjectAndEr</text>
+<text x="768.0" y="757.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="757.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="768.0" y="776.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="776.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedDataObject: String &lt;&lt;FK&gt;&gt;</text>
+<text x="768.0" y="795.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="795.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedEr: String &lt;&lt;FK&gt;&gt;</text>
+</g>
+<g id="class-shapeAndActor">
+<rect x="760" y="810" width="300.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="760" y1="832" x2="1060.0" y2="832" stroke="#7F9DB9" stroke-width="1"/>
+<text x="910.0" y="826.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">shapeAndActor</text>
+<text x="768.0" y="847.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="847.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="768.0" y="866.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="866.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedShape: String &lt;&lt;FK&gt;&gt;</text>
+<text x="768.0" y="885.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="885.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedActor: String &lt;&lt;FK&gt;&gt;</text>
+</g>
+<g id="class-diagram">
+<rect x="760" y="902" width="300.0" height="142" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="760" y1="924" x2="1060.0" y2="924" stroke="#7F9DB9" stroke-width="1"/>
+<text x="910.0" y="918.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">diagram</text>
+<text x="768.0" y="939.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="939.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="768.0" y="958.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="958.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="768.0" y="977.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="977.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">notation: String</text>
+<text x="768.0" y="996.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="996.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">diagramFilePath: String</text>
+<text x="768.0" y="1015.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="1015.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">imageFilePath: String</text>
+<text x="768.0" y="1034.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="782.0" y="1034.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">diagramContent: String</text>
+</g>
+<g id="class-tm">
+<rect x="760" y="1067" width="120.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="760" y1="1089" x2="880.0" y2="1089" stroke="#7F9DB9" stroke-width="1"/>
+<text x="820.0" y="1083.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">tm</text>
+</g>
+<g id="class-messageAndEr">
+<rect x="1120" y="1060" width="310.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1120" y1="1082" x2="1430.0" y2="1082" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1275.0" y="1076.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">messageAndEr</text>
+<text x="1128.0" y="1097.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1142.0" y="1097.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="1128.0" y="1116.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1142.0" y="1116.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedMessage: String &lt;&lt;FK&gt;&gt;</text>
+<text x="1128.0" y="1135.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1142.0" y="1135.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedEr: String &lt;&lt;FK&gt;&gt;</text>
+</g>
+<g id="ext-description#diag"><rect x="1150" y="949" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1201.1" y="967.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<path d="M175.0 748.0 L215.0 748.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="209.0" y="743.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M405.0 740.0 L440.0 740.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="410.0" y="735.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M440.0 718.0 L440.0 1008.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M440.0 718.0 L470.0 718.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="713.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M440.0 761.0 L470.0 761.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="756.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M440.0 848.0 L520.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M440.0 1008.0 L520.0 1008.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="446.0" y="843.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..* (choice)</text>
+<path d="M365.0 766.0 L365.0 792.0 L421.0 792.0 L421.0 756.0 L405.0 756.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="365.0,766.0 358.0,775.0 365.0,784.0 372.0,775.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="369.0" y="786.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="407.0" y="770.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="365.0" y="810.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subBusinessContextMap</text>
+<path d="M640.0 848.0 L715.0 848.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="645.0" y="843.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M715.0 762.5 L715.0 922.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M715.0 762.5 L760.0 762.5" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="754.0" y="757.5" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M715.0 852.5 L760.0 852.5" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="754.0" y="847.5" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M715.0 922.0 L760.0 922.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="754.0" y="917.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M560.0 866.0 L560.0 892.0 L656.0 892.0 L656.0 858.0 L640.0 858.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="560.0,866.0 553.0,875.0 560.0,884.0 567.0,875.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="564.0" y="886.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="642.0" y="874.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="560.0" y="910.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subPm</text>
+<path d="M640.0 1008.0 L735.0 1008.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="645.0" y="1003.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M735.0 1022.0 L735.0 1085.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M735.0 1022.0 L760.0 1022.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="754.0" y="1017.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M735.0 1085.0 L760.0 1085.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="754.0" y="1080.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M820.0 1067.0 L820.0 1044.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="825.0" y="1063.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="815.0" y="1058.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M880.0 1085.0 L1120.0 1085.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="885.0" y="1080.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1114.0" y="1080.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1060.0 962.0 L1150.0 962.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1065.0" y="957.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1144.0" y="957.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<g id="class-er">
+<rect x="215" y="1150" width="190.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="215" y1="1172" x2="405.0" y2="1172" stroke="#7F9DB9" stroke-width="1"/>
+<text x="310.0" y="1166.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">er</text>
+</g>
+<g id="ext-specId#er"><rect x="470" y="1132" width="73.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="506.6" y="1150.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">specId</text>
+</g>
+<g id="ext-authoring#er"><rect x="470" y="1170" width="93.5" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="516.7" y="1188.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">authoring</text>
+</g>
+<g id="class-informationUnit">
+<rect x="470" y="1220" width="245.0" height="123" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="470" y1="1242" x2="715.0" y2="1242" stroke="#7F9DB9" stroke-width="1"/>
+<text x="592.5" y="1236.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">informationUnit</text>
+<text x="478.0" y="1257.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1257.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="478.0" y="1276.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1276.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="478.0" y="1295.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1295.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">dataType: String</text>
+<text x="478.0" y="1314.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1314.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">isMandatory: Boolean</text>
+<text x="478.0" y="1333.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1333.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">definition: String</text>
+</g>
+<g id="class-constraint">
+<rect x="470" y="1395" width="330.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="470" y1="1417" x2="800.0" y2="1417" stroke="#7F9DB9" stroke-width="1"/>
+<text x="635.0" y="1411.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">constraint</text>
+<text x="478.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="478.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedBusinessRule: String [0..*] &lt;&lt;FK&gt;&gt;</text>
+<text x="478.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedInformationUnit: String [0..*] &lt;&lt;FK&gt;&gt;</text>
+</g>
+<g id="class-correspondingMvd">
+<rect x="470" y="1550" width="245.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="470" y1="1572" x2="715.0" y2="1572" stroke="#7F9DB9" stroke-width="1"/>
+<text x="592.5" y="1566.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">correspondingMvd</text>
+<text x="478.0" y="1587.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1587.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">basis: String</text>
+<text x="478.0" y="1606.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="492.0" y="1606.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-synonym">
+<rect x="870" y="1130" width="245.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="870" y1="1152" x2="1115.0" y2="1152" stroke="#7F9DB9" stroke-width="1"/>
+<text x="992.5" y="1146.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">synonym</text>
+<text x="878.0" y="1167.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1167.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">(content): String</text>
+<text x="878.0" y="1186.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1186.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">xml:lang: language</text>
+</g>
+<g id="class-examples">
+<rect x="870" y="1210" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="870" y1="1232" x2="1115.0" y2="1232" stroke="#7F9DB9" stroke-width="1"/>
+<text x="992.5" y="1226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">examples</text>
+</g>
+<g id="class-correspondingExternalElement">
+<rect x="870" y="1265" width="245.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="870" y1="1287" x2="1115.0" y2="1287" stroke="#7F9DB9" stroke-width="1"/>
+<text x="992.5" y="1281.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">correspondingExternalElement</text>
+<text x="878.0" y="1302.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1302.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">basis: String</text>
+<text x="878.0" y="1321.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1321.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-expression">
+<rect x="870" y="1395" width="245.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="870" y1="1417" x2="1115.0" y2="1417" stroke="#7F9DB9" stroke-width="1"/>
+<text x="992.5" y="1411.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">expression</text>
+<text x="878.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String</text>
+<text x="878.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">uri: anyURI</text>
+<text x="878.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="892.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">(rule content): any [0..*]</text>
+</g>
+<g id="class-formalRuleLanguage">
+<rect x="1180" y="1395" width="250.0" height="104" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1180" y1="1417" x2="1430.0" y2="1417" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1305.0" y="1411.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">formalRuleLanguage</text>
+<text x="1188.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="1432.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="1188.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="1451.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">version: String</text>
+<text x="1188.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">publicationYear: gYear</text>
+<text x="1188.0" y="1489.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1202.0" y="1489.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">uri: anyURI</text>
+</g>
+<g id="ext-businessRule#er"><rect x="870" y="1505" width="113.0" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="926.5" y="1523.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">businessRule</text>
+</g>
+<g id="ext-description#er"><rect x="470" y="1640" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="521.1" y="1658.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-description#iu"><rect x="745" y="1307" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="796.1" y="1325.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-description#c"><rect x="520" y="1502" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="571.1" y="1520.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-description#mvd"><rect x="775" y="1570" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="826.1" y="1588.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-description#ex"><rect x="1160" y="1215" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1211.1" y="1233.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<g id="ext-description#cee"><rect x="1160" y="1280" width="102.2" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1211.1" y="1298.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">description</text>
+</g>
+<path d="M175.0 1168.0 L215.0 1168.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="209.0" y="1163.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M405.0 1160.0 L440.0 1160.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="410.0" y="1155.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M440.0 1145.0 L440.0 1653.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M440.0 1145.0 L470.0 1145.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1140.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M440.0 1183.0 L470.0 1183.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1178.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M440.0 1231.0 L470.0 1231.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1227.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000"></text>
+<text x="444.0" y="1227.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..* (choice)</text>
+<path d="M440.0 1406.0 L470.0 1406.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000"></text>
+<text x="444.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<path d="M440.0 1561.0 L470.0 1561.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1557.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000"></text>
+<text x="444.0" y="1557.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<path d="M440.0 1653.0 L470.0 1653.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="464.0" y="1648.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M365.0 1186.0 L365.0 1212.0 L421.0 1212.0 L421.0 1176.0 L405.0 1176.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="365.0,1186.0 358.0,1195.0 365.0,1204.0 372.0,1195.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="369.0" y="1206.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="407.0" y="1190.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="365.0" y="1230.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subEr</text>
+<path d="M715.0 1231.0 L840.0 1231.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="720.0" y="1227.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M840.0 1141.0 L840.0 1276.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M840.0 1141.0 L870.0 1141.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="864.0" y="1137.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M840.0 1221.0 L870.0 1221.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="864.0" y="1217.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M840.0 1276.0 L870.0 1276.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="864.0" y="1272.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M530.0 1220.0 L530.0 1202.0 L731.0 1202.0 L731.0 1270.0 L715.0 1270.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="530.0,1220.0 537.0,1211.0 530.0,1202.0 523.0,1211.0" fill="#ffffff" stroke="#404040" stroke-width="1"/>
+<text x="534.0" y="1214.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="717.0" y="1286.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<text x="655.0" y="1196.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">subInformationUnit</text>
+<path d="M800.0 1406.0 L870.0 1406.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="805.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="864.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1115.0 1406.0 L1180.0 1406.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1120.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1174.0" y="1402.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M800.0 1448.0 L835.0 1448.0 L835.0 1518.0 L870.0 1518.0" fill="none" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4"/>
+<path d="M859.9 1513.7 L870.0 1518.0 L859.9 1522.3" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="840.0" y="1512.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="start" font-style="italic" fill="#000000">«ref»</text>
+<path d="M470.0 1467.0 L456.0 1467.0 L456.0 1355.0 L500.0 1355.0 L500.0 1343.0" fill="none" stroke="#000000" stroke-width="1.1" stroke-dasharray="6 4"/>
+<path d="M495.7 1353.1 L500.0 1343.0 L504.3 1353.1" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="506.0" y="1353.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="start" font-style="italic" fill="#000000">«ref»</text>
+<path d="M715.0 1320.0 L745.0 1320.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="719.0" y="1316.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="741.0" y="1335.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M571.1 1480.0 L571.1 1502.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="576.1" y="1493.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="566.1" y="1499.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M715.0 1583.0 L775.0 1583.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="719.0" y="1579.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="771.0" y="1598.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1115.0 1228.0 L1160.0 1228.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1119.0" y="1224.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1156.0" y="1243.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1115.0 1298.0 L1160.0 1298.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1119.0" y="1294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="1156.0" y="1313.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<rect x="15" y="1720" width="1560" height="400" fill="none" stroke="#000000" stroke-width="1.2"/>
+<line x1="1230" y1="1720" x2="1230" y2="2120" stroke="#000000" stroke-width="1.2"/>
+<g id="class-authoring">
+<rect x="520" y="1730" width="190.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="520" y1="1752" x2="710.0" y2="1752" stroke="#7F9DB9" stroke-width="1"/>
+<text x="615.0" y="1746.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">authoring</text>
+<text x="528.0" y="1767.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="542.0" y="1767.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">copyright: String</text>
+</g>
+<g id="class-changeLog">
+<rect x="30" y="1840" width="270.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="30" y1="1862" x2="300.0" y2="1862" stroke="#7F9DB9" stroke-width="1"/>
+<text x="165.0" y="1856.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">changeLog</text>
+<text x="38.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="52.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+<text x="38.0" y="1896.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="52.0" y="1896.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">changeDateTime: DateTime</text>
+<text x="38.0" y="1915.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="52.0" y="1915.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">changeSummary: String</text>
+</g>
+<g id="class-author">
+<rect x="450" y="1840" width="215.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="450" y1="1862" x2="665.0" y2="1862" stroke="#7F9DB9" stroke-width="1"/>
+<text x="557.5" y="1856.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">author</text>
+<text x="458.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="472.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">id: String &lt;&lt;PK&gt;&gt;</text>
+</g>
+<g id="class-committee">
+<rect x="790" y="1840" width="170.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="790" y1="1862" x2="960.0" y2="1862" stroke="#7F9DB9" stroke-width="1"/>
+<text x="875.0" y="1856.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">committee</text>
+<text x="798.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="812.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-publisher">
+<rect x="985" y="1840" width="175.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="985" y1="1862" x2="1160.0" y2="1862" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1072.5" y="1856.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">publisher</text>
+<text x="993.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1007.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+<text x="993.0" y="1896.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1007.0" y="1896.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">location: String</text>
+</g>
+<g id="class-change">
+<rect x="30" y="2010" width="270.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="30" y1="2032" x2="300.0" y2="2032" stroke="#7F9DB9" stroke-width="1"/>
+<text x="165.0" y="2026.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">change</text>
+<text x="38.0" y="2047.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="52.0" y="2047.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">changedElement: String</text>
+<text x="38.0" y="2066.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="52.0" y="2066.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">changedFrom: String</text>
+</g>
+<g id="class-person">
+<rect x="330" y="1965" width="210.0" height="123" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="330" y1="1987" x2="540.0" y2="1987" stroke="#7F9DB9" stroke-width="1"/>
+<text x="435.0" y="1981.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">person</text>
+<text x="338.0" y="2002.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="352.0" y="2002.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">firstName: String</text>
+<text x="338.0" y="2021.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="352.0" y="2021.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">middleName: String</text>
+<text x="338.0" y="2040.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="352.0" y="2040.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">lastName: String</text>
+<text x="338.0" y="2059.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="352.0" y="2059.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">emailAddress: String</text>
+<text x="338.0" y="2078.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="352.0" y="2078.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">affiliation: String</text>
+</g>
+<g id="class-organization">
+<rect x="570" y="1965" width="210.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="570" y1="1987" x2="780.0" y2="1987" stroke="#7F9DB9" stroke-width="1"/>
+<text x="675.0" y="1981.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">organization</text>
+<text x="578.0" y="2002.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="592.0" y="2002.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
+</g>
+<g id="class-specId">
+<rect x="1255" y="1770" width="285.0" height="218" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
+<line x1="1255" y1="1792" x2="1540.0" y2="1792" stroke="#7F9DB9" stroke-width="1"/>
+<text x="1397.5" y="1786.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">specId</text>
+<text x="1263.0" y="1807.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1807.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">guid: String &lt;&lt;PK&gt;&gt;</text>
+<text x="1263.0" y="1826.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1826.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">shortTitle: String</text>
+<text x="1263.0" y="1845.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1845.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">localShortTitle: String</text>
+<text x="1263.0" y="1864.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1864.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">fullTitle: String</text>
+<text x="1263.0" y="1883.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1883.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">subTitle: String</text>
+<text x="1263.0" y="1902.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1902.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">idmCode: String</text>
+<text x="1263.0" y="1921.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1921.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">localCode: String</text>
+<text x="1263.0" y="1940.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1940.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">documentStatus: String</text>
+<text x="1263.0" y="1959.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1959.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">localDocumentStatus: String</text>
+<text x="1263.0" y="1978.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
+<text x="1277.0" y="1978.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">version: String</text>
+</g>
+<path d="M615.0 1777.0 L615.0 1812.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="620.0" y="1791.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M165.0 1812.0 L1072.5 1812.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M165.0 1812.0 L165.0 1840.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="159.0" y="1835.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M557.5 1812.0 L557.5 1840.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="551.5" y="1835.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M875.0 1812.0 L875.0 1840.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="869.0" y="1835.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M1072.5 1812.0 L1072.5 1840.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="1066.5" y="1835.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..1</text>
+<path d="M300.0 1872.0 L450.0 1872.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="305.0" y="1867.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..*  changedBy</text>
+<text x="444.0" y="1867.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1</text>
+<path d="M665.0 1858.0 L790.0 1858.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="670.0" y="1853.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..*  leader</text>
+<text x="784.0" y="1853.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M665.0 1882.0 L790.0 1882.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="670.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1..*  member</text>
+<text x="784.0" y="1877.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">0..*</text>
+<path d="M557.5 1887.0 L557.5 1942.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="562.5" y="1901.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<path d="M435.0 1942.0 L675.0 1942.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<path d="M435.0 1942.0 L435.0 1965.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="429.0" y="1960.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<path d="M675.0 1942.0 L675.0 1965.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<text x="669.0" y="1960.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="end" fill="#000000">1..*</text>
+<text x="567.5" y="1958.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="start" font-style="italic" fill="#000000">{choice}</text>
+<path d="M165.0 1925.0 L165.0 2010.0" fill="none" stroke="#000000" stroke-width="1.1"/>
+<polygon points="165.0,1925.0 158.0,1934.0 165.0,1943.0 172.0,1934.0" fill="#404040" stroke="#404040" stroke-width="1"/>
+<text x="173.0" y="1955.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">1</text>
+<text x="173.0" y="2004.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">0..*</text>
+<g id="ext-legend"><rect x="1180" y="1640" width="46.0" height="26" rx="6" ry="6" fill="#FFD966" stroke="#7F6000" stroke-width="1"/>
+<text x="1203.0" y="1658.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000"> </text>
+</g>
+<text x="1235.0" y="1658.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">: Classes specified elsewhere in the diagram</text>
+<text x="1180.0" y="1686.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="14" text-anchor="start" fill="#000000">&lt;&lt;FK&gt;&gt;: reference by identifier (ref attribute)</text>
+</svg>

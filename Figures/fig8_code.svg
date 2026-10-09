@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="480" viewBox="0 0 1460 480">
+<title>IDM code</title>
+<rect width="1460" height="480" fill="#ffffff"/>
+<text x="722.0" y="50.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="22" text-anchor="middle" fill="#000000">IDM specification code</text>
+<path d="M10 94 Q10 84 20 84 L713.0 84 Q723.0 84 723.0 74 Q723.0 84 733.0 84 L1426 84 Q1436 84 1436 94" fill="none" stroke="#4A6FA5" stroke-width="1.5"/>
+<text x="435.0" y="133.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="22" text-anchor="middle" fill="#000000">IDM classification code</text>
+<path d="M12 172 Q12 162 22 162 L425.0 162 Q435.0 162 435.0 152 Q435.0 162 445.0 162 L848 162 Q858 162 858 172" fill="none" stroke="#4A6FA5" stroke-width="1.5"/>
+<text x="1150.0" y="133.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="22" text-anchor="middle" fill="#000000">Individual-specification-oriented information</text>
+<path d="M878 172 Q878 162 888 162 L1147.0 162 Q1157.0 162 1157.0 152 Q1157.0 162 1167.0 162 L1426 162 Q1436 162 1436 172" fill="none" stroke="#4A6FA5" stroke-width="1.5"/>
+<g id="part-1"><rect x="12" y="236" width="133" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="78.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Specification</text>
+<text x="78.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Type</text>
+<text x="78.5" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 29481-1</text>
+</g>
+<line x1="147" y1="314" x2="160" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-2"><rect x="162" y="236" width="118" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="221.0" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Primary</text>
+<text x="221.0" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Use</text>
+<text x="221.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 29481-1</text>
+</g>
+<line x1="282" y1="314" x2="300" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-3"><rect x="302" y="236" width="153" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="378.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Project Phase</text>
+<text x="378.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">(Start)</text>
+<text x="378.5" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 22263</text>
+</g>
+<line x1="457" y1="314" x2="468" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-4"><rect x="470" y="236" width="152" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="546.0" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Project Phase</text>
+<text x="546.0" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">(End)</text>
+<text x="546.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 22263</text>
+</g>
+<line x1="624" y1="314" x2="638" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-5"><rect x="640" y="236" width="102" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="691.0" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Primary</text>
+<text x="691.0" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Region</text>
+<text x="691.0" y="192.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 3166-1 Country</text>
+<text x="691.0" y="209.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">or a user-defined</text>
+<text x="691.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">region</text>
+</g>
+<line x1="744" y1="314" x2="753" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-6"><rect x="755" y="236" width="103" height="80" rx="12" ry="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="806.5" y="282.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Language</text>
+<text x="806.5" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 639-1</text>
+</g>
+<line x1="860" y1="314" x2="891" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-7"><rect x="893" y="236" width="129" height="80" rx="12" ry="12" fill="#DEEBF7" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="957.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Short title</text>
+<text x="957.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">in English</text>
+</g>
+<line x1="1024" y1="314" x2="1038" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-8"><rect x="1040" y="236" width="128" height="80" rx="12" ry="12" fill="#DEEBF7" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="1104.0" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Author or</text>
+<text x="1104.0" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">committee</text>
+<text x="1104.0" y="192.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">Last name of the</text>
+<text x="1104.0" y="209.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">leading author or a</text>
+<text x="1104.0" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">short committee name</text>
+</g>
+<line x1="1170" y1="314" x2="1183" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-9"><rect x="1185" y="236" width="93" height="80" rx="12" ry="12" fill="#DEEBF7" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="1231.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Initial</text>
+<text x="1231.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Date</text>
+<text x="1231.5" y="226.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="13" text-anchor="middle" fill="#2F5597">ISO 8601-1</text>
+</g>
+<line x1="1280" y1="314" x2="1293" y2="314" stroke="#7F7F7F" stroke-width="2"/>
+<g id="part-10"><rect x="1295" y="236" width="143" height="80" rx="12" ry="12" fill="#DEEBF7" stroke="#7F7F7F" stroke-width="2.5"/>
+<text x="1366.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Document</text>
+<text x="1366.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">status</text>
+</g>
+<text x="178.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="32" text-anchor="end" fill="#2F5597">e.g.</text>
+<text x="190.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="32" text-anchor="start" fill="#2F5597">er_AuthorEstimate_BR_DE_NOR_EN_CostEstimatipmforPC_bSNoric_20200317_WD</text>
+<line x1="78.5" y1="318" x2="203.5" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="221.0" y1="318" x2="334.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="378.5" y1="318" x2="469.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="546.0" y1="318" x2="520.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="691.0" y1="318" x2="583.9" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="806.5" y1="318" x2="647.6" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="957.5" y1="318" x2="818.6" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1104.0" y1="318" x2="1021.9" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1231.5" y1="318" x2="1153.3" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1366.5" y1="318" x2="1258.2" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>

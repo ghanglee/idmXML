@@ -3,71 +3,168 @@
 	xmlns:idm="https://standards.iso.org/iso/29481/-3/ed-2/en"
 	targetNamespace="https://standards.iso.org/iso/29481/-3/ed-2/en"
 	elementFormDefault="qualified">
+	<!-- Revision 10: xml:lang support for informationUnit/synonym.
+	     xml.xsd is a minimal local copy of the W3C schema for the XML namespace
+	     (only xml:lang), so validation works offline. -->
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 	<xs:include schemaLocation="specId.xsd"/>
 	<xs:include schemaLocation="authoring.xsd"/>
 	<xs:include schemaLocation="uc.xsd"/>
 	<xs:include schemaLocation="businessContextMap.xsd"/>
-	<xs:element name="er">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="idm:specId" minOccurs="1" maxOccurs="1"/>
-				<xs:element ref="idm:authoring" minOccurs="1" maxOccurs="1"/>
-				<xs:element name="constraint" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
-						</xs:sequence>
-						<xs:attribute name="id" type="xs:string" use="required"/>
-						<xs:attribute name="associatedInformationUnit" use="optional"/>
-						<xs:attribute name="associatedBusinessRule" use="optional"/>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="correspondingMvd" minOccurs="0" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
-						</xs:sequence>
-						<xs:attribute name="basis" type="xs:string" use="required"/>
-						<xs:attribute name="name" type="xs:string" use="required"/>
-					</xs:complexType>
-				</xs:element>
-				<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
-<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
-				<xs:choice minOccurs="1" maxOccurs="unbounded">
-				    <xs:element ref="idm:informationUnit"/>
-				    <xs:element name="subEr">
-			        	<xs:complexType>
-				            <xs:sequence>
-				                <xs:element ref="idm:er"/>
-				            </xs:sequence>
-				        </xs:complexType>
-				    </xs:element>
-				</xs:choice>
-<!--ISO 29481-3 Clause 10. An ER shall not be empty and shall have at least one information unit or a sub-ER. -->
-			</xs:sequence>
-		</xs:complexType>
+	<!-- Revision 10/12: non-empty text for informationUnit/synonym and businessRule/statement (named nonEmptyText in Rev 10) -->
+	<xs:simpleType name="nonEmptyText">
+		<xs:restriction base="xs:normalizedString">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="er" type="idm:erType">
 		<xs:key name="key_erGuid">
 			<xs:selector xpath="./idm:specId"/>
 			<xs:field xpath="@guid"/>
 		</xs:key>
+		<!-- Revision 11: information unit ids are unique across the whole ER tree
+		     (top-level er, nested subInformationUnits and all sub-ERs), and a constraint anywhere
+		     in the tree may reference any information unit in the tree. -->
 		<xs:key name="key_informationUnitId">
-			<xs:selector xpath="./idm:informationUnit"/>
+			<xs:selector xpath=".//idm:informationUnit"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
 		<xs:key name="key_constraint">
 			<xs:selector xpath="./idm:constraint"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
-		<xs:keyref name="keyref_associatedInformationUnit" refer="idm:key_informationUnitId">
-			<xs:selector xpath="./idm:constraint"/>
-			<xs:field xpath="@associatedInformationUnit"/>
+		<xs:keyref name="keyref_associatedInformationUnitRef" refer="idm:key_informationUnitId">
+			<xs:selector xpath=".//idm:constraint/idm:associatedInformationUnit"/>
+			<xs:field xpath="@ref"/>
 		</xs:keyref>
 	</xs:element>
+
+	<xs:complexType name="erType">
+		<xs:sequence>
+			<xs:element ref="idm:specId" minOccurs="1" maxOccurs="1"/>
+			<xs:element ref="idm:authoring" minOccurs="1" maxOccurs="1"/>
+			<!-- Constraint (Revision 11)
+			     A constraint is one logical restriction derived from zero or more business rules
+			     and applied to zero or more information units. It may be stated informally
+			     (description) and/or formally in one or more rule languages (expression).
+			     Equivalent formal expressions of the same restriction belong to the same constraint;
+			     a business rule that decomposes into separate checks is linked from several constraints.
+			     The ISO 29481-3 ed.2 attributes associatedInformationUnit / associatedBusinessRule
+			     (single-valued) are replaced by the repeatable child elements below; importers map
+			     the old attributes to the new elements. -->
+			<xs:element name="constraint" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="associatedBusinessRule" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<!-- Refers to uc/businessRule/@id of the enclosing idm (keyref_associatedBusinessRuleRef) -->
+								<xs:attribute name="ref" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="associatedInformationUnit" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<!-- Refers to informationUnit/@id anywhere in this ER's subtree,
+								     including subInformationUnits and sub-ERs (keyref_associatedInformationUnitRef) -->
+								<xs:attribute name="ref" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<!-- Informal statement of the constraint -->
+						<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
+						<!-- Formal statements of the constraint, one rule language each -->
+						<xs:element ref="idm:expression" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="id" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="correspondingMvd" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+					<xs:attribute name="basis" type="xs:string" use="required"/>
+					<xs:attribute name="name" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
+<!--ISO 29481-3 Clause 10. An ER shall have at least one information unit or a sub-ER.
+    Additionally, a bottom-level ER (an ER without any sub-ER) shall have at least one information unit.
+    Without this rule, it is possible to build an ER hierarchy that contains no information units at all
+    — every ER could simply point to sub-ERs, with none of them actually defining any information to exchange.
+    This secondary rule is enforced at the application level, as XSD cannot express conditional constraints. -->
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+			    <xs:element ref="idm:informationUnit"/>
+				<xs:element name="subEr">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- Revision 11: sub-ERs use a local er declaration of the same type.
+							     Information-unit identity is checked once, on the top-level er, across
+							     the whole ER tree (key_informationUnitId); repeating that key on every
+							     nested er makes some validators (libxml2) report ambiguous matches. -->
+							<xs:element name="er" type="idm:erType">
+								<xs:key name="key_subErGuid">
+									<xs:selector xpath="./idm:specId"/>
+									<xs:field xpath="@guid"/>
+								</xs:key>
+								<xs:key name="key_subErConstraint">
+									<xs:selector xpath="./idm:constraint"/>
+									<xs:field xpath="@id"/>
+								</xs:key>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+<!--ISO 29481-3 Clause 10. An ER shall have at least one information unit or a sub-ER. -->
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ============================================================== -->
+	<!-- Formal rule expression (Revision 11)                            -->
+	<!-- ============================================================== -->
+	<!-- One formal statement of a constraint in a single rule language.
+	     Content, in addition to formalRuleLanguage, is one of:
+	     - XML-based rule language markup in its own namespace (e.g. RuleML, LegalRuleML),
+	       checked only if the validator has that language's schema (processContents="lax");
+	     - text-based rule language as character data, preferably in CDATA (e.g. SPARQL, SHACL, Python);
+	     - nothing, with @uri pointing to an external rule file. -->
+	<xs:element name="expression">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="idm:formalRuleLanguage" minOccurs="1" maxOccurs="1"/>
+				<xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="optional"/>
+			<xs:attribute name="uri" type="xs:anyURI" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Formal rule language (Revision 11). Same pattern as classification. -->
+	<xs:element name="formalRuleLanguage">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="version" type="xs:string" use="optional"/>
+			<xs:attribute name="publicationYear" type="xs:gYear" use="optional"/>
+			<!-- Namespace or specification URI identifying the language unambiguously -->
+			<xs:attribute name="uri" type="xs:anyURI" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
 	<!-- Information Unit -->
 	<xs:element name="informationUnit">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
+				<!-- Revision 10: alternative names and translations of the information unit.
+				     The name attribute remains the preferred term. xml:lang takes a BCP 47 tag
+				     (e.g. en, en-GB, ko, ja, zh-CN). -->
+				<xs:element name="synonym" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="idm:nonEmptyText">
+								<xs:attribute ref="xml:lang" use="optional"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="examples" minOccurs="0" maxOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
@@ -98,5 +195,12 @@
 			<xs:attribute name="isMandatory" type="xs:boolean" use="required"/>
 			<xs:attribute name="definition" type="xs:string" use="required"/>
 		</xs:complexType>
+		<!-- Revision 10: no duplicate synonym within the same language.
+		     Synonyms without xml:lang are not covered (XSD skips absent fields). -->
+		<xs:unique name="unique_synonymPerLanguage">
+			<xs:selector xpath="idm:synonym"/>
+			<xs:field xpath="."/>
+			<xs:field xpath="@xml:lang"/>
+		</xs:unique>
 	</xs:element>
 </xs:schema>
