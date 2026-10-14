@@ -25,14 +25,17 @@
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>
-		<!-- Cross-element identity constraint: er/constraint/@associatedBusinessRule references uc/businessRule/@id -->
+		<!-- Cross-element identity constraint: er/constraint/associatedBusinessRule/@ref references uc/businessRule/@id.
+		     Revision 11: covers constraints in the top-level ER and in sub-ERs up to 5 levels deep
+		     (XSD 1.0 selectors cannot express arbitrary depth without also reaching into subIdm,
+		     whose business rules are scoped to the sub-IDM). Deeper nesting is checked by the application. -->
 		<xs:key name="key_businessRuleId">
 			<xs:selector xpath="idm:uc/idm:businessRule"/>
 			<xs:field xpath="@id"/>
 		</xs:key>
-		<xs:keyref name="keyref_associatedBusinessRule" refer="idm:key_businessRuleId">
-			<xs:selector xpath="idm:er/idm:constraint"/>
-			<xs:field xpath="@associatedBusinessRule"/>
+		<xs:keyref name="keyref_associatedBusinessRuleRef" refer="idm:key_businessRuleId">
+			<xs:selector xpath="idm:er/idm:constraint/idm:associatedBusinessRule | idm:er/idm:subEr/idm:er/idm:constraint/idm:associatedBusinessRule | idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:constraint/idm:associatedBusinessRule | idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:constraint/idm:associatedBusinessRule | idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:constraint/idm:associatedBusinessRule | idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:subEr/idm:er/idm:constraint/idm:associatedBusinessRule"/>
+			<xs:field xpath="@ref"/>
 		</xs:keyref>
 	</xs:element>
 </xs:schema>

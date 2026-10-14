@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="679" height="851" viewBox="0 0 679 851">
+<title>authoring</title>
+<rect x="0" y="0" width="679" height="851" fill="#ffffff"/>
+<g id="el-authoring">
+<rect x="13.0" y="421.8" width="85.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="10.0" y="418.8" width="85.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="18.0" y="434.1" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">authoring</text>
+<rect x="82.3" y="425.2" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="84.3" y1="429.8" x2="89.3" y2="429.8" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="97.3" y1="429.8" x2="111.3" y2="429.8" stroke="#000000" stroke-width="1"/>
+<line x1="111.3" y1="35.5" x2="111.3" y2="824.0" stroke="#000000" stroke-width="1"/>
+<line x1="111.3" y1="35.5" x2="123.3" y2="35.5" stroke="#000000" stroke-width="1"/>
+<line x1="111.3" y1="474.2" x2="123.3" y2="474.2" stroke="#000000" stroke-width="1"/>
+<line x1="111.3" y1="824.0" x2="123.3" y2="824.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M123.3 30.0 L123.3 10.0 L202.7 10.0 L210.7 18.0 L232.7 18.0 L232.7 61.0 L123.3 61.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="128.3" y="15.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="130.3" y1="19.5" x2="135.3" y2="19.5" stroke="#000000" stroke-width="1"/>
+<text x="141.3" y="24.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="140.3" y="37.0" width="74.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="137.3" y="34.0" width="74.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="147.3" y="47.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">copyright</text>
+</g>
+<g id="group-sequence">
+<polygon points="129.3125,463.25 163.3125,463.25 169.3125,469.25 169.3125,479.25 163.3125,485.25 129.3125,485.25 123.3125,479.25 123.3125,469.25" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="129.3125,463.25 163.3125,463.25 169.3125,469.25 169.3125,479.25 163.3125,485.25 129.3125,485.25 123.3125,479.25 123.3125,469.25" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="131.3" y1="474.2" x2="161.3" y2="474.2" stroke="#000000" stroke-width="1"/>
+<rect x="138.3" y="472.2" width="4" height="4" fill="#000000"/>
+<rect x="144.3" y="472.2" width="4" height="4" fill="#000000"/>
+<rect x="150.3" y="472.2" width="4" height="4" fill="#000000"/>
+<rect x="171.3" y="469.8" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="173.3" y1="474.2" x2="178.3" y2="474.2" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="180.3" y1="474.2" x2="194.3" y2="474.2" stroke="#000000" stroke-width="1"/>
+<line x1="194.3" y1="178.5" x2="194.3" y2="770.0" stroke="#000000" stroke-width="1"/>
+<line x1="194.3" y1="178.5" x2="208.3" y2="178.5" stroke="#000000" stroke-width="1"/>
+<line x1="194.3" y1="399.8" x2="208.3" y2="399.8" stroke="#000000" stroke-width="1"/>
+<line x1="194.3" y1="640.8" x2="208.3" y2="640.8" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="194.3" y1="770.0" x2="208.3" y2="770.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<g id="el-changeLog">
+<rect x="215.3" y="174.5" width="94.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="212.3" y="171.5" width="94.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<rect x="208.3" y="167.5" width="94.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="216.3" y="182.8" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changeLog</text>
+<rect x="289.3" y="174.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="291.3" y1="178.5" x2="296.3" y2="178.5" stroke="#000000" stroke-width="1"/>
+<text x="300.3" y="202.5" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">1..*</text>
+</g>
+<line x1="304.3" y1="178.5" x2="318.3" y2="178.5" stroke="#000000" stroke-width="1"/>
+<line x1="318.3" y1="127.0" x2="318.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<line x1="318.3" y1="127.0" x2="330.3" y2="127.0" stroke="#000000" stroke-width="1"/>
+<line x1="318.3" y1="230.0" x2="330.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M330.3 87.0 L330.3 67.0 L409.6 67.0 L417.6 75.0 L477.0 75.0 L477.0 187.0 L330.3 187.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="335.3" y="72.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="337.3" y1="76.5" x2="342.3" y2="76.5" stroke="#000000" stroke-width="1"/>
+<text x="348.3" y="81.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="347.3" y="94.0" width="30.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="344.3" y="91.0" width="30.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="354.3" y="104.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">id</text>
+<rect x="347.3" y="117.0" width="115.8" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="344.3" y="114.0" width="115.8" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="354.3" y="127.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changeDateTime</text>
+<rect x="347.3" y="140.0" width="116.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="344.3" y="137.0" width="116.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="354.3" y="150.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changeSummary</text>
+<rect x="347.3" y="163.0" width="84.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="344.3" y="160.0" width="84.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="354.3" y="173.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changedBy</text>
+</g>
+<g id="group-sequence">
+<polygon points="336.296875,219.0 370.296875,219.0 376.296875,225.0 376.296875,235.0 370.296875,241.0 336.296875,241.0 330.296875,235.0 330.296875,225.0" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="336.296875,219.0 370.296875,219.0 376.296875,225.0 376.296875,235.0 370.296875,241.0 336.296875,241.0 330.296875,235.0 330.296875,225.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="338.3" y1="230.0" x2="368.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<rect x="345.3" y="228.0" width="4" height="4" fill="#000000"/>
+<rect x="351.3" y="228.0" width="4" height="4" fill="#000000"/>
+<rect x="357.3" y="228.0" width="4" height="4" fill="#000000"/>
+<rect x="378.3" y="225.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="380.3" y1="230.0" x2="385.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="387.3" y1="230.0" x2="401.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<line x1="401.3" y1="230.0" x2="401.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<line x1="401.3" y1="230.0" x2="415.3" y2="230.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<g id="el-change">
+<rect x="422.3" y="226.0" width="72.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="419.3" y="223.0" width="72.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="415.3" y="219.0" width="72.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="423.3" y="234.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">change</text>
+<rect x="474.3" y="225.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="476.3" y1="230.0" x2="481.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<text x="485.3" y="254.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">0..*</text>
+</g>
+<line x1="489.3" y1="230.0" x2="503.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<line x1="503.3" y1="230.0" x2="503.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<line x1="503.3" y1="230.0" x2="515.3" y2="230.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M515.3 213.0 L515.3 193.0 L594.6 193.0 L602.6 201.0 L661.3 201.0 L661.3 267.0 L515.3 267.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="520.3" y="198.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="522.3" y1="202.5" x2="527.3" y2="202.5" stroke="#000000" stroke-width="1"/>
+<text x="533.3" y="207.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="532.3" y="220.0" width="116.0" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="529.3" y="217.0" width="116.0" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="539.3" y="230.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changedElement</text>
+<rect x="532.3" y="243.0" width="99.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="529.3" y="240.0" width="99.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="539.3" y="253.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">changedFrom</text>
+</g>
+<g id="el-author">
+<rect x="215.3" y="395.8" width="75.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="212.3" y="392.8" width="75.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<rect x="208.3" y="388.8" width="75.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<path d="M211.3 407.8 L217.3 401.8 M213.3 401.8 L217.3 401.8 L217.3 405.8" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="222.3" y="404.1" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">author</text>
+<rect x="270.6" y="395.2" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="272.6" y1="399.8" x2="277.6" y2="399.8" stroke="#000000" stroke-width="1"/>
+<text x="281.6" y="423.8" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">1..*</text>
+</g>
+<line x1="285.6" y1="399.8" x2="299.6" y2="399.8" stroke="#000000" stroke-width="1"/>
+<line x1="299.6" y1="322.5" x2="299.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<line x1="299.6" y1="322.5" x2="311.6" y2="322.5" stroke="#000000" stroke-width="1"/>
+<line x1="299.6" y1="477.0" x2="311.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M311.6 317.0 L311.6 297.0 L391.0 297.0 L399.0 305.0 L421.0 305.0 L421.0 348.0 L311.6 348.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="316.6" y="302.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="318.6" y1="306.5" x2="323.6" y2="306.5" stroke="#000000" stroke-width="1"/>
+<text x="329.6" y="311.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="328.6" y="324.0" width="30.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="325.6" y="321.0" width="30.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="335.6" y="334.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">id</text>
+</g>
+<g id="group-choice">
+<polygon points="317.640625,466.0 351.640625,466.0 357.640625,472.0 357.640625,482.0 351.640625,488.0 317.640625,488.0 311.640625,482.0 311.640625,472.0" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="317.640625,466.0 351.640625,466.0 357.640625,472.0 357.640625,482.0 351.640625,488.0 317.640625,488.0 311.640625,482.0 311.640625,472.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="319.6" y1="477.0" x2="326.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<line x1="326.6" y1="477.0" x2="332.6" y2="472.0" stroke="#000000" stroke-width="1"/>
+<line x1="332.6" y1="471.0" x2="332.6" y2="483.0" stroke="#000000" stroke-width="1"/>
+<rect x="334.6" y="471.5" width="3" height="3" fill="#000000"/>
+<rect x="334.6" y="475.5" width="3" height="3" fill="#000000"/>
+<rect x="334.6" y="479.5" width="3" height="3" fill="#000000"/>
+<line x1="339.6" y1="477.0" x2="349.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<rect x="359.6" y="472.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="361.6" y1="477.0" x2="366.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<text x="355.6" y="501.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">1..*</text>
+</g>
+<line x1="368.6" y1="477.0" x2="382.6" y2="477.0" stroke="#000000" stroke-width="1"/>
+<line x1="382.6" y1="425.5" x2="382.6" y2="528.5" stroke="#000000" stroke-width="1"/>
+<line x1="382.6" y1="425.5" x2="396.6" y2="425.5" stroke="#000000" stroke-width="1"/>
+<line x1="382.6" y1="528.5" x2="396.6" y2="528.5" stroke="#000000" stroke-width="1"/>
+<g id="el-person">
+<rect x="399.6" y="417.5" width="70.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="396.6" y="414.5" width="70.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="404.6" y="429.8" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">person</text>
+<rect x="453.6" y="421.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="455.6" y1="425.5" x2="460.6" y2="425.5" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="468.6" y1="425.5" x2="482.6" y2="425.5" stroke="#000000" stroke-width="1"/>
+<line x1="482.6" y1="425.5" x2="482.6" y2="425.5" stroke="#000000" stroke-width="1"/>
+<line x1="482.6" y1="425.5" x2="494.6" y2="425.5" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M494.6 374.0 L494.6 354.0 L574.0 354.0 L582.0 362.0 L623.3 362.0 L623.3 497.0 L494.6 497.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="499.6" y="359.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="501.6" y1="363.5" x2="506.6" y2="363.5" stroke="#000000" stroke-width="1"/>
+<text x="512.6" y="368.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="511.6" y="381.0" width="75.4" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="508.6" y="378.0" width="75.4" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="518.6" y="391.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">firstName</text>
+<rect x="511.6" y="404.0" width="91.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="508.6" y="401.0" width="91.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="518.6" y="414.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">middleName</text>
+<rect x="511.6" y="427.0" width="73.4" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="508.6" y="424.0" width="73.4" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="518.6" y="437.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">lastName</text>
+<rect x="511.6" y="450.0" width="98.7" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="508.6" y="447.0" width="98.7" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="518.6" y="460.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">emailAddress</text>
+<rect x="511.6" y="473.0" width="73.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="508.6" y="470.0" width="73.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="518.6" y="483.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">affiliation</text>
+</g>
+<g id="el-organization">
+<rect x="399.6" y="520.5" width="101.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="396.6" y="517.5" width="101.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="404.6" y="532.8" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">organization</text>
+<rect x="485.0" y="524.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="487.0" y1="528.5" x2="492.0" y2="528.5" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="500.0" y1="528.5" x2="514.0" y2="528.5" stroke="#000000" stroke-width="1"/>
+<line x1="514.0" y1="528.5" x2="514.0" y2="528.5" stroke="#000000" stroke-width="1"/>
+<line x1="514.0" y1="528.5" x2="526.0" y2="528.5" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M526.0 523.0 L526.0 503.0 L605.3 503.0 L613.3 511.0 L635.3 511.0 L635.3 554.0 L526.0 554.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="531.0" y="508.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="533.0" y1="512.5" x2="538.0" y2="512.5" stroke="#000000" stroke-width="1"/>
+<text x="544.0" y="517.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="543.0" y="530.0" width="51.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="540.0" y="527.0" width="51.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="550.0" y="540.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">name</text>
+</g>
+<g id="el-committee">
+<rect x="215.3" y="636.8" width="90.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="212.3" y="633.8" width="90.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="208.3" y="629.8" width="90.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="216.3" y="645.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">committee</text>
+<rect x="285.3" y="636.2" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="287.3" y1="640.8" x2="292.3" y2="640.8" stroke="#000000" stroke-width="1"/>
+<text x="296.3" y="664.8" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">0..*</text>
+</g>
+<line x1="300.3" y1="640.8" x2="314.3" y2="640.8" stroke="#000000" stroke-width="1"/>
+<line x1="314.3" y1="609.5" x2="314.3" y2="672.0" stroke="#000000" stroke-width="1"/>
+<line x1="314.3" y1="609.5" x2="326.3" y2="609.5" stroke="#000000" stroke-width="1"/>
+<line x1="314.3" y1="672.0" x2="326.3" y2="672.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M326.3 604.0 L326.3 584.0 L405.7 584.0 L413.7 592.0 L435.7 592.0 L435.7 635.0 L326.3 635.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="331.3" y="589.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="333.3" y1="593.5" x2="338.3" y2="593.5" stroke="#000000" stroke-width="1"/>
+<text x="344.3" y="598.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="343.3" y="611.0" width="51.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="340.3" y="608.0" width="51.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="350.3" y="621.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">name</text>
+</g>
+<g id="group-sequence">
+<polygon points="332.328125,661.0 366.328125,661.0 372.328125,667.0 372.328125,677.0 366.328125,683.0 332.328125,683.0 326.328125,677.0 326.328125,667.0" transform="translate(3,3)" fill="#c8c8c8" stroke="none"/>
+<polygon points="332.328125,661.0 366.328125,661.0 372.328125,667.0 372.328125,677.0 366.328125,683.0 332.328125,683.0 326.328125,677.0 326.328125,667.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="334.3" y1="672.0" x2="364.3" y2="672.0" stroke="#000000" stroke-width="1"/>
+<rect x="341.3" y="670.0" width="4" height="4" fill="#000000"/>
+<rect x="347.3" y="670.0" width="4" height="4" fill="#000000"/>
+<rect x="353.3" y="670.0" width="4" height="4" fill="#000000"/>
+<rect x="374.3" y="667.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="376.3" y1="672.0" x2="381.3" y2="672.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="383.3" y1="672.0" x2="397.3" y2="672.0" stroke="#000000" stroke-width="1"/>
+<line x1="397.3" y1="652.0" x2="397.3" y2="692.0" stroke="#000000" stroke-width="1"/>
+<line x1="397.3" y1="652.0" x2="411.3" y2="652.0" stroke="#000000" stroke-width="1"/>
+<line x1="397.3" y1="692.0" x2="411.3" y2="692.0" stroke="#000000" stroke-width="1" stroke-dasharray="4 3"/>
+<g id="el-member">
+<rect x="418.3" y="648.0" width="76.7" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="415.3" y="645.0" width="76.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<rect x="411.3" y="641.0" width="76.7" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<line x1="414.3" y1="644.0" x2="420.3" y2="644.0" stroke="#000000" stroke-width="1"/>
+<line x1="414.3" y1="646.0" x2="420.3" y2="646.0" stroke="#000000" stroke-width="1"/>
+<line x1="414.3" y1="648.0" x2="420.3" y2="648.0" stroke="#000000" stroke-width="1"/>
+<text x="423.3" y="656.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">member</text>
+<text x="486.0" y="676.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">1..*</text>
+</g>
+<g id="el-leader">
+<rect x="418.3" y="688.0" width="65.3" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="415.3" y="685.0" width="65.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="411.3" y="681.0" width="65.3" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<line x1="414.3" y1="684.0" x2="420.3" y2="684.0" stroke="#000000" stroke-width="1"/>
+<line x1="414.3" y1="686.0" x2="420.3" y2="686.0" stroke="#000000" stroke-width="1"/>
+<line x1="414.3" y1="688.0" x2="420.3" y2="688.0" stroke="#000000" stroke-width="1"/>
+<text x="423.3" y="696.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">leader</text>
+<text x="474.7" y="716.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="11" font-weight="normal" font-style="normal" text-anchor="end" fill="#000000">0..*</text>
+</g>
+<g id="el-publisher">
+<rect x="211.3" y="762.0" width="84.0" height="22.0" fill="#c8c8c8" stroke="none"/>
+<rect x="208.3" y="759.0" width="84.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="216.3" y="774.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">publisher</text>
+<rect x="279.3" y="765.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="281.3" y1="770.0" x2="286.3" y2="770.0" stroke="#000000" stroke-width="1"/>
+</g>
+<line x1="294.3" y1="770.0" x2="308.3" y2="770.0" stroke="#000000" stroke-width="1"/>
+<line x1="308.3" y1="770.0" x2="308.3" y2="770.0" stroke="#000000" stroke-width="1"/>
+<line x1="308.3" y1="770.0" x2="320.3" y2="770.0" stroke="#000000" stroke-width="1"/>
+<g id="attrs-">
+<path d="M320.3 753.0 L320.3 733.0 L399.6 733.0 L407.6 741.0 L429.6 741.0 L429.6 807.0 L320.3 807.0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+<rect x="325.3" y="738.0" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="327.3" y1="742.5" x2="332.3" y2="742.5" stroke="#000000" stroke-width="1"/>
+<text x="338.3" y="747.0" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">attributes</text>
+<rect x="337.3" y="760.0" width="51.3" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="334.3" y="757.0" width="51.3" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<text x="344.3" y="770.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">name</text>
+<rect x="337.3" y="783.0" width="66.0" height="18.0" fill="#c8c8c8" stroke="none"/>
+<rect x="334.3" y="780.0" width="66.0" height="18.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" stroke-dasharray="4 2"/>
+<text x="344.3" y="793.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="bold" font-style="normal" text-anchor="start" fill="#000000">location</text>
+</g>
+<g id="constraints-">
+<rect x="123.3" y="813.0" width="93.0" height="22.0" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+<rect x="129.3" y="819.5" width="9" height="9" fill="#ffffff" stroke="#000000" stroke-width="0.9"/>
+<line x1="131.3" y1="824.0" x2="136.3" y2="824.0" stroke="#000000" stroke-width="1"/>
+<line x1="133.8" y1="821.5" x2="133.8" y2="826.5" stroke="#000000" stroke-width="1"/>
+<text x="142.3" y="828.3" font-family="Arial, 'Liberation Sans', Helvetica, sans-serif" font-size="12" font-weight="normal" font-style="italic" text-anchor="start" fill="#000000">constraints</text>
+</g>
+</svg>

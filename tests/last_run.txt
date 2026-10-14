@@ -1,0 +1,105 @@
+Engines: libxml2/mono, xerces-jdk/mono, xmlschema-py/mono, libxml2/mod, xerces-jdk/mod, xmlschema-py/mod
+
+## A. samples
+[pass    ] valid   TestCases/businessRule/r12/BR_full_r12.xml
+[pass    ] valid   TestCases/businessRule/r12/BR_minimal_r12.xml
+[pass    ] valid   TestCases/businessRule/r12/WindowCostIDM_BusinessRules_r12.xml
+[pass    ] INVALID TestCases/businessRule/r12/invalid/01_no_statement.xml  — Element 'idm:businessRule': Missing child element(s). Expected is ( idm:statement ).
+[pass    ] INVALID TestCases/businessRule/r12/invalid/02_two_statements.xml  — Element 'idm:statement': This element is not expected. Expected is one of ( idm:images, idm:descript
+[pass    ] INVALID TestCases/businessRule/r12/invalid/03_statement_with_xml_lang.xml  — Element 'idm:statement', attribute '{http://www.w3.org/XML/1998/namespace}lang': The attribute '{htt
+[pass    ] INVALID TestCases/businessRule/r12/invalid/04_empty_images.xml  — Element 'idm:images': Missing child element(s). Expected is ( idm:image ).
+[pass    ] INVALID TestCases/businessRule/r12/invalid/05_image_without_images.xml  — Element 'idm:image': This element is not expected. Expected is one of ( idm:images, idm:description,
+[pass    ] INVALID TestCases/businessRule/r12/invalid/06_description_before_statement.xml  — Element 'idm:description': This element is not expected. Expected is ( idm:statement ).
+[pass    ] INVALID TestCases/businessRule/r12/invalid/07_proposition_ed2.xml  — Element 'idm:proposition': This element is not expected. Expected is ( idm:statement ).
+[pass    ] INVALID TestCases/businessRule/r12/invalid/08_empty_statement.xml  — Element 'idm:statement': [facet 'minLength'] The value has a length of '0'; this underruns the allow
+
+## B. constraint links
+[pass    ] valid   full example (BR-07, 3 IUs, informal + 4 formal expressions)
+[pass    ] valid   constraint with id only
+[pass    ] valid   informal-only constraint
+[pass    ] valid   one constraint linked to two business rules
+[pass    ] valid   one business rule decomposed into two constraints
+[pass    ] INVALID unknown business rule ref  — Element 'idm:associatedBusinessRule': No match found for key-sequence ['BR-99'] of keyref 'idm:keyre
+[pass    ] INVALID unknown information unit ref  — Element 'idm:associatedInformationUnit': No match found for key-sequence ['IU-999'] of keyref 'idm:k
+[pass    ] valid   ref to nested subInformationUnit (IU-012a)
+[pass    ] valid   top-level constraint -> IU in sub-ER (IU-S1)
+[pass    ] valid   sub-ER constraint -> its own IU
+[pass    ] valid   sub-ER constraint -> parent ER IU
+[pass    ] valid   sub-ER constraint -> nested subInformationUnit of parent ER
+[pass    ] INVALID sub-ER constraint -> unknown IU  — Element 'idm:associatedInformationUnit': No match found for key-sequence ['IU-999'] of keyref 'idm:k
+[pass    ] valid   deep sub-ER (level 3) constraint -> top-level IU
+[pass    ] valid   top-level constraint -> IU in deep sub-ER (level 3)
+[pass    ] valid   same constraint id in two different sub-ERs (per-ER scope)
+[pass    ] INVALID duplicate constraint id within one sub-ER  — Element 'idm:constraint': Duplicate key-sequence ['C-y'] in key identity-constraint 'idm:key_subErCo
+[pass    ] valid   sub-ER constraint -> known business rule
+[pass    ] INVALID sub-ER constraint -> unknown business rule  — Element 'idm:associatedBusinessRule': No match found for key-sequence ['BR-99'] of keyref 'idm:keyre
+[pass    ] INVALID unknown business rule in sub-ER at nesting level 5  — Element 'idm:associatedBusinessRule': No match found for key-sequence ['BR-99'] of keyref 'idm:keyre
+[pass    ] valid   unknown business rule in sub-ER at nesting level 6 (beyond XSD coverage -> app check)
+[pass    ] INVALID duplicate constraint id in same ER  — Element 'idm:constraint': Duplicate key-sequence ['C-x'] in key identity-constraint 'idm:key_constra
+[pass    ] INVALID duplicate IU id across top ER and sub-ER  — Element 'idm:informationUnit': Duplicate key-sequence ['IU-S1'] in key identity-constraint 'idm:key_
+[pass    ] INVALID ed.2 attribute form (removed)  — Element 'idm:constraint', attribute 'associatedBusinessRule': The attribute 'associatedBusinessRule'
+[pass    ] INVALID wrong child order (description before links)  — Element 'idm:associatedBusinessRule': This element is not expected. Expected is one of ( idm:descrip
+[pass    ] INVALID wrong child order (expression before description)  — Element 'idm:description': This element is not expected. Expected is ( idm:expression ).
+[pass    ] INVALID associatedBusinessRule without ref  — Element 'idm:associatedBusinessRule': The attribute 'ref' is required but missing.
+[pass    ] INVALID associatedInformationUnit without ref  — Element 'idm:associatedInformationUnit': The attribute 'ref' is required but missing.
+
+## C. expression
+[pass    ] valid   formalRuleLanguage name only
+[pass    ] valid   formalRuleLanguage all attributes
+[pass    ] INVALID formalRuleLanguage without name  — Element 'idm:formalRuleLanguage': The attribute 'name' is required but missing.
+[pass    ] INVALID publicationYear not a year ("21")  — Element 'idm:formalRuleLanguage', attribute 'publicationYear': '21' is not a valid value of the atom
+[pass    ] INVALID publicationYear as date ("2021-08-30")  — Element 'idm:formalRuleLanguage', attribute 'publicationYear': '2021-08-30' is not a valid value of 
+[pass    ] INVALID unknown attribute on formalRuleLanguage  — Element 'idm:formalRuleLanguage', attribute 'vendor': The attribute 'vendor' is not allowed.
+[pass    ] INVALID expression without formalRuleLanguage  — Element 'idm:expression': Missing child element(s). Expected is ( idm:formalRuleLanguage ).
+[pass    ] INVALID two formalRuleLanguage in one expression  — Element 'idm:formalRuleLanguage': This element is not expected. Expected is ( ##otheridm:* ).
+[pass    ] INVALID formalRuleLanguage after rule markup  — Element '{http://ruleml.org/spec}Implies': This element is not expected. Expected is ( idm:formalRul
+[pass    ] valid   embedded RuleML
+[pass    ] valid   embedded LegalRuleML
+[pass    ] valid   two foreign-namespace roots in one expression
+[pass    ] valid   CDATA text (SPARQL)
+[pass    ] valid   plain text with escaped markup
+[pass    ] valid   external rule file via @uri, no body
+[pass    ] INVALID idm-namespace element inside expression  — Element 'idm:description': This element is not expected. Expected is ( ##otheridm:* ).
+[pass    ] INVALID no-namespace element inside expression (must use a namespace or CDATA)  — Element 'rule': This element is not expected. Expected is ( ##otheridm:* ).
+[pass    ] valid   bogus RuleML content accepted (lax, no RuleML schema loaded)
+[pass    ] valid   several expressions in the same language
+[pass    ] INVALID expression outside constraint (on informationUnit)  — Element 'idm:expression': This element is not expected. Expected is one of ( idm:description, idm:sy
+
+## D. synonyms
+[pass    ] valid   multilingual synonyms
+[pass    ] valid   same text in two languages
+[pass    ] INVALID duplicate synonym in same language  — Element 'idm:synonym': Duplicate key-sequence ['FRR', 'en'] in unique identity-constraint 'idm:uniqu
+[pass    ] valid   duplicate untagged synonym (not caught -> app check)
+             xmlschema-py/mono      INVALID  [known deviation: checks xs:unique rows with an absent field; XSD 1.0 excludes them]  duplicated value ('FRR', None) for XsdUnique(name='idm:unique_synonymPerLanguage')
+             xmlschema-py/mod       INVALID  [known deviation: checks xs:unique rows with an absent field; XSD 1.0 excludes them]  duplicated value ('FRR', None) for XsdUnique(name='idm:unique_synonymPerLanguage')
+[pass    ] INVALID invalid language tag  — Element 'idm:synonym', attribute '{http://www.w3.org/XML/1998/namespace}lang': Warning: No precomput
+[pass    ] INVALID empty synonym  — Element 'idm:synonym': Warning: No precomputed value available, the value was either invalid or some
+[pass    ] INVALID synonym after correspondingExternalElement  — Element 'idm:synonym': This element is not expected. Expected is one of ( idm:correspondingExternalE
+[pass    ] valid   synonyms + full constraint together
+
+## E. sub-IDM
+[pass    ] valid   sub-IDM reuses business rule id BR-07 (own scope)
+             libxml2/mono           INVALID  [known deviation: merges key tables of nested idm scopes -> reports ambiguous match (pre-existing, not Rev. 11)]  Element '{https://standards.iso.org/iso/29481/-3/ed-2/en}associatedBusinessRule': More than one matc
+             libxml2/mod            INVALID  [known deviation: merges key tables of nested idm scopes -> reports ambiguous match (pre-existing, not Rev. 11)]  Element '{https://standards.iso.org/iso/29481/-3/ed-2/en}associatedBusinessRule': More than one matc
+[pass    ] INVALID sub-IDM constraint -> outer IDM business rule  — Element 'idm:associatedBusinessRule': No match found for key-sequence ['BR-08'] of keyref 'idm:keyre
+[pass    ] valid   sub-IDM reuses information unit ids (own ER scope)
+
+## F. businessRule (Rev 12)
+[pass    ] valid   statement only
+[pass    ] valid   statement + images + description + reference
+[pass    ] valid   images with two images
+[pass    ] valid   statement + description (no images)
+[pass    ] INVALID no statement  — Element 'idm:images': This element is not expected. Expected is ( idm:statement ).
+[pass    ] INVALID empty statement  — Element 'idm:statement': [facet 'minLength'] The value has a length of '0'; this underruns the allow
+[pass    ] INVALID two statements  — Element 'idm:statement': This element is not expected. Expected is one of ( idm:images, idm:descript
+[pass    ] INVALID statement with xml:lang (translations out of scope)  — Element 'idm:statement', attribute '{http://www.w3.org/XML/1998/namespace}lang': The attribute '{htt
+[pass    ] INVALID empty images  — Element 'idm:images': Missing child element(s). Expected is ( idm:image ).
+[pass    ] INVALID two images groups  — Element 'idm:images': This element is not expected. Expected is one of ( idm:description, idm:refere
+[pass    ] INVALID image directly under businessRule  — Element 'idm:image': This element is not expected. Expected is one of ( idm:images, idm:description,
+[pass    ] INVALID description before images  — Element 'idm:images': This element is not expected. Expected is one of ( idm:description, idm:refere
+[pass    ] INVALID reference before description  — Element 'idm:description': This element is not expected. Expected is ( idm:reference ).
+[pass    ] INVALID statement after images  — Element 'idm:images': This element is not expected. Expected is ( idm:statement ).
+[pass    ] INVALID ed.2 proposition wrapper (removed)  — Element 'idm:proposition': This element is not expected. Expected is ( idm:statement ).
+[pass    ] valid   constraint -> business rule defined with statement
+
+86 expectation cases + 0 sample files x 6 engine/schema combinations; 0 failures or disagreements

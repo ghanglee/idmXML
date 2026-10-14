@@ -92,13 +92,19 @@
 				<xs:element name="businessRule" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="proposition" minOccurs="1" maxOccurs="1">
+							<!-- Revision 12: the proposition wrapper (description 1..*) is replaced by
+							     statement (the rule in natural language), optional images (graphical examples),
+							     optional description (commentary such as scope, exceptions or interpretation)
+							     and references. -->
+							<xs:element name="statement" type="idm:nonEmptyText" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="images" minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element ref="idm:description" minOccurs="1" maxOccurs="unbounded"/>
+										<xs:element ref="idm:image" minOccurs="1" maxOccurs="unbounded"/>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
+							<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>
 							<xs:element name="reference" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 						<xs:attribute name="id" type="xs:string" use="required"/>
