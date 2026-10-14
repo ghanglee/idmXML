@@ -148,8 +148,8 @@ def build():
         cls(n, colA, y, at, w=235)
     colB = 850
     Bc = [('language', 118, []), ('use', 170, ['name: String']), ('region', 236, ['value: String', 'type: String']),
-          ('standardProjectStage', 316, []), ('localProjectStage', 368, []), ('constructionEntity', 420, ['name: String']),
-          ('actor', 484, ['id: String <<PK>>', 'name: String', 'actorType: String']),
+          ('standardProjectPhase', 316, []), ('localProjectPhase', 368, []), ('constructionEntity', 420, ['name: String']),
+          ('actor', 484, ['id: String <<PK>>', 'name: String', 'external: Boolean']),
           ('businessRule', 590, ['id: String <<PK>>', 'name: String', 'statement: String'])]
     for n, y, at in Bc:
         cls(n, colB, y, at, w=245)
@@ -210,20 +210,20 @@ def build():
     poly([(busA, 403), (busB, 403)])
     yb = [L(n, 11)[1] for n, _, _ in Bc]
     poly([(busB, min(yb)), (busB, max(yb))])
-    mult_B = {'language': '1', 'use': '1..*', 'region': '1..*', 'standardProjectStage': '1..*', 'localProjectStage': '0..*',
+    mult_B = {'language': '1', 'use': '1..*', 'region': '1..*', 'standardProjectPhase': '1..*', 'localProjectPhase': '0..*',
               'constructionEntity': '0..*', 'actor': '0..*', 'businessRule': '0..*'}
     for n, _, _ in Bc:
         p = L(n, 11); poly([(busB, p[1]), p]); m(p[0] - 6, p[1] - 4, mult_B[n], 'end')
     # stage -> name / outcomes / informationRequirements ; classification
     busC = 1140
-    for n in ['standardProjectStage', 'localProjectStage']:
+    for n in ['standardProjectPhase', 'localProjectPhase']:
         p = R(n, 11); poly([p, (busC, p[1])]); m(p[0] + 5, p[1] - 4, '1')
     for n, mm in [('name', '1'), ('outcomes', '0..1'), ('informationRequirements', '0..1')]:
         p = L(n, 11); poly([(busC, p[1]), p]); m(p[0] - 6, p[1] - 4, mm, 'end')
-    poly([(busC, L('name', 11)[1]), (busC, R('localProjectStage', 11)[1])])
-    # classification links (use, localProjectStage, constructionEntity, actor, subActor) via bus x=1160
+    poly([(busC, L('name', 11)[1]), (busC, R('localProjectPhase', 11)[1])])
+    # classification links (use, localProjectPhase, constructionEntity, actor, subActor) via bus x=1160
     busK = 1160
-    for n in ['use', 'localProjectStage', 'constructionEntity', 'actor']:
+    for n in ['use', 'localProjectPhase', 'constructionEntity', 'actor']:
         p = R(n, 30)
         if n == 'actor':
             p = R(n, 22)

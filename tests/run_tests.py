@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""idmXSD v2.0 regression and feature tests (Revisions 10-12).
+"""idmXSD v2.0 regression and feature tests (Revisions 10-13).
 
 Usage:  python3 tests/run_tests.py [repository root]
 Runs every case against BOTH the monolithic and the modularized schema and
@@ -248,6 +248,43 @@ check(g, 'reference before description', fixture(br_xml=BRX(ST + REF + DSC)), Fa
 check(g, 'statement after images', fixture(br_xml=BRX(IMGS + ST)), False)
 check(g, 'ed.2 proposition wrapper (removed)', fixture(br_xml=BRX(f'<proposition><description title="{EN}"/></proposition>')), False)
 check(g, 'constraint -> business rule defined with statement', fixture([C(BR('BR-07') + IUR('IU-012'))], br_xml=BRX(ST + REF)), True)
+
+# ---------------------------------------------------------------- G. project phase + actor role (Revision 13)
+g = 'G. phase + actor (Rev 13)'
+def uc_variant(phases=None, actors=None):
+    """Replace the fixture's standardProjectPhase/localProjectPhase (phases) and/or actor elements (actors)."""
+    t = fixture(); uc = t.getroot().find(q('uc'))
+    if phases is not None:
+        old = [c for c in uc if etree.QName(c).localname in ('standardProjectPhase', 'localProjectPhase',
+                                                            'standardProjectStage', 'localProjectStage')]
+        pos = list(uc).index(old[0])
+        for c in old: uc.remove(c)
+        for i, p in enumerate(phases): uc.insert(pos + i, X(p))
+    if actors is not None:
+        old = uc.findall(q('actor')); pos = list(uc).index(old[0])
+        for c in old: uc.remove(c)
+        for i, a in enumerate(actors): uc.insert(pos + i, X(a))
+    return t
+SP = lambda n, tag='standardProjectPhase': f'<{tag} xmlns="{NS}"><name>{n}</name></{tag}>'
+LP = lambda n, tag='localProjectPhase': (f'<{tag} xmlns="{NS}"><name>{n}</name>'
+                                         f'<classification id="cls-riba" name="RIBA Plan of Work" publicationYear="2020"/></{tag}>')
+A = lambda attrs='', body='': f'<actor xmlns="{NS}" id="a-{abs(hash(attrs + body)) % 10**6}" name="Role {abs(hash(attrs + body)) % 10**6}" {attrs}>{body}</actor>'
+check(g, 'standardProjectPhase (two ISO 22263 phases)', uc_variant([SP('brief'), SP('design')]), True)
+check(g, 'standardProjectPhase + localProjectPhase (RIBA)', uc_variant([SP('design'), LP('Stage 4 Technical Design')]), True)
+check(g, 'standardProjectStage (renamed, removed)', uc_variant([SP('design', 'standardProjectStage')]), False)
+check(g, 'localProjectStage (renamed, removed)', uc_variant([SP('design'), LP('Stage 4', 'localProjectStage')]), False)
+check(g, 'no standardProjectPhase (1..* required)', uc_variant([LP('Stage 4')]), False)
+check(g, 'duplicate standardProjectPhase name', uc_variant([SP('design'), SP('design')]), False)
+check(g, 'standardProjectPhase name outside ISO 22263 list', uc_variant([SP('operation')]), False)
+check(g, 'actor without external (default false)', uc_variant(actors=[A()]), True)
+check(g, 'actor external="true" (external actor role)', uc_variant(actors=[A(), A('external="true"')]), True)
+check(g, 'actor external="false"', uc_variant(actors=[A('external="false"')]), True)
+check(g, 'actor external="1" (xs:boolean lexical form)', uc_variant(actors=[A('external="1"')]), True)
+check(g, 'actor external="yes" (not xs:boolean)', uc_variant(actors=[A('external="yes"')]), False)
+check(g, 'actor actorType="group" (removed)', uc_variant(actors=[A('actorType="group"')]), False)
+check(g, 'external composite actor role with subActors',
+      uc_variant(actors=[A('external="true"', '<subActor id="s-1" name="Plan reviewer"/><subActor id="s-2" name="Fire officer"/>')]), True)
+check(g, 'external on subActor (only on actor)', uc_variant(actors=[A('', '<subActor id="s-1" name="x" external="true"/>')]), False)
 
 # ---------------------------------------------------------------- engines
 import shutil, subprocess, tempfile

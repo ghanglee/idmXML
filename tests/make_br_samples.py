@@ -25,8 +25,20 @@ def E(tag, parent=None, text=None, **a):
     return e
 
 
+def rev13(el):
+    """Revision 13: project phase instead of project stage; actor/@actorType removed."""
+    for e in el.iter():
+        if not isinstance(e.tag, str):
+            continue
+        if e.tag in (q('standardProjectStage'), q('localProjectStage')):
+            e.tag = e.tag.replace('Stage', 'Phase')
+        if e.tag == q('actor'):
+            e.attrib.pop('actorType', None)
+
+
 def write(tree_or_el, name, comment=None):
     el = tree_or_el.getroot() if hasattr(tree_or_el, 'getroot') else tree_or_el
+    rev13(el)
     if comment:
         el.addprevious(etree.Comment(comment)) if el.getparent() is not None else None
     tree = etree.ElementTree(el)
@@ -126,7 +138,7 @@ def shell(short, full, code, summary, aim):
     E('language', uc, 'EN')
     E('use', uc, name='Check Code Compliance')
     E('type', E('region', uc, value='international'), 'USR')
-    E('name', E('standardProjectStage', uc), 'design')
+    E('name', E('standardProjectPhase', uc), 'design')
     return root, uc
 
 
@@ -176,8 +188,8 @@ E('reference', br, 'EN 13501-2 (classification of fire resistance)')
 br = E('businessRule', uc, id='BR-08', name='Fire resistance of compartment walls')
 E('statement', br, 'Walls that form a fire-compartment boundary shall have a fire resistance of at least 1 hour.')
 E('reference', br, 'Building Act Enforcement Decree, Art. 46 (illustrative)')
-uc.append(etree.Element(q('actor'), id='actor-1', name='Architect', actorType='group'))
-uc.append(etree.Element(q('actor'), id='actor-2', name='Building Control Officer', actorType='individual'))
+uc.append(etree.Element(q('actor'), id='actor-1', name='Architect'))
+uc.append(etree.Element(q('actor'), id='actor-2', name='Building Control Officer', external='true'))
 E('reference', uc, basisStandard='false', fullCitation='Building Act Enforcement Decree (illustrative)')
 
 er = er_shell(root, 'BR_full_r12')

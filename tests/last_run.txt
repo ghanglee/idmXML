@@ -102,4 +102,21 @@ Engines: libxml2/mono, xerces-jdk/mono, xmlschema-py/mono, libxml2/mod, xerces-j
 [pass    ] INVALID ed.2 proposition wrapper (removed)  — Element 'idm:proposition': This element is not expected. Expected is ( idm:statement ).
 [pass    ] valid   constraint -> business rule defined with statement
 
-86 expectation cases + 0 sample files x 6 engine/schema combinations; 0 failures or disagreements
+## G. phase + actor (Rev 13)
+[pass    ] valid   standardProjectPhase (two ISO 22263 phases)
+[pass    ] valid   standardProjectPhase + localProjectPhase (RIBA)
+[pass    ] INVALID standardProjectStage (renamed, removed)  — Element 'idm:standardProjectStage': This element is not expected. Expected is one of ( idm:region, i
+[pass    ] INVALID localProjectStage (renamed, removed)  — Element 'idm:localProjectStage': This element is not expected. Expected is one of ( idm:standardProj
+[pass    ] INVALID no standardProjectPhase (1..* required)  — Element 'idm:localProjectPhase': This element is not expected. Expected is one of ( idm:region, idm:
+[pass    ] INVALID duplicate standardProjectPhase name  — Element 'idm:standardProjectPhase': Duplicate key-sequence ['design'] in unique identity-constraint 
+[pass    ] INVALID standardProjectPhase name outside ISO 22263 list  — Element 'idm:name': Warning: No precomputed value available, the value was either invalid or somethi
+[pass    ] valid   actor without external (default false)
+[pass    ] valid   actor external="true" (external actor role)
+[pass    ] valid   actor external="false"
+[pass    ] valid   actor external="1" (xs:boolean lexical form)
+[pass    ] INVALID actor external="yes" (not xs:boolean)  — Element 'idm:actor', attribute 'external': 'yes' is not a valid value of the atomic type 'xs:boolean
+[pass    ] INVALID actor actorType="group" (removed)  — Element 'idm:actor', attribute 'actorType': The attribute 'actorType' is not allowed.
+[pass    ] valid   external composite actor role with subActors
+[pass    ] INVALID external on subActor (only on actor)  — Element 'idm:subActor', attribute 'external': The attribute 'external' is not allowed.
+
+101 expectation cases + 0 sample files x 6 engine/schema combinations; 0 failures or disagreements

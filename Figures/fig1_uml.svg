@@ -95,15 +95,15 @@
 <text x="858.0" y="292.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
 <text x="872.0" y="292.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">type: String</text>
 </g>
-<g id="class-standardProjectStage">
+<g id="class-standardProjectPhase">
 <rect x="850" y="316" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
 <line x1="850" y1="338" x2="1095.0" y2="338" stroke="#7F9DB9" stroke-width="1"/>
-<text x="972.5" y="332.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">standardProjectStage</text>
+<text x="972.5" y="332.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">standardProjectPhase</text>
 </g>
-<g id="class-localProjectStage">
+<g id="class-localProjectPhase">
 <rect x="850" y="368" width="245.0" height="36" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
 <line x1="850" y1="390" x2="1095.0" y2="390" stroke="#7F9DB9" stroke-width="1"/>
-<text x="972.5" y="384.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">localProjectStage</text>
+<text x="972.5" y="384.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">localProjectPhase</text>
 </g>
 <g id="class-constructionEntity">
 <rect x="850" y="420" width="245.0" height="47" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
@@ -121,7 +121,7 @@
 <text x="858.0" y="540.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
 <text x="872.0" y="540.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">name: String</text>
 <text x="858.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
-<text x="872.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">actorType: String</text>
+<text x="872.0" y="559.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">external: Boolean</text>
 </g>
 <g id="class-businessRule">
 <rect x="850" y="590" width="245.0" height="85" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>

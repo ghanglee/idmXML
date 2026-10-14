@@ -9,7 +9,7 @@
 |------|-------|
 | `specId.xsd` | Specification identifier and UUID type |
 | `authoring.xsd` | Authors, change log, committee, publisher |
-| `uc.xsd` | Use case, actors, project stages, classification, description, image |
+| `uc.xsd` | Use case, actor roles, project phases, classification, description, image |
 | `businessContextMap.xsd` | BCM, process map, interaction map, transaction map, diagram |
 | `er.xsd` | Exchange requirement, information unit |
 | `idm.xsd` | Root IDM element with cross-element constraints |
@@ -132,6 +132,8 @@ Explicit enforcement of ISO 29481-3 Clause 10: "An ER shall not be empty and sha
 
 ### Reason
 BPMN process maps use Pools (participants) containing Lanes (roles/teams). The `actor` element models Pools, and `subActor` models Lanes within those Pools. Both have direct `id`/`name` attributes and optional `classification`. The `actorType` attribute distinguishes organizations (`group`) from individuals (`individual`), supporting ISO 29481-1 actor role semantics.
+
+> **Superseded in part by Revision 13:** `actorType` was removed; `actor/@external` marks external actor roles. `subActor` is unchanged.
 
 ---
 
@@ -313,6 +315,8 @@ Information Units have a `definition` attribute for text-based definitions. Howe
 ### Changes
 
 #### 8a. Fixed `unique_standardprojectStageName` (uc.xsd)
+
+> **Renamed in Revision 13:** now `unique_standardProjectPhaseName` on `standardProjectPhase`.
 ```xml
 <!-- Before (bug: wrong element name and field) -->
 <xs:unique name="unique_standardprojectStageName">
@@ -498,7 +502,7 @@ Documented validator deviations (reported, not counted as failures):
 ## Revision 12 — Business Rule Statement (replaces proposition)
 
 **Date**: October 9, 2026
-**Affected files**: `uc.xsd`, `er.xsd` (type rename), `idm_monolithic_V2.0.xsd`, `tests/run_tests.py`; samples in `samples/IDM/businessRule/r12/`
+**Affected files**: `uc.xsd`, `er.xsd` (type rename), `idm_monolithic_V2.0.xsd`, `tests/run_tests.py`; samples in `samples/IDM/idmXML_v2.0/businessRule/r12/`
 
 ### Change
 The `proposition` wrapper of `businessRule` (which only contained `description` 1..\*) is replaced by a `statement` (the rule in natural language), optional `images`, and an optional `description` for commentary:
@@ -534,10 +538,54 @@ The `proposition` wrapper of `businessRule` (which only contained `description` 
 "Proposition" was unclear to users, and the wrapper added a nesting level whose only content was `description`, whose text could only go into the `title` attribute. A business rule is now: id, name, statement, optional images, optional commentary, references. The informal rule lives in the UC (`statement`); formal versions live in the ER (`constraint/expression`, Rev. 11).
 
 ### Migration
-Importers map `proposition/description/@title` → `statement` text (several descriptions: first → statement, the others → `description`), and images under the old description → `images/image`. Example: `samples/WindowCostIDM_BusinessRules.xml` (Rev. 11) and its converted counterpart `samples/IDM/businessRule/r12/WindowCostIDM_BusinessRules_r12.xml`.
+Importers map `proposition/description/@title` → `statement` text (several descriptions: first → statement, the others → `description`), and images under the old description → `images/image`. Example: `samples/WindowCostIDM_BusinessRules.xml` (Rev. 11) and its converted counterpart `samples/IDM/idmXML_v2.0/businessRule/r12/WindowCostIDM_BusinessRules_r12.xml`.
 
 ### Tests
 Group F covers statement, images, description, element order, the removed `proposition` and constraint → business rule links. See `tests/last_run.txt` for counts.
+
+---
+
+## Revision 13 — Project Phase Terminology; Actor Role (`external` replaces `actorType`)
+
+**Date**: October 14, 2026
+**Affected files**: `uc.xsd`, `idm_monolithic_V2.0.xsd`, `tests/run_tests.py`, `tests/make_br_samples.py`; all samples in `samples/IDM/idmXML_v2.0/`
+
+### Changes
+
+#### 13a. Project stage → project phase
+`standardProjectStage` / `localProjectStage` are renamed to `standardProjectPhase` / `localProjectPhase`; the identity constraint `unique_standardprojectStageName` becomes `unique_standardProjectPhaseName`. Content is unchanged (ISO 22263 enumeration for the standard phase; `name`, `outcomes`, `informationRequirements`, `classification` for the local phase).
+
+```xml
+<!-- Before -->                                  <!-- After -->
+<standardProjectStage>                           <standardProjectPhase>
+  <name>design</name>                              <name>design</name>
+</standardProjectStage>                          </standardProjectPhase>
+```
+
+#### 13b. Actor role: `actorType` removed, `external` added
+`actor/@actorType` (`group` | `individual`, Rev. 3) is removed. A new optional `actor/@external` (`xs:boolean`, default `false`) marks an **external actor role**: an actor outside the scope of interest (SOI) that provides input to, or receives output from, it. `subActor` is unchanged; an `actor` with `subActor` children is a composite actor role, one without them an elementary actor role.
+
+```xml
+<!-- Before -->
+<actor id="actor-auth" name="Building permit authority" actorType="group">
+  <subActor id="actor-auth-fr" name="Fire plan reviewer"/>
+</actor>
+
+<!-- After -->
+<actor id="actor-auth" name="Building permit authority" external="true">
+  <subActor id="actor-auth-fr" name="Fire plan reviewer"/>
+</actor>
+```
+
+### Reason
+- **13a**: ISO 29481-1:2025 (ed. 3) uses "project phase" throughout (standard project phases per ISO 22263, local project phases). The published ISO 29481-3 ed. 1 also uses `standardProjectPhase` / `localProjectPhase`; the 2022-08-22 schema had renamed them to `…Stage` without a recorded reason. Rev. 13 restores alignment with Parts 1 and 3.
+- **13b**: ISO 29481-1:2025 defines an *actor* (3.1.1) as a person, organization or organizational unit, and a *role* (3.1.2) as the functions performed by an actor at a point in time. An IDM specifies generic roles (e.g. client, designer), so `actor` in idmXML is an actor role and `group` / `individual` cannot be determined by the IDM author. Annex D of Part 1 distinguishes elementary, composite and external actor roles: the first two are already expressed by `subActor`; `external` adds the third, needed for interaction maps.
+
+### Migration
+Importers rename `standardProjectStage` / `localProjectStage` to `…Phase` and drop `actorType`. `external` is not derivable from earlier files and defaults to `false`.
+
+### Tests
+Group G (15 cases): both phase elements, the removed `…Stage` names, the ISO 22263 enumeration and uniqueness, `external` values (`true`, `false`, `1`, `yes`), the removed `actorType`, an external composite role and `external` on `subActor` (rejected). Samples updated: `Building permit authority` (FireSafetyDesignReview) and `Building Control Officer` (BR_full_r12) are external actor roles.
 
 ---
 
@@ -558,3 +606,4 @@ Group F covers statement, images, description, element order, the removed `propo
 | 10 | Oct 9, 2026 | er.xsd, monolithic, xml.xsd (new) | `informationUnit/synonym` with `xml:lang`; `unique_synonymPerLanguage` | Enhancement (extension) |
 | 11 | Oct 9, 2026 | er.xsd, idm.xsd, monolithic, tests/ (new) | Constraint link elements (attributes removed); `expression` + `formalRuleLanguage`; ER-tree-wide information-unit identity; `erType`; multi-validator test suite | Enhancement (breaking) |
 | 12 | Oct 9, 2026 | uc.xsd, er.xsd, monolithic, tests | `businessRule`: `statement` + optional `images` and `description` replace `proposition`; `synonymText` → `nonEmptyText` | Enhancement (breaking) |
+| 13 | Oct 14, 2026 | uc.xsd, monolithic, tests | `standardProjectStage`/`localProjectStage` → `standardProjectPhase`/`localProjectPhase` (ISO 29481-1:2025); `actor/@actorType` removed, `actor/@external` added (external actor role) | Alignment (breaking) |
