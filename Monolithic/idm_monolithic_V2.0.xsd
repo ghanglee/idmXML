@@ -228,7 +228,8 @@
 						<xs:attribute name="value" type="xs:string" use="required"/>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="standardProjectStage" minOccurs="1" maxOccurs="unbounded">
+				<!-- Revision 13: standardProjectStage/localProjectStage renamed to standardProjectPhase/localProjectPhase ("project phase", ISO 29481-1:2025) -->
+				<xs:element name="standardProjectPhase" minOccurs="1" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="name">
@@ -248,7 +249,7 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="localProjectStage" minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="localProjectPhase" minOccurs="0" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="name" minOccurs="1" maxOccurs="1"/>
@@ -312,15 +313,9 @@
 						<xs:attribute name="id" type="xs:string" use="required"/>
 						<xs:attribute name="name" type="xs:string" use="required"/>
 
-						<!-- Optional semantic typing -->
-						<xs:attribute name="actorType" use="optional">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:enumeration value="group"/>
-									<xs:enumeration value="individual"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:attribute>
+						<!-- Revision 13: an actor in an IDM specification is an actor role (ISO 29481-1, 3.1.2).
+						     external="true" marks an external actor role outside the scope of interest (ISO 29481-1, Annex D). -->
+						<xs:attribute name="external" type="xs:boolean" use="optional" default="false"/>
 
 					</xs:complexType>
 				</xs:element>
@@ -386,8 +381,8 @@
 			<xs:selector xpath="idm:use"/>
 			<xs:field xpath="@name"/>
 		</xs:unique>
-		<xs:unique name="unique_standardprojectStageName">
-			<xs:selector xpath="idm:standardProjectStage"/>
+		<xs:unique name="unique_standardProjectPhaseName">
+			<xs:selector xpath="idm:standardProjectPhase"/>
 			<xs:field xpath="idm:name"/>
 		</xs:unique>
 		<xs:unique name="unique_regionType">
