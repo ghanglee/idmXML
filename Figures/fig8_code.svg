@@ -68,16 +68,16 @@
 <text x="1366.5" y="270.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">Document</text>
 <text x="1366.5" y="294.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="18" text-anchor="middle" fill="#000000">status</text>
 </g>
-<text x="178.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="32" text-anchor="end" fill="#2F5597">e.g.</text>
-<text x="190.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="32" text-anchor="start" fill="#2F5597">er_AuthorEstimate_BR_DE_NOR_EN_CostEstimatipmforPC_bSNoric_20200317_WD</text>
-<line x1="78.5" y1="318" x2="203.5" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="221.0" y1="318" x2="334.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="378.5" y1="318" x2="469.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="546.0" y1="318" x2="520.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="691.0" y1="318" x2="583.9" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="806.5" y1="318" x2="647.6" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="957.5" y1="318" x2="818.6" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="1104.0" y1="318" x2="1021.9" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="1231.5" y1="318" x2="1153.3" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
-<line x1="1366.5" y1="318" x2="1258.2" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="178.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="30" text-anchor="end" fill="#2F5597">e.g.</text>
+<text x="190.0" y="445.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="30" text-anchor="start" fill="#2F5597">er_AuthorEstimate_BR_DE_NOR_EN_CostEstimationForPCBridge_bSNoric_20200317T093000_WD</text>
+<line x1="78.5" y1="318" x2="202.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="221.0" y1="318" x2="325.7" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="378.5" y1="318" x2="452.2" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="546.0" y1="318" x2="500.0" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="691.0" y1="318" x2="559.3" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="806.5" y1="318" x2="619.0" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="957.5" y1="318" x2="816.8" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1104.0" y1="318" x2="1045.0" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1231.5" y1="318" x2="1221.1" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="1366.5" y1="318" x2="1372.3" y2="412" stroke="#2F5597" stroke-width="1" stroke-dasharray="3 3"/>
 </svg>

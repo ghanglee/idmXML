@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""idmXSD v2.0 regression and feature tests (Revisions 10-13).
+"""idmXSD v2.0 regression and feature tests (Revisions 10-14).
 
 Usage:  python3 tests/run_tests.py [repository root]
 Runs every case against BOTH the monolithic and the modularized schema and
@@ -285,6 +285,17 @@ check(g, 'actor actorType="group" (removed)', uc_variant(actors=[A('actorType="g
 check(g, 'external composite actor role with subActors',
       uc_variant(actors=[A('external="true"', '<subActor id="s-1" name="Plan reviewer"/><subActor id="s-2" name="Fire officer"/>')]), True)
 check(g, 'external on subActor (only on actor)', uc_variant(actors=[A('', '<subActor id="s-1" name="x" external="true"/>')]), False)
+
+# ---------------------------------------------------------------- H. exchange view definition (Revision 14)
+g = 'H. correspondingEvd (Rev 14)'
+def with_er_child(xml):
+    t = fixture(); er = t.getroot().find(q('er'))
+    pos = list(er).index(er.find(q('authoring'))) + 1
+    er.insert(pos, X(xml)); return t
+check(g, 'correspondingEvd with description', with_er_child(
+    f'<correspondingEvd xmlns="{NS}" basis="IFC4.3" name="IFC4.3 Reference View"><description title="IFC model view used as EVD"/></correspondingEvd>'), True)
+check(g, 'correspondingEvd without name', with_er_child(f'<correspondingEvd xmlns="{NS}" basis="IFC4.3"/>'), False)
+check(g, 'correspondingMvd (renamed, removed)', with_er_child(f'<correspondingMvd xmlns="{NS}" basis="IFC4.3" name="Reference View"/>'), False)
 
 # ---------------------------------------------------------------- engines
 import shutil, subprocess, tempfile

@@ -119,4 +119,9 @@ Engines: libxml2/mono, xerces-jdk/mono, xmlschema-py/mono, libxml2/mod, xerces-j
 [pass    ] valid   external composite actor role with subActors
 [pass    ] INVALID external on subActor (only on actor)  — Element 'idm:subActor', attribute 'external': The attribute 'external' is not allowed.
 
-101 expectation cases + 0 sample files x 6 engine/schema combinations; 0 failures or disagreements
+## H. correspondingEvd (Rev 14)
+[pass    ] valid   correspondingEvd with description
+[pass    ] INVALID correspondingEvd without name  — Element 'idm:correspondingEvd': The attribute 'name' is required but missing.
+[pass    ] INVALID correspondingMvd (renamed, removed)  — Element 'idm:correspondingMvd': This element is not expected. Expected is one of ( idm:constraint, i
+
+104 expectation cases + 0 sample files x 6 engine/schema combinations; 0 failures or disagreements

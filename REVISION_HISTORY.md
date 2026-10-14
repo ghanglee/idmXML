@@ -11,7 +11,7 @@
 | `authoring.xsd` | Authors, change log, committee, publisher |
 | `uc.xsd` | Use case, actor roles, project phases, classification, description, image |
 | `businessContextMap.xsd` | BCM, process map, interaction map, transaction map, diagram |
-| `er.xsd` | Exchange requirement, information unit |
+| `er.xsd` | Exchange requirement, information unit, constraint, corresponding EVD |
 | `idm.xsd` | Root IDM element with cross-element constraints |
 | `idm_monolithic_V2.0.xsd` | Monolithic (consolidated) version of the above 6 files |
 | `xml.xsd` | Minimal W3C XML-namespace schema (`xml:lang`), imported by `er.xsd` / monolithic (Rev. 10) |
@@ -589,6 +589,42 @@ Group G (15 cases): both phase elements, the removed `…Stage` names, the ISO 2
 
 ---
 
+## Revision 14 — Exchange View Definition (`correspondingEvd` replaces `correspondingMvd`); IDM Code Date-Time
+
+**Date**: October 14, 2026
+**Affected files**: `er.xsd`, `idm_monolithic_V2.0.xsd`, `tests/run_tests.py`; samples `FireSafetyDesignReview`, `MEPEquipmentHandover`; ISO 29481-3 text (Clause 10, Table 46, Figure 8)
+**GitHub issues**: #3 (item 1), #7
+
+### Changes
+
+#### 14a. `correspondingMvd` → `correspondingEvd`
+The ER child `correspondingMvd` is renamed to `correspondingEvd`. Attributes (`basis`, `name`) and content (`description` 0..\*) are unchanged.
+
+```xml
+<!-- Before -->
+<correspondingMvd basis="IFC4.3" name="IFC4.3 Reference View"/>
+<!-- After -->
+<correspondingEvd basis="IFC4.3" name="IFC4.3 Reference View"/>
+```
+
+#### 14b. IDM code: initial date and time without separators (document only)
+The "Initial date" part of the IDM code (ISO 29481-3, Table 46) uses the ISO 8601-1 basic format `yyyyMMddTHHmmss` (e.g. `20260812T153000`) instead of `yyyy-MM-ddTHH:mm:ss`. No schema change: `specId/@idmCode` is a string.
+
+### Reason
+- **14a**: ISO 29481-1:2025 introduces *exchange view definition* (EVD, 3.2.3) as the general term for a computer-interpretable representation of one or more data models, or their parts, required to fulfil an exchange requirement. *Model view definition* (MVD) is specific to IFC; an IFC MVD is one kind of EVD.
+- **14b**: An IDM code is used as an identifier and often as a file name. Colons are not allowed in file names on common operating systems; the ISO 8601-1 basic format has no separators.
+
+### Not adopted
+Issue #3 (item 2) asked for a mapping between standard and local project phases. Standard phases often cannot be mapped one-to-one to local phases, so `standardProjectPhase` and `localProjectPhase` stay independent (no mapping element).
+
+### Migration
+Importers rename `correspondingMvd` to `correspondingEvd`.
+
+### Tests
+Group H (3 cases): `correspondingEvd` with description, missing `name`, and the removed `correspondingMvd`.
+
+---
+
 ## Summary of All Changes
 
 | Rev | Date | Files | Change | Category |
@@ -607,3 +643,4 @@ Group G (15 cases): both phase elements, the removed `…Stage` names, the ISO 2
 | 11 | Oct 9, 2026 | er.xsd, idm.xsd, monolithic, tests/ (new) | Constraint link elements (attributes removed); `expression` + `formalRuleLanguage`; ER-tree-wide information-unit identity; `erType`; multi-validator test suite | Enhancement (breaking) |
 | 12 | Oct 9, 2026 | uc.xsd, er.xsd, monolithic, tests | `businessRule`: `statement` + optional `images` and `description` replace `proposition`; `synonymText` → `nonEmptyText` | Enhancement (breaking) |
 | 13 | Oct 14, 2026 | uc.xsd, monolithic, tests | `standardProjectStage`/`localProjectStage` → `standardProjectPhase`/`localProjectPhase` (ISO 29481-1:2025); `actor/@actorType` removed, `actor/@external` added (external actor role) | Alignment (breaking) |
+| 14 | Oct 14, 2026 | er.xsd, monolithic, tests | `correspondingMvd` → `correspondingEvd` (EVD, ISO 29481-1:2025); IDM code initial date-time in ISO 8601-1 basic format (document only) | Alignment (breaking) |
