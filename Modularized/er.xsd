@@ -76,7 +76,8 @@
 					<xs:attribute name="id" type="xs:string" use="required"/>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="correspondingMvd" minOccurs="0" maxOccurs="unbounded">
+			<!-- Revision 14: correspondingMvd renamed to correspondingEvd (exchange view definition, ISO 29481-1:2025, 3.2.3) -->
+			<xs:element name="correspondingEvd" minOccurs="0" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element ref="idm:description" minOccurs="0" maxOccurs="unbounded"/>

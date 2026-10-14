@@ -30,7 +30,7 @@ boxes = [
     ('Initial|Date', ['ISO 8601-1'], 1185, 1278, True),
     ('Document|status', [], 1295, 1438, True),
 ]
-EX = 'er_AuthorEstimate_BR_DE_NOR_EN_CostEstimatipmforPC_bSNoric_20200317_WD'
+EX = 'er_AuthorEstimate_BR_DE_NOR_EN_CostEstimationForPCBridge_bSNoric_20200317T093000_WD'
 
 
 def build():
@@ -59,7 +59,7 @@ def build():
             nx = boxes[i + 1][2]
             S.append(f'<line x1="{x2+2}" y1="{by+bh-2}" x2="{nx-2}" y2="{by+bh-2}" stroke="#7F7F7F" stroke-width="2"/>')
     # example string and leader lines
-    size = 32
+    size = 30
     f = F(size)
     prefix = 'e.g.   '
     x0 = 190

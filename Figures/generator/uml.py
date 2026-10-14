@@ -318,7 +318,7 @@ def build():
     cls('informationUnit', 470, ye + 70, ['id: String <<PK>>', 'name: String', 'dataType: String', 'isMandatory: Boolean', 'definition: String'], w=245)
     cls('constraint', 470, ye + 245, ['id: String <<PK>>', 'associatedBusinessRule: String [0..*] <<FK>>',
                                        'associatedInformationUnit: String [0..*] <<FK>>'], w=330)
-    cls('correspondingMvd', 470, ye + 400, ['basis: String', 'name: String'], w=245)
+    cls('correspondingEvd', 470, ye + 400, ['basis: String', 'name: String'], w=245)
     cls('synonym', 870, ye - 20, ['(content): String', 'xml:lang: language'], w=245)
     cls('examples', 870, ye + 60, [], w=245)
     cls('correspondingExternalElement', 870, ye + 115, ['basis: String', 'name: String'], w=245)
@@ -338,7 +338,7 @@ def build():
     poly([(et, L('specId#er')[1]), (et, L('description#er')[1])])
     for n in ['specId#er', 'authoring#er']:
         poly([(et, L(n)[1]), L(n)]); m(L(n)[0] - 6, L(n)[1] - 5, '1', 'end')
-    for n, mm, dy in [('informationUnit', '1..* (choice)', 11), ('constraint', '0..*', 11), ('correspondingMvd', '0..*', 11)]:
+    for n, mm, dy in [('informationUnit', '1..* (choice)', 11), ('constraint', '0..*', 11), ('correspondingEvd', '0..*', 11)]:
         p = L(n, dy); poly([(et, p[1]), p]); m(p[0] - 6, p[1] - 4, '', 'end')
         m(et + 4, p[1] - 4, mm)
     poly([(et, L('description#er')[1]), L('description#er')]); m(L('description#er')[0] - 6, L('description#er')[1] - 5, '0..*', 'end')
@@ -380,7 +380,7 @@ def build():
     dlink(R('informationUnit', 100), 'description#iu')
     x0, y0, w0, h0 = C['description#c']
     dlink((x0 + w0 / 2, C['constraint'][1] + C['constraint'][3]), 'description#c', horiz=False)
-    dlink(R('correspondingMvd', 33), 'description#mvd')
+    dlink(R('correspondingEvd', 33), 'description#mvd')
     dlink(R('examples', 18), 'description#ex')
     dlink(R('correspondingExternalElement', 33), 'description#cee')
 

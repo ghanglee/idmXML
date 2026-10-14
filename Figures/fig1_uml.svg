@@ -502,10 +502,10 @@
 <text x="478.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
 <text x="492.0" y="1470.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">associatedInformationUnit: String [0..*] &lt;&lt;FK&gt;&gt;</text>
 </g>
-<g id="class-correspondingMvd">
+<g id="class-correspondingEvd">
 <rect x="470" y="1550" width="245.0" height="66" fill="#DCE6F2" stroke="#7F9DB9" stroke-width="1"/>
 <line x1="470" y1="1572" x2="715.0" y2="1572" stroke="#7F9DB9" stroke-width="1"/>
-<text x="592.5" y="1566.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">correspondingMvd</text>
+<text x="592.5" y="1566.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="middle" fill="#000000">correspondingEvd</text>
 <text x="478.0" y="1587.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
 <text x="492.0" y="1587.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">basis: String</text>
 <text x="478.0" y="1606.0" font-family="Calibri, Carlito, 'Segoe UI', Arial, sans-serif" font-size="15" text-anchor="start" fill="#000000">-</text>
